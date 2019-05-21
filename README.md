@@ -8,7 +8,7 @@ See [CollectionBuilder](https://github.com/CollectionBuilder/collectionbuilder-g
 
 Lib-STATIC is a minimal computing-based approach to creating data-driven tools leveraging static-web technologies (enabled by generators such as Jekyll and a "JAM" stack approach) and librarians’ specialized skills in metadata and classification to create engaging web publications via three components: a spreadsheet with well-formed metadata, a directory of assets, and a configuration file. 
 
-#
+# Why?
 
 In response to challenges and frustrations with the systems we used daily, we started to see that there were ways to build these systems and tools that did not lock us into proprietary contracts nor lock us out of the code and data driving the site's presentation. 
 These experiences led us to a philosophy of development that leverages the expertise of librarians and cultural heritage workers and the unique values of their institutions at the forefront of project design decisions.
