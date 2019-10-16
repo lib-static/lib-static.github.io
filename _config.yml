@@ -5,28 +5,27 @@
 # Site settings
 
 # title of site appears in banner
-title: Collection Builder
+title: Lib-STATIC
 # tagline appears in banner
-tagline: a theme for building simple digital exhibits
+tagline: a methodology, and a cookbook
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills"
+description: "Lib-STATIC is a minimal computing-based approach to creating data-driven tools leveraging static-web technologies (enabled by generators such as Jekyll and a “JAM” stack approach) and librarians’ specialized skills in metadata and classification to create engaging web publications via three components: a spreadsheet with well-formed metadata, a directory of assets, and a configuration file."
 # keywords appear in meta tags
 keywords: "university of idaho, digital collections, digital humanities"
 # creator of the digital collection, to appear in meta tags
-author: evanwill
+author: dcnb
 # creator contact email for meta tags
-email: ewilliamson@uidaho.edu
+email: dbecker@uidaho.edu
 # collection project date, when did you publish this
-collection-date: "2018"
+collection-date: "2019"
 
 # url is your gh-pages base, following the pattern: username.github.io
-url: https://uidaholib.github.io
+url: https://lib-static.github.io
 # baseurl is your github repository's name prefixed with a /
-baseurl: /blank-collectionbuilder-template
+baseurl: /lib-static.github.io
 # repository is the github repository's full url
-repository: https://github.com/uidaholib/blank-collectionbuilder-template
-
+repository: https://github.com/lib-static/lib-static.github.io
 # Theme Options
 # Use fontawesome CDN (true, false), https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
 fontawesome: false
