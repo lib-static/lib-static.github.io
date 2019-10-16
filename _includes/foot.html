@@ -1,0 +1,7 @@
+<!-- Optional JS for Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{{ '/assets/js/jquery-3.3.1.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<!-- load other js -->
+{%- if page.table-id -%}{% include js/table-basic.html %}{%- endif -%}
+{%- if page.map-id -%}{% include js/map-basic.html %}{%- endif -%}
+{%- if page.gallery-id -%}{% include js/gallery-basic.html %}{%- endif -%}
