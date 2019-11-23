@@ -8,7 +8,7 @@ title: Home
 {:.pl-4 .blockquote}
 > **methodology in progress!**
 
-See [CollectionBuilder](https://github.com/CollectionBuilder/collectionbuilder-gh) and [Oral History as Data](https://github.com/uidaholib/oral-history-as-data) for our works in progress.
+See [CollectionBuilder](https://collectionbuilder.github.io/) and [Oral History as Data](https://github.com/uidaholib/oral-history-as-data) for our works in progress.
 
 
 ![Lib-STATIC Values](images/lib-static-values.png){:.img-fluid}
