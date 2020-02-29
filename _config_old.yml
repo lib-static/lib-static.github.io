@@ -1,0 +1,51 @@
+# collectionbuilder-gh
+# a Jekyll Digital Collection Generator
+# designed for GitHub Pages
+
+# Site settings
+
+# title of site appears in banner
+title: Lib-STATIC
+# tagline appears in banner
+tagline: a methodology, and a cookbook
+# description appears in meta tags and other locations
+# this description might appear in search result lists, keep around 160 characters max
+description: "Lib-STATIC is a minimal computing-based approach to creating data-driven tools leveraging static-web technologies (enabled by generators such as Jekyll and a “JAM” stack approach) and librarians’ specialized skills in metadata and classification to create engaging web publications via three components: a spreadsheet with well-formed metadata, a directory of assets, and a configuration file."
+# keywords appear in meta tags
+keywords: "university of idaho, digital collections, digital humanities"
+# creator of the digital collection, to appear in meta tags
+author: dcnb
+# creator contact email for meta tags
+email: dbecker@uidaho.edu
+# collection project date, when did you publish this
+collection-date: "2019"
+
+# url is your gh-pages base, following the pattern: username.github.io
+url: https://lib-static.github.io
+# baseurl is your github repository's name prefixed with a /
+baseurl: /lib-static.github.io
+# repository is the github repository's full url
+repository: https://github.com/lib-static/lib-static.github.io
+# Theme Options
+# Use fontawesome CDN (true, false), https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
+fontawesome: false
+# navbar text color
+# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
+# navbar-color: navbar-dark
+# navbar background color
+# Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
+# navbar-background: bg-secondary
+# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
+# Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
+bootswatch: # leave blank or comment out for plain bootstrap
+
+# google services [optional!]
+# leave these blank or comment out to NOT include google code
+# google-tracking-id: "UA-74844011-1"
+
+# build settings
+permalink: pretty
+
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+# (this is done automatically by gh-pages build)

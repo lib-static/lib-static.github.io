@@ -1,0 +1,28 @@
+---
+layout: page
+---
+{%- assign items = site.data[site.metadata] -%}
+<div class="row">
+  <div class="col-md-8">
+
+  {% include index/description.html %}
+  {% include index/carousel.html %}
+  
+  </div>
+  <div class="col-md-4">  
+
+    {% include index/time.html %}
+
+    {% include index/featured-terms.html title="Top Subjects" featured=site.data.theme.featured-subjects field="subject" max=site.data.theme.featured-subjects-max btn-color="info" %}
+
+    {% include index/featured-terms.html title="Locations" featured=site.data.theme.featured-locations field="location" max=site.data.theme.featured-locations-max btn-color="outline-secondary" %}
+
+    {% include index/objects.html %}
+
+  </div>
+  <div class="col-md-12">
+
+    {% include index/data-download.html %}
+
+  </div>
+</div>

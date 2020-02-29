@@ -1,51 +1,60 @@
+##########
 # collectionbuilder-gh
-# a Jekyll Digital Collection Generator
-# designed for GitHub Pages
+# Jekyll Digital Collection Generator, designed for GitHub Pages
+# https://github.com/CollectionBuilder/collectionbuilder-gh
+##########
 
-# Site settings
+##########
+# URL VARIABLES
+#
+# url is your gh-pages base, following the pattern: username.github.io
+url: https://collectionbuilder.github.io
+# baseurl is your github repository's name prefixed with a /
+baseurl: /collectionbuilder-gh
+# location of code, the full url to your github repository
+source-code: https://github.com/CollectionBuilder/collectionbuilder-gh
 
+##########
+# SITE SETTINGS
+#
 # title of site appears in banner
-title: Lib-STATIC
-# tagline appears in banner
-tagline: a methodology, and a cookbook
+title: CollectionBuilder-GH 
+# tagline, a short phrase that will appear throughout the site in the top banner
+tagline: a template for creating simple digital exhibits
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "Lib-STATIC is a minimal computing-based approach to creating data-driven tools leveraging static-web technologies (enabled by generators such as Jekyll and a “JAM” stack approach) and librarians’ specialized skills in metadata and classification to create engaging web publications via three components: a spreadsheet with well-formed metadata, a directory of assets, and a configuration file."
-# keywords appear in meta tags
-keywords: "university of idaho, digital collections, digital humanities"
-# creator of the digital collection, to appear in meta tags
-author: dcnb
-# creator contact email for meta tags
-email: dbecker@uidaho.edu
-# collection project date, when did you publish this
-collection-date: "2019"
+description: "CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills"
+# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
+author: CollectionBuilder
 
-# url is your gh-pages base, following the pattern: username.github.io
-url: https://lib-static.github.io
-# baseurl is your github repository's name prefixed with a /
-baseurl: /lib-static.github.io
-# repository is the github repository's full url
-repository: https://github.com/lib-static/lib-static.github.io
-# Theme Options
-# Use fontawesome CDN (true, false), https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
-fontawesome: false
-# navbar text color
-# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
-# navbar-color: navbar-dark
-# navbar background color
-# Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
-# navbar-background: bg-secondary
-# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
-# Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
-bootswatch: # leave blank or comment out for plain bootstrap
+##########
+# COLLECTION SETTINGS
+#
+# choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
+metadata: demo-metadata 
 
-# google services [optional!]
+##########
+# GOOGLE SERVICES [optional!]
+#
 # leave these blank or comment out to NOT include google code
-# google-tracking-id: "UA-74844011-1"
+# google-analytics-id: "UA-74844011-1"
+# google-cse-id: "002151703305773322890:1pu3smhw1t8"
 
-# build settings
-permalink: pretty
+##########
+# ROBOTS EXCLUDE
+#
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true 
 
+##########
+# BUILD SETTINGS 
+#
 # Note: use environment variable on build command to include analytics
 # JEKYLL_ENV=production jekyll build
 # (this is done automatically by gh-pages build)
+#
+# ignore stuff
+exclude: [docs/, Rakefile, README.md, LICENSE]
+# compress CSS output
+sass:
+  style: compressed
