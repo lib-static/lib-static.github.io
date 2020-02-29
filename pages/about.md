@@ -2,34 +2,25 @@
 title: About
 layout: page
 permalink: /about.html
-# Edit the markdown on in this file to describe your collection
 ---
 
-{% include about/jumbotron.html %}
+# Lib-STATIC
 
-# About {{ site.title }}.
+{:.pl-4 .blockquote}
 
-This site is generated using `collectionbuilder-gh`, a project to generate a free and simple digital collection using [GitHub Pages](https://pages.github.com/) from: 
+See [CollectionBuilder](https://collectionbuilder.github.io/) and [Oral History as Data](https://github.com/uidaholib/oral-history-as-data) for our works in progress.
 
-- a CSV of collection metadata
-- a folder of JPEG images or PDF documents
+Lib-STATIC is a minimal computing-based approach to creating data-driven tools leveraging static-web technologies (enabled by generators such as Jekyll and a "JAM" stack approach) and librarians’ specialized skills in metadata and classification to create engaging web publications via three components: a spreadsheet with well-formed metadata, a directory of assets, and a configuration file. 
 
- `collectionbuilder-gh` is intended as a simple template for hands-on teaching about digital libraries.
-It can be used in a workshop setting to take participants through digitization and metadata creation, to having a live collection site hosted on GitHub.
+![Lib-STATIC Values](images/lib-static-values.png){:.img-fluid}
 
-Similar learning experiences use DAMS/[CMS](https://en.wikipedia.org/wiki/Content_management_system) platforms that are often overkill for one-off projects. Although CMS feature familiar GUI administration interfaces, they are not simple to learn and customize.
+# Why?
 
-`collectionbuilder-gh` aims to be well documented and easy to configure by following the example.
-A project in "minimal computing," it provides a depth of learning opportunities, allowing users to take complete ownership over the project and make their work open to the world.
+In response to challenges and frustrations with the systems we used daily, we started to see that there were ways to build these systems and tools that did not lock us into proprietary contracts nor lock us out of the code and data driving the site's presentation. 
+These experiences led us to a philosophy of development that leverages the expertise of librarians and cultural heritage workers and the unique values of their institutions at the forefront of project design decisions.
+This methodology differs greatly from the predominant model for platform and tool building for academic libraries as it does not require complex infrastructure nor specialized developers to build, implement, and maintain the systems put into use.
+The shift towards a focus on clean data and simple systems enables a more agile and responsive approach, allowing the iterative development of features, gradual acquisition of developer skills, and flexible migration between hosts without the need for deep investment. 
 
-## Learn about:
+We recognize that there will still be learning curves and frustrations in the development and use of any system, regardless of its underlying methodology. 
+However, with its focus on the primary values of usability and accessibility, Lib-STATIC gives libraries and cultural institutions the framework within which to develop and use tools that actually embody their principles by removing the overwrought features and extensive infrastructure requirements that permeate many of the library systems currently used and developed.
 
-- Git and GitHub basics for collaboration and project management
-- [Markdown](https://guides.github.com/features/mastering-markdown/) for plaintext writing and content creation
-- HTML, CSS, and JS literacy
-- commandline literacy
-- [Jekyll](https://jekyllrb.com/) basics
-- working in the Open, open source and open data
-- digital libraries concepts such as "collections as data", minimal computing, data-driven design
-
-{% include about/credits.md %}

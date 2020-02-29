@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<div class="container mt-2">
+    <ul class="breadcrumb h6">
+        <li class="breadcrumb-item"><a class="text-dark" href="{{ '/' | absolute_url }}">{{ site.title }}</a></li>
+        <li class="breadcrumb-item text-secondary"><a class="text-dark" href="{{ '/browse.html' | absolute_url }}">Browse</a></li>
+        <li id="bc-title" class="breadcrumb-item active">{{page.title}}</li>
+    </ul>
+
+    
+
+    <div class="row mt-3">
+                <div class="col-md-6">
+                    <h2 id="item-title">{{page.title}}</h2>
+                    <dt class="field">Description:</dt>
+                    <dd class="field-value">{{page.description}}</dd>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-center"><a class="btn btn-info btn-lg" href="{{page.objectlink}}" target="_blank">Project Website</a></p>
+                    <dt class="field">Related Projects:</dt>
+                    <dd class="field-value">{{page.project-example}}</dd>
+                    <dt class="field">Category:</dt>
+                    <dd class="field-value">{{page.category}}</dd>
+                    <dt class="field">Site Generator:</dt>
+                    <dd class="field-value">{{page.generator-type}}</dd>
+                    <dt class="field">Developer(s):</dt>
+                    <dd class="field-value">{{page.people}}</dd>
+                </div>
+    </div>
+<div class="row mt-4">
+            <div class="col-md-6">
+                <figure class="figure">
+                    <img class="figure-img img-fluid rounded h-200" src="{{ page.image1 | prepend: '/images/' | relative_url }}" alt="{{page.image1-caption}}">
+                    <figcaption class="figure-caption">{{page.image1-caption}}</figcaption>
+                </figure>
+            </div>
+            {% if page.image2 %}
+            <div class="col-md-6">
+                <figure class="figure mt-2">
+                    <img class="figure-img img-fluid rounded h-200" src="{{ page.image2 | prepend: '/images/' | relative_url }}" alt="{{page.image2-caption}}">
+                    <figcaption class="figure-caption">{{page.image2-caption}}</figcaption>
+                </figure>
+            </div>
+            {% endif %}
+        
+    </div>
+</div>
+</div>
+
+{%- if site.data.theme.browse-buttons == true -%}
+<div class="text-center">
+    <a id="prev-button" class="btn btn-secondary">&laquo; Previous</a>
+    <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
+    <a id="for-button" class="btn btn-secondary">Next &raquo;</a>
+</div>
+
+<div id="item-nav">
+    <div class="d-none d-md-block">
+        <a id="back-button" class="previous btn btn-lg btn-secondary">&laquo;</a>
+        <a id="next-button" class="next btn btn-lg btn-secondary">&raquo;</a>
+    </div>
+</div>
+{% else %}
+<div class="text-center">
+    <a class="btn btn-outline-primary" href="{{ '/browse.html' | relative_url }}">&laquo; Back to Collection Browse</a>
+</div>
+{% endif %}
+</div>
