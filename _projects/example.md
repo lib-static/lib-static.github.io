@@ -1,20 +1,18 @@
 ---
-objectid: ohd # a short identifier with no spaces, weird characters, etc.
-title: Oral History as Data #short descriptive title identifying main purpose/use and possibly technology
-objectlink: https://uidaholib.github.io/oral-history-as-data/ # link to the main tool/project site
-github-repo: https://github.com/uidaholib/oral-history-as-data # link to the main tool/project github repository, only if different
-description: "The Oral History as Data (OHD) tool is a static website generator that allows users to analyze and publish coded oral history or qualitative interview files." # short description providing contextual information about the uses, technologies, examples, tools, and/or category the recipe addresses
-development-state: in production # [OPTIONS: early stages; in development; in production ]
-related-project: 
-- title: CTRL+Shift
-  url: https://ctrl-shift.org
-- title: Voices of Gay Rodeo
-  url: https://voicesofgayrodeo.com  
-category: Qualitative Data Analysis; Oral History; # Choose from: (Digital Collection; Institutional Repository; Research Guide; Qualitative Data Analysis; Oral History; Library Website; Critical Edition; OER; screwing-around;) or, if you have to, add a new one
-technologies: Jekyll; CSV; SVG; JavaScript; Bootstrap; YouTube; SoundCloud; Vimeo;	# list the required technologies (broadly speaking) important to and/or necessary for your recipe; separate by semi-colon. Include the site generator first. Example: jekyll; bootstrap;svg;
-software-requirements: This tool can be used entirely through the GitHub.com web interface, and the generated website can be published via GitHub pages. To use the tool on a local computer, you would need to install Git, Ruby, and Jekyll. # Free text statement describing software installs required before getting started on a local computer.
+objectid: ctrl-shift # a short identifier with no spaces, weird characters, etc.
+title: "CTRL+Shift: Writing Practice at the Dawn of the Digital Age" #short descriptive title identifying main purpose/use and possibly technology
+objectlink: https://ctrl-shift.org/ # link to the main tool/project site
+description: "CTRL-Shift is an online collection of audio recordings, transcripts, process visualizations, and data analyses broken out from interviews conducted with 11 prominent contemporary American poets from across the United States. " # short description providing contextual information about the uses, technologies, examples, tools, and/or category the recipe addresses 
+category: Qualitative Data Analysis; Oral History; Screwing-Around # Choose from: (Digital Collection; Institutional Repository; Research Guide; Qualitative Data Analysis; Oral History; Library Website; Critical Edition; OER; screwing-around;) or, if you have to, add a new one
+technologies: Jekyll; CSV; SVG; JavaScript; Bootstrap; Voyant; YouTube; # list the required technologies (broadly speaking) important to and/or necessary for your recipe; separate by semi-colon. Include the site generator first. Example: jekyll; bootstrap;svg;
 people: # list all people responsible for code development
 - name: Devin Becker
+  github: dcnb # provide the name / github ids of the person and/or people developing this recipe; separate multiple people by semi-colon
+  website: https://devinbecker.org # optional -- points to site for individual. 
+- name: Corey Oglesby
+  github: dcnb # provide the name / github ids of the person and/or people developing this recipe; separate multiple people by semi-colon
+  website: https://devinbecker.org # optional -- points to site for individual. 
+- name: Lauren Westerfield
   github: dcnb # provide the name / github ids of the person and/or people developing this recipe; separate multiple people by semi-colon
   website: https://devinbecker.org # optional -- points to site for individual. 
 images: # try and keep it to no more than 2-3 images. 
