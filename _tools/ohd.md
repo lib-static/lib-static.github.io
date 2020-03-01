@@ -1,16 +1,20 @@
 ---
 objectid: ohd # a short identifier with no spaces, weird characters, etc.
 title: Oral History as Data #short descriptive title identifying main purpose/use and possibly technology
+objectlink: https://uidaholib.github.io/oral-history-as-data/ # link to the main tool/project site
 description: "The Oral History as Data (OHD) tool is a static website generator that allows users to analyze and publish coded oral history or qualitative interview files. By turning transcriptions into tagged/coded CSV files, adding a list of filters, and creating a simple markdown file for each interview (to be included in the _transcipt collection), OHD will provide filterable transcripts and a color coded visualization for all transcripts included." # short description providing contextual information about the uses, technologies, examples, tools, and/or category the recipe addresses
+development-state: middle # [OPTIONS: early, middle, mature ]
+difficulty: medium # [OPTIONS: easy, medium, hard]
 related-project: ctrl-shift;voicesofgayrodeo # use the objectid of the project that was built with this tool; if more than one, separate by semi-colon. 
 category: Qualitative Data Analysis; Oral History; # Choose from: (Digital Collection; Institutional Repository; Research Guide; Qualitative Data Analysis; Oral History; Library Website; Critical Edition; OER; screwing-around;) or, if you have to, add a new one
 generator-type: jekyll # list the static site generator that enables the tool 
 technologies: CSV, SVG; javascript filter; bootstrap; 	# list the required technologies (broadly speaking) important to and/or necessary for your recipe; separate by semi-colon. Example: bootstrap;svg;
+software-requirements: This can be used and a site published entirely through the GitHub.com web interface. To use on a local computer, you would need to install Git, Ruby, and Jekyll.
 people: dcnb # provide the github ids of the person and/or people developing this recipe; separate multiple people by semi-colon
 image1: ohd1.png # filenames for main image, including extension and folder
-image1-caption: Colorful, SVG-based visualization for interviews based on coded subjects. Uses a liquid loop to assign colors based on subjects and pull CSV transcript into a colorful, interactive bar for exploring the interview by subject.  # caption for main image
+image1-caption: Colorful, SVG-based visualization for interviews based on coded subjects.  # caption for main image
 image2: ohd2.png # OPTIONAL -- filenames for secondary image
-image2-caption: Interactive transcript page generated for each transcrip CSV. # OPTIONAL -- caption for secondary image
+image2-caption: Interactive transcript page generated for each transcript CSV. # OPTIONAL -- caption for secondary image
 ---
 
 ### Context
