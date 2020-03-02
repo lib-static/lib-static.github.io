@@ -2,8 +2,8 @@ display_text,stub,dropdown_parent
 Home,/
 Browse
 All,/browse.html,Browse
-Tools,/tools/,Browse
-Projects,/projects/,Browse
-How Tos,/howtos/
 Code,/code.html,Browse
+Tools,/tools/,
+Projects,/projects/,
+How Tos,/howtos/
 About,/about.html

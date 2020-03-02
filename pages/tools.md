@@ -1,10 +1,21 @@
 ---
 title: Browse Tools
-layout: browse
+layout: feature
 permalink: /tools/
+divider: development-state
 # see _data/config-browse.csv for display options
 # the Browse visualization will be added below the content in this file
 ---
 
-## Browse Tools
+## Lib-STATIC Tools 
 
+Below you can find a list of tools to help you build various websites and projects. The tools are separted out into their development stages. Some tools included here are quite new
+
+{% for tool in site.tools %}
+## [{{tool.title}}]({{tool.objectid | prepend: '/tools/' | relative_url}})
+
+{{tool.description}}
+
+***
+
+{% endfor %}

@@ -1,3 +1,31 @@
+{% if page.layout == "home-infographic" and site.data.theme.featured-image %}
+<style>
+#home-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: {{ site.data.theme.home-banner-image-position | default: 'center' }};
+    font-family: lobster, sans;
+}
+#home-title-box {
+    padding-top: {{ site.data.theme.home-title-y-padding | default: '5em' }};
+    padding-bottom: {{ site.data.theme.home-title-y-padding | default: '5em' }};
+}
+@media screen and (max-width: 576px) {
+    #home-title-box {
+        padding-top: 5em;
+        padding-bottom: 5em; 
+    }
+}
+</style>
+<div id="home-banner" class="container-fluid mb-0 p-0">
+    <div id="home-title-box" >
+        <div class="title-card p-2 text-center">
+            <h1 class="display-4">{{ site.title }}</h1>
+            {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
+        </div>
+    </div>
+</div>
+{%- else -%}
 <header class="mb-4">
     <div class="container-fluid h-100 text-white bg-dark">
         <div class="row px-3 py-2">
@@ -21,7 +49,7 @@
                         <li class="nav-item dropdown">
                             {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_text' %}
                             {%- assign childStubs = navChildren | map: 'stub' -%}
-                            <a class="nav-link  dropdown-toggle{% if childStubs contains page.url %} active{% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display_text }}</a>
+                            <a class="nav-link  dropdown-toggle{% if childStubs contains page.url %} active{% endif %} text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display_text }}</a>
                             <div class="dropdown-menu">
                                 {% for c in navChildren %}
                                 <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}" href="{{ c.stub | relative_url }}">{{ c.display_text }}</a>
@@ -37,3 +65,4 @@
         </div>
     </div>
 </header>
+{% endif %}

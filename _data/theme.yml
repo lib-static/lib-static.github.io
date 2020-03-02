@@ -40,7 +40,7 @@ about-featured-image: demo_001
 # ITEM PAGE
 #
 # see _data/metadata-config.csv to define the metadata fields that will display.
-browse-buttons: true # true/false, adds previous/next arrows to item pages
+browse-buttons: false # true/false, adds previous/next arrows to item pages
 
 ##########
 # SUBJECTS PAGE
