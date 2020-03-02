@@ -1,10 +1,10 @@
 {% if page.layout == "home-infographic" and site.data.theme.featured-image %}
 <style>
 #home-banner {
-    background-image: url('{% include image/featured-image.html %}');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: {{ site.data.theme.home-banner-image-position | default: 'center' }};
+    font-family: lobster, sans;
 }
 #home-title-box {
     padding-top: {{ site.data.theme.home-title-y-padding | default: '5em' }};
@@ -24,13 +24,10 @@
             {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
         </div>
     </div>
-    {% unless site.data.theme.featured-image contains '/' %}<div class="text-right p-0 mt-0">
-        <small><a class="text-info featured-link" href="{{ site.data.theme.featured-image | prepend: '/item.html?id=' | relative_url }}" title="{{ featuredItem.title | escape }}">Featured Image</a></small>
-    </div>{% endunless %}
 </div>
 {%- else -%}
 <div class="container pt-2">
-    <h1 class="h3">
+    <h1 class="p-4" style="font-family: lobster, sans;">
         <a href="{{ '/' | absolute_url }}" class="text-dark text-uppercase font-weight-normal">{{ site.title }}</a>
         <small class="text-muted">| {{ site.tagline }}</small>
     </h1>

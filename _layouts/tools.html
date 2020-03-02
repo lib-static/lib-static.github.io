@@ -20,18 +20,18 @@ layout: default
             {%endif%}
         </div>
     </div>
-    <div class="row ">
-        <div class="col-md-7">
-            {% if page.images %}
-    <div class="row mb-4">
-        {% for image in page.images %}
-        <figure class="figure text-center mt-4 col-md-4">
-            <img class="figure-img rounded img-thumbnail" src="{% if image.filelocation contains 'http' %}{{ image.filelocation }}{% else%}{{ image.filelocation | relative_url }}{% endif %}" alt="{{image.caption}}" style="max-height: 250px;" data-toggle="tooltip" data-placement="bottom" title="{{page.image1-caption}}">
-            <figcaption class="figure-caption">{{image.caption}}</figcaption>
-        </figure>
-        {% endfor %}
-    </div> {% endif %}
 
+{% if page.images %}
+<div class="row mb-4">
+    {% for image in page.images %}
+    <figure class="figure text-center mt-4 col-md-4">
+        <img class="figure-img rounded img-thumbnail" src="{% if image.filelocation contains 'http' %}{{ image.filelocation }}{% else%}{{ image.filelocation | relative_url }}{% endif %}" alt="{{image.caption}}" style="max-height: 250px;" data-toggle="tooltip" data-placement="bottom" title="{{page.image1-caption}}">
+        <figcaption class="figure-caption">{{image.caption}}</figcaption>
+    </figure>
+    {% endfor %}
+</div> {% endif %}
+<div class="row ">
+    <div class="col-md-7">
     {% if page.related-project %}<dt class="field mb-2">Related Projects:</dt>
     {% for p in page.related-project %}<dd class="field-value my-4"><a class="btn btn-lg btn-outline-info" href="{{p.url}}" target="_blank">{{p.title}}</a></dd>{% endfor %}
     {% endif %}
@@ -61,7 +61,10 @@ layout: default
             {% if page.software-requirements %}<dt class="field">Software Requirements:</dt>
             <dd class="field-value">{{page.software-requirements}}</dd>{% endif %}
             <dt class="field">Developer(s):</dt>
-            {% for p in page.people%}<dd class="field-value">{{p.name}}<sup class="ml-1"><a href="https://github.com/{{p.name}}">GitHub</a></sup>{%if p.website%}<sup class="ml-3"><a href="{{p.website}}">Info</a></sup>{% endif %}</dd>{% endfor %}</div>
+            {% for p in page.people%}<dd class="field-value"> {% for p in page.people%}<dd class="field-value"><div class="row"><span class="col-8"><a  href="{{ p.name | prepend: 'browse.html#' |relative_url }}">{{p.name}}</a></span>
+                {%if p.website%}<span class="col-1"><a href="https://github.com/{{p.name}}"><i class="fab fa-github text-secondary"></i></a></span>{% endif %}
+                {%if p.website%}<span class="col-1"><a href="{{p.website}}"><i class="fas fa-info-circle"></i></a></span>{% endif %}
+            </div></dd>{% endfor %}</dd>{% endfor %}</div>
         </div>
     </div>
 
