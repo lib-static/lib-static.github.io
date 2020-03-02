@@ -1,0 +1,39 @@
+<header class="mb-4">
+    <div class="container-fluid h-100 text-white bg-dark">
+        <div class="row px-3 py-2">
+            <div class="col-md-8">
+                <h1 class="p-4" style="font-family: lobster, sans;">
+                    <a href="{{ '/' | absolute_url }}" class="text-white text-uppercase font-weight-normal">{{ site.title }}</a>
+                    <small class="">| {{ site.tagline }}</small>
+                </h1>
+            </div>
+
+            <nav class="col-md-4 mt-md-4" role="navigation">
+                <ul class="nav nav-pills nav-fill float-right">
+                  
+                        {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%} 
+                        {% for nav in navItems %}
+                        {% if nav.stub %}
+                        <li class="nav-item {% if page.url == nav.stub %}active{% endif %}">
+                            <a class="nav-link text-white" href="{{ nav.stub | relative_url }}">{{ nav.display_text }}</a>
+                        </li>
+                        {%- else -%}
+                        <li class="nav-item dropdown">
+                            {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_text' %}
+                            {%- assign childStubs = navChildren | map: 'stub' -%}
+                            <a class="nav-link  dropdown-toggle{% if childStubs contains page.url %} active{% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display_text }}</a>
+                            <div class="dropdown-menu">
+                                {% for c in navChildren %}
+                                <a class="dropdown-item {% if page.url == c.stub %}active{% endif %}" href="{{ c.stub | relative_url }}">{{ c.display_text }}</a>
+                                {% endfor %}
+                            </div>
+                        </li>
+                        {% endif %}
+                        {%- endfor -%}
+                    
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</header>

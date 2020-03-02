@@ -7,3 +7,5 @@ permalink: /browse.html
 ---
 
 ## Browse Items
+
+{%- assign items = site.projects | concat: site.tools -%}

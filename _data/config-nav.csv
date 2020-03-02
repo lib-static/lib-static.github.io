@@ -1,8 +1,9 @@
 display_text,stub,dropdown_parent
 Home,/
-Browse,/browse.html
-Tools,/tools/
-Projects,/projects/
+Browse
+All,/browse.html,Browse
+Tools,/tools/,Browse
+Projects,/projects/,Browse
 How Tos,/howtos/
-Code Ingredients,/ingredients.html
+Code,/code.html,Browse
 About,/about.html

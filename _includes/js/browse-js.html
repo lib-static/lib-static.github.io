@@ -1,4 +1,8 @@
-{%- assign items = site.projects | concat: site.tools -%}
+{% if page.url contains 'projects' %}{%- assign items = site.projects -%}
+{% elsif page.url contains 'tools' %}{%- assign items = site.tools -%}
+{% else %}{%- assign items = site.projects | concat: site.tools -%}
+{% endif %}
+
 {%- assign fields = site.data.config-browse -%}
 <script>
 
@@ -83,9 +87,12 @@ function makeCard(obj) {
 
   /* add items */
   var items = [
-    {% for i in items %}{%for c in i.code %}{ "title":{{ c.title | strip | escape | jsonify }}, "objecttype": "CODE", {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ c.[f.field] | strip | jsonify }},{% endif %}{% endfor %} "id":{{ i.url | append: "#code" | jsonify }} },
+    {% if page.url contains 'browse.html' %}{% for i in items %}{%for c in i.code %}{ "title":{{ c.title | strip | escape | jsonify }}, "objecttype": "CODE", {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ c.[f.field] | strip | jsonify }},{% endif %}{% endfor %} "id":{{ i.url | append: "#code" | jsonify }} },
     {% endfor %}
     {% endfor %}{% for i in items %}{ "title":{{ i.title | strip | escape | jsonify }}, "objecttype":{{ i.objecttype | escape | upcase | jsonify }}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %} "filename": {{ i.images[0].filelocation | jsonify }}, "id":{{ i.url | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    {% elsif page.url contains 'code.html' %} {% for i in items %}{%for c in i.code %}{ "title":{{ c.title | strip | escape | jsonify }}, "objecttype": "CODE", {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ c.[f.field] | strip | jsonify }},{% endif %}{% endfor %} "id":{{ i.url | append: "#code" | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}
+    {% else %}{% for i in items %}{ "title":{{ i.title | strip | escape | jsonify }}, "objecttype":{{ i.objecttype | escape | upcase | jsonify }}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %} "filename": {{ i.images[0].filelocation | jsonify }}, "id":{{ i.url | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}{% endif %}
   ];
   /* randomize items once at page load */
   shuffle(items);
