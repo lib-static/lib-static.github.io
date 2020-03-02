@@ -1,10 +1,12 @@
 ---
-objectid: ohd # a short identifier with no spaces, weird characters, etc.
-title: Oral History as Data #short descriptive title identifying main purpose/use and possibly technology
-objectlink: https://uidaholib.github.io/oral-history-as-data/ # link to the main tool/project site
-description: "The Oral History as Data (OHD) tool is a static website generator that allows users to analyze and publish coded oral history or qualitative interview files. By turning transcriptions into tagged/coded CSV files, adding a list of filters, and creating a simple markdown file for each interview (to be included in the _transcipt collection), OHD will provide filterable transcripts and a color coded visualization for all transcripts included." # short description providing contextual information about the uses, technologies, examples, tools, and/or category the recipe addresses
+objectid: blank # a short identifier with no spaces, weird characters, etc.
+objecttype: project # either tool or project
+title: TITLE #short descriptive title identifying main purpose/use and possibly technology
+objectlink: LINK_to_Project # link to the main tool/project site
+github-repo: LINK_to_GitHubRepo # link to the main tool/project github repository, only if different
+description: "Project Description" # short description providing contextual information about the uses, technologies, examples, tools, and/or category the recipe addresses 
 development-state: middle # [OPTIONS: very very early, early, middle, mature, finished, sunset ]
-related-project: ctrl-shift;voicesofgayrodeo # use the objectid of the project that was built with this tool; if more than one, separate by semi-colon. 
+related-project: project1_objectid;project2_objectid # use the objectid of the project that was built with this tool; if more than one, separate by semi-colon. 
 category: Qualitative Data Analysis; Oral History; # Choose from: (Digital Collection; Institutional Repository; Research Guide; Qualitative Data Analysis; Oral History; Library Website; Critical Edition; OER; screwing-around;) or, if you have to, add a new one
 generator-type: jekyll # list the static site generator that enables the tool 
 technologies: CSV, SVG; javascript filter; bootstrap; 	# list the required technologies (broadly speaking) important to and/or necessary for your recipe; separate by semi-colon. Example: bootstrap;svg;

@@ -1,21 +1,20 @@
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
+{%- assign items = site.projects | concat: site.tools -%}
 {%- assign fields = site.data.config-browse -%}
 <script>
 
 function makeCard(obj) {
     // find item link
-    var itemHref = "{{ '/item.html' | absolute_url | append: '?id=' }}" + obj.id;
+    var itemHref = obj.id;
     // find images
     var imgSrc, thumbSrc;
-    if(obj.youtube) {
-      imgSrc = 'https://img.youtube.com/vi/' + obj.youtube + '/hqdefault.jpg';
-    } else if (obj.format.includes("audio")) {
+    if(obj.objecttype.includes("CODE")){
+      thumbSrc = '';
+    } else if (obj.filename == null) {
       thumbSrc = '{{ "/assets/img/audio.svg" | relative_url }}';
-    } else if (obj.format.includes("pdf")) {
-      thumbSrc = '{{ "/assets/img/pdf.svg" | relative_url }}';
     } else {
-      imgSrc = '{{ "/objects/" | relative_url }}' +  obj.filename;
+      imgSrc = obj.filename;
     }  
+    
     // start card
     var card = '<div class="item col-lg-4 col-md-6 col-sm-12 mb-2"><div class="card">';
     // top image for photos
@@ -23,7 +22,7 @@ function makeCard(obj) {
       card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
     }
     // title
-    card += '<div class="card-body text-center"> <h4 class="card-title"><a href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h4>';
+    card += '<div class="card-body text-center"> <h4 class="card-title"><a href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h4><h5>'  +obj.objecttype + '</h5>';
     // thumb for non-photo items
     if(thumbSrc){
       card += '<p><a href="' + itemHref + '"><img class="lazyload w-50" data-src="' + thumbSrc + '" alt="Image of ' + obj.title + '"></a></p>';
@@ -48,15 +47,15 @@ function makeCard(obj) {
     {% endunless %}{% endfor %}
     card += '</p>';
     // media type
-    if(obj.format != "") {
-      card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(obj.format) + '">' + 
-        obj.format.split("/").pop().toUpperCase() + ' <span class="';
-      if(obj.format.includes('image')){
+    if(obj.objecttype != "") {
+      card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ '/browse.html' | relative_url }}#' + encodeURIComponent(obj.objecttype) + '">' + 
+        obj.objecttype.split("/").pop().toUpperCase() + ' <span class="';
+      if(obj.objecttype.includes('PROJECT')){
         card += 'far fa-image';
-      } else if(obj.format.includes('audio')){
+      } else if(obj.objecttype.includes('TOOL')){
         card += 'far fa-file-audio';
-      } else if(obj.format.includes('video')){
-        card += 'far fa-file-video';
+      } else if(obj.objecttype.includes('CODE')){
+        card += 'far fa-file';
       } else {
         card += 'far fa-file';
       }
@@ -84,8 +83,9 @@ function makeCard(obj) {
 
   /* add items */
   var items = [
-    {% for i in items %}
-    { "title":{{ i.title | strip | escape | jsonify }}, "format":{% if i.format %}{{ i.format | escape | jsonify }}{% else %}""{% endif %}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %} {% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }}, {% endif %}"filename": {{ i.filename | jsonify }}, "id":{{ i.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    {% for i in items %}{%for c in i.code %}{ "title":{{ c.title | strip | escape | jsonify }}, "objecttype": "CODE", {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ c.[f.field] | strip | jsonify }},{% endif %}{% endfor %} "id":{{ i.url | append: "#code" | jsonify }} },
+    {% endfor %}
+    {% endfor %}{% for i in items %}{ "title":{{ i.title | strip | escape | jsonify }}, "objecttype":{{ i.objecttype | escape | upcase | jsonify }}, {% for f in fields %}{% if i[f.field] %}{{ f.field | escape | jsonify }}:{{ i[f.field] | strip | jsonify }},{% endif %}{% endfor %} "filename": {{ i.images[0].filelocation | jsonify }}, "id":{{ i.url | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
   ];
   /* randomize items once at page load */
   shuffle(items);

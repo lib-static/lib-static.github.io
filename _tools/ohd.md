@@ -1,5 +1,6 @@
 ---
 objectid: ohd # a short identifier with no spaces, weird characters, etc.
+objecttype: tool # either tool or project
 title: Oral History as Data #short descriptive title identifying main purpose/use and possibly technology
 objectlink: https://uidaholib.github.io/oral-history-as-data/ # link to the main tool/project site
 github-repo: https://github.com/uidaholib/oral-history-as-data # link to the main tool/project github repository, only if different
@@ -8,8 +9,10 @@ development-state: in production # [OPTIONS: early stages; in development; in pr
 related-project: 
 - title: CTRL+Shift
   url: https://ctrl-shift.org
+  objectid: ctrlshift # use the object id of the corresponding project if it is listed in Lib-STATIC; if not, leave blank
 - title: Voices of Gay Rodeo
   url: https://voicesofgayrodeo.com  
+  objectid: # use the object id of the corresponding project if it is listed in Lib-STATIC; if not, leave blank
 category: Qualitative Data Analysis; Oral History; # Choose from: (Digital Collection; Institutional Repository; Research Guide; Qualitative Data Analysis; Oral History; Library Website; Critical Edition; OER; screwing-around;) or, if you have to, add a new one
 technologies: Jekyll; CSV; SVG; JavaScript; Bootstrap; YouTube; SoundCloud; Vimeo;	# list the required technologies (broadly speaking) important to and/or necessary for your recipe; separate by semi-colon. Include the site generator first. Example: jekyll; bootstrap;svg;
 software-requirements: This tool can be used entirely through the GitHub.com web interface, and the generated website can be published via GitHub pages. To use the tool on a local computer, you would need to install Git, Ruby, and Jekyll. # Free text statement describing software installs required before getting started on a local computer.
@@ -26,9 +29,11 @@ code:
 - title: Interactive SVG-based/color-coded transcript visualization
   url: https://github.com/uidaholib/oral-history-as-data/blob/master/_includes/js/visualization-js.html; https://github.com/uidaholib/oral-history-as-data/blob/master/_layouts/visualization.html # link to where people can view the piece of code, preferabbly in a GitHub repo
   description: Liquid based SVG layout and interactive javascript features combine to build the color-coded horizontal bars that allow users to investigate transcripts via coded subjects. # brief description of the piece of code and how it's used. 
+  page: https://uidaholib.github.io/oral-history-as-data/visualizations.html # url of page where this code works
 - title: Searchable/Filterable Transcript
   url: https://github.com/uidaholib/oral-history-as-data/blob/master/_includes/js/transcript-js.html; https://github.com/uidaholib/oral-history-as-data/blob/master/_layouts/transcript.html # link to where people can view the piece of code, preferabbly in a GitHub repo
-  description: Liquid based layout using transcript CSVs and interactive javascript features for creating the search- and filter-able transcripts, using URL parameters and Liquid # brief description of the piece of code and how it's used. 
+  description: Liquid based layout using transcript CSVs and interactive javascript features for creating the search- and filter-able transcripts, using URL parameters and Liquid. Paremeters enable linked sharing.  # brief description of the piece of code and how it's used. 
+  page: https://uidaholib.github.io/oral-history-as-data/transcripts/gluck.html?filter=career # url of page where this code works
 ---
 
 ### Context

@@ -33,9 +33,9 @@ layout: default
 <div class="row ">
     <div class="col-md-7">
     {% if page.related-project %}<dt class="field mb-2">Related Projects:</dt>
-    {% for p in page.related-project %}<dd class="field-value my-4"><a class="btn btn-lg btn-outline-info" href="{{p.url}}" target="_blank">{{p.title}}</a></dd>{% endfor %}
+    {% for p in page.related-project %}<dd class="field-value my-4"><a class="btn btn-lg btn-outline-info" href="{% if p.objectid %}{{ p.objectid | prepend: '/tools/' }} {% else %}{{p.url}}{% endif %}" target="_blank">{{p.title}}</a></dd>{% endfor %}
     {% endif %}
-            {% if page.code %}<dt class="field mt-4">Code Features:</dt>
+            {% if page.code %}<dt class="field mt-4" id="code">Code Features:</dt>
             <div class="row my-4">
                 {% for c in page.code %}<div class="col-md-6">
                     <div class="card">
@@ -44,7 +44,7 @@ layout: default
                         </div>
                         <div class="card-body">
                             {% assign links = c.url | split: ";" %}
-                            {% for link in links %}<a class="btn btn-sm btn-outline-success" href="{{ link}}">{{link | split: "/" | last}}</a><br />{% endfor %}
+                            {% for link in links %}<a target="_blank" class="btn btn-sm btn-outline-success" href="{{ link}}">{{link | split: "/" | last}}</a><br />{% endfor %} 
                             <p class="mt-3">{{c.description}}</p>
                         </div>
                     </div>

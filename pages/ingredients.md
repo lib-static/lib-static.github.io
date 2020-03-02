@@ -1,9 +1,9 @@
 ---
-title: Browse All
+title: Code Pieces
 layout: browse
-permalink: /browse.html
+permalink: /ingredients.html
 # see _data/config-browse.csv for display options
 # the Browse visualization will be added below the content in this file
 ---
 
-## Browse Items
+## Browse Code
