@@ -9,83 +9,64 @@ layout: default
         <li id="bc-title" class="breadcrumb-item active">{{page.title}}</li>
     </ul>
     <div class="row mt-4">
-        <div class="col-md-7">
-            <h2 id="item-title">{{page.title}}<sup><small><a class="btn btn-sm ml-2" href="{{ page.development-state | prepend: 'browse.html#' |relative_url }}">{{page.development-state}}</a></small></sup></h2>
-            {% if page.category %}<p>{% assign cats = page.category | split: ";" %}{% for cat in cats %}<a class="btn btn-sm btn-outline-primary {% unless forloop.first %}ml-2{% endunless %}" href="{{ cat | prepend: 'browse.html#' |relative_url }}">{{cat}}</a>{% endfor %}</p>{% endif %}
-            <p>{{page.description}}</p>
-        </div>
-        <div class="col-md-5">
-            <p class="text-center"><a class="btn btn-info btn-lg mt-4" href="{{page.objectlink}}" target="_blank">Demo Site</a></p>
-            {% if page.github-repo%}<p class="text-center"><a class="btn btn-info btn-lg" href="{{page.github-repo}}" target="_blank">GitHub Repository</a></p>
-            {%endif%}
-        </div>
-    </div>
+        <div class="col-md-4 bg-light order-sm-2">
 
-{% if page.images %}
-<div class="row mb-4">
-    {% for image in page.images %}
-    <figure class="figure text-center mt-4 col-md-4">
-        <img class="figure-img rounded img-thumbnail" src="{% if image.filelocation contains 'http' %}{{ image.filelocation }}{% else%}{{ image.filelocation | relative_url }}{% endif %}" alt="{{image.caption}}" style="max-height: 250px;" data-toggle="tooltip" data-placement="bottom" title="{{page.image1-caption}}">
-        <figcaption class="figure-caption">{{image.caption}}</figcaption>
-    </figure>
-    {% endfor %}
-</div> {% endif %}
-<div class="row ">
-    <div class="col-md-7">
-    {% if page.related-project %}<dt class="field mb-2">Related Projects:</dt>
-    {% for p in page.related-project %}<dd class="field-value my-4"><a class="btn btn-lg btn-outline-info" href="{% if p.objectid %}{{ p.objectid | prepend: '/tools/' }} {% else %}{{p.url}}{% endif %}" target="_blank">{{p.title}}</a></dd>{% endfor %}
-    {% endif %}
-            {% if page.code %}<dt class="field mt-4" id="code">Code Features:</dt>
-            <div class="row my-4">
-                {% for c in page.code %}<div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5>{{c.title}}</h5>
-                        </div>
-                        <div class="card-body">
-                            {% assign links = c.url | split: ";" %}
-                            {% for link in links %}<a target="_blank" class="btn btn-sm btn-outline-success" href="{{ link}}">{{link | split: "/" | last}}</a><br />{% endfor %} 
-                            <p class="mt-3">{{c.description}}</p>
-                        </div>
-                    </div>
-                </div>{% endfor %}</div>{% endif %}
+            {% if page.images %}
+            {% for image in page.images %}
+            <figure class="figure text-center mt-4 col-12">
+                <img class="figure-img rounded img-thumbnail" src="{% if image.filelocation contains 'http' %}{{ image.filelocation }}{% else%}{{ image.filelocation | relative_url }}{% endif %}" alt="{{image.caption}}" style="max-height: 300px;" data-toggle="tooltip" data-placement="bottom" title="{{page.image1-caption}}">
+                <figcaption class="figure-caption text-center">{{image.caption}}</figcaption>
+            </figure>
+            {% endfor %}
+            {% endif %}
+            {% if page.related-project %}<dt class="field mb-2">Related Projects:</dt>
+            {% for p in page.related-project %}<dd class="field-value my-4"><a class="btn btn-outline-dark" href="{% if p.objectid %}{{ p.objectid | prepend: '/tools/' }} {% else %}{{p.url}}{% endif %}" target="_blank">{{p.title}}</a></dd>{% endfor %}
+            {% endif %}
         </div>
-        <div class="col-md-4 offset-md-1">
-           <div class="card">
-               <div class="card-header"><h5>Tech Specs</h5></div>
-           <div class="card-body">
-             {% if page.technologies %}<dt class="field">Technologies:</dt>
+        <div class="col-md-7 offset-md-1 order-sm-1">
+
+            <h2 id="item-title" class="h1">{{page.title}}<sup><small><a class="btn btn-sm ml-2" href="{{ page.development-state | prepend: 'browse.html#' |relative_url }}">{{page.development-state}}</a></small></sup></h2>
+            <p class="my-4"><a class="btn btn-dark" href="{{page.objectlink}}" target="_blank">Demo Site</a>
+                {% if page.github-repo%}<a class="btn btn-outline-primary ml-3" href="{{page.github-repo}}" target="_blank">GitHub Repository</a></p> {%endif%}
+
+            <p class="h3 mt-3">{{page.description}}</p>
+
+            {% if page.category %}<dt class="field">Category:</dt>
+            <dd>{% assign cats = page.category | split: ";" %}{% for cat in cats %}<a class="btn btn-sm btn-outline-primary {% unless forloop.first %}ml-2{% endunless %}" href="{{ cat | prepend: 'browse.html#' |relative_url }}">{{cat}}</a>{% endfor %}</dt>{% endif %}
+                {% if page.technologies %}
+            <dt class="field">Technologies:</dt>
             <dd class="field-value">{% assign techs = page.technologies | split: ";" %}{% for tech in techs %}<a class="btn btn-sm btn-outline-info {% unless forloop.first %}ml-2{% endunless %}" href="{{ tech | prepend: 'browse.html#' |relative_url }}">{{tech}}</a>{% endfor %}</dd>{% endif %}
             {% if page.generator-type %}<dt class="field">Generator Type:</dt>
             <dd class="field-value"><a class="btn btn-sm btn-outline-secondary" href="{{ page.generator-type | prepend: 'browse.html#' |relative_url }}">{{page.generator-type}}</a></dd>{% endif %}
             {% if page.software-requirements %}<dt class="field">Software Requirements:</dt>
             <dd class="field-value">{{page.software-requirements}}</dd>{% endif %}
             <dt class="field">Developer(s):</dt>
-            {% for p in page.people%}<dd class="field-value"> {% for p in page.people%}<dd class="field-value"><div class="row"><span class="col-8"><a  href="{{ p.name | prepend: 'browse.html#' |relative_url }}">{{p.name}}</a></span>
-                {%if p.website%}<span class="col-1"><a href="https://github.com/{{p.name}}"><i class="fab fa-github text-secondary"></i></a></span>{% endif %}
-                {%if p.website%}<span class="col-1"><a href="{{p.website}}"><i class="fas fa-info-circle"></i></a></span>{% endif %}
-            </div></dd>{% endfor %}</dd>{% endfor %}</div>
+            {% for p in page.people%}<dd class="field-value"> {% for p in page.people%}
+            <dd class="field-value">
+                <div class="row"><span class="col-8"><a href="{{ p.name | prepend: 'browse.html#' |relative_url }}">{{p.name}}</a></span>
+                    {%if p.website%}<span class="col-1"><a href="https://github.com/{{p.name}}"><i class="fab fa-github text-secondary"></i></a></span>{% endif %}
+                    {%if p.website%}<span class="col-1"><a href="{{p.website}}"><i class="fas fa-info-circle"></i></a></span>{% endif %}
+                </div>
+            </dd>{% endfor %}</dd>{% endfor %}
         </div>
     </div>
+   
+    <div class="row my-4">
+        {% if page.code %}<dt class="field mt-4" id="code">Code Features:</dt>
+        {% for c in page.code %}<div class="col-md-6">
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h5>{{c.title}}</h5>
+                </div>
+                <div class="card-body">
+                    {% assign links = c.url | split: ";" %}
+                    {% for link in links %}<a target="_blank" class="btn btn-sm btn-outline-success" href="{{ link}}">{{link | split: "/" | last}}</a><br />{% endfor %}
+                    <p class="mt-3">{{c.description}}</p>
+                </div>
+            </div>
+        </div>{% endfor %}</div>{% endif %}
 
 </div>
 
-{%- if site.data.theme.browse-buttons == true -%}
-<div class="text-center">
-    <a id="prev-button" class="btn btn-secondary">&laquo; Previous</a>
-    <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
-    <a id="for-button" class="btn btn-secondary">Next &raquo;</a>
-</div>
 
-<div id="item-nav">
-    <div class="d-none d-md-block">
-        <a id="back-button" class="previous btn btn-lg btn-secondary">&laquo;</a>
-        <a id="next-button" class="next btn btn-lg btn-secondary">&raquo;</a>
-    </div>
-</div>
-{% else %}
-<div class="text-center">
-    <a class="btn btn-outline-primary" href="{{ '/browse.html' | relative_url }}">&laquo; Back to Collection Browse</a>
-</div>
-{% endif %}
 </div>

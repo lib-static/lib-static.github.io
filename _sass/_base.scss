@@ -39,9 +39,8 @@ a {
     transition: top .1s ease-in;
 }
 /* banner */
-.title-card {
-    background-color: #25242485;
-    background-color: rgba(37, 36, 36, 0.72);
+.title-card, .pageheader{
+    background-color: #1f887e;
     color: white !important;
 }
 .featured-link {
