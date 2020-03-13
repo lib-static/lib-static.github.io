@@ -23,7 +23,7 @@ title: Lib-STATIC
 tagline: a methodology, a community, and a cookbook
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "Lib-STATIC is a minimal computing-based approach to creating data-driven tools leveraging static-web technologies (enabled by generators such as Jekyll and a “JAM” stack approach) and librarians’ specialized skills in metadata and classification to create engaging web publications via three components: a spreadsheet with well-formed metadata, a directory of assets, and a configuration file."
+description: "Lib-STATIC is a minimal computing-based approach to creating data-driven tools leveraging static-web technologies and librarians’ (and other GLAM Professionals') specialized skills in metadata and classification to create engaging web publications and applications."
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: lib-static
 

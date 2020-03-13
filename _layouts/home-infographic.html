@@ -2,14 +2,43 @@
 layout: page
 ---
 {%- assign items = site.data[site.metadata] -%}
-<div class="row">
-  <div class="col-md-8 offset-md-2">
+<div class="row mb-4">
+  <div class="col-md-8 ">
 
-  {% include index/description.html %}
+    <div class="mb-3">
+      <div class="card-body">
+        
+        <p class="card-text h3">Lib-STATIC is a minimal computing-based approach to creating data-driven tools that leverages static-web technologies and metadata skills to create engaging web publications and applications.</p>
+
+        <p  class="card-text h3 pt-4">Are you: </p>
+<ul class="card-text h3" style="list-style: circle;">
+<li>Tired of learning systems rather than skills?</li>
+<li>Frustrated with overbloated infrastcture?</li>
+<li>Siloed by the tools you know and the tools you don't?</li>
+</ul>
+
+<p class="card-text h3 pt-4"> Try the Lib-STATIC approach and let's all rethink how we do web development and systems in the libraries.</p>
+  
+  <p>(It might work for you, or you might hate it. But at least you tried.)</p>
+     
+      </div>
+    </div>
   
   
   </div>
-  <div class="col-md-4">  
+  <div class="col-md-4 text-center pt-4">  
+
+    {% include bootstrap/button.md link="/about.html" text="Learn About" color="outline-primary mb-2 btn-lg mt-4"%}
+
+    {% include bootstrap/button.md link="/about.html" text="Learn How" color="outline-success my-2 btn-lg"%}
+
+
+    {% include bootstrap/button.md link="/tools/" text="Find Tools" color="outline-info my-2 btn-lg"%}
+
+    {% include bootstrap/button.md link="/projects/" text="See Projects" color="outline-warning my-2 btn-lg"%}
+
+    {% include bootstrap/button.md link="/tools/" text="Reuse Code" color="outline-danger mt-2 mb-4 btn-lg"%}
+
 
     
 
