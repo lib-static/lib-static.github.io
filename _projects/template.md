@@ -23,7 +23,7 @@ code: #code that you think others might find useful from the project, sketch or 
   technologies: # list the required technologies (broadly speaking) important to and/or necessary for your recipe; separate by semi-colon. Include the site generator first. Example: jekyll; bootstrap;svg;
 ---
 
-*objectid:* # a short identifier with no spaces, weird characters, etc.
+**objectid:** # a short identifier with no spaces, weird characters, etc.
 
 **objecttype**: # either project, tool, or sketch
 
