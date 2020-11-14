@@ -10,7 +10,7 @@ layout: default
     </ul>
     <div class="row mt-4">
         <div class="col-md-4 bg-light order-sm-2">
-
+            
             {% if page.images %}
             {% for image in page.images %}
             <figure class="figure text-center mt-4 col-12">
@@ -26,9 +26,10 @@ layout: default
         <div class="col-md-7 offset-md-1 order-sm-1">
 
             <h2 id="item-title" class="h1">{{page.title}}<sup><small><a class="btn btn-sm ml-2" href="{{ page.development-state | prepend: 'browse.html#' |relative_url }}">{{page.development-state}}</a></small></sup></h2>
-            <p class="my-4"><a class="btn btn-dark" href="{{page.objectlink}}" target="_blank">Demo Site</a>
-                {% if page.github-repo%}<a class="btn btn-outline-primary ml-3" href="{{page.github-repo}}" target="_blank">GitHub Repository</a></p> {%endif%}
-
+            <p class="my-4"><a class="btn btn-outline-primary" href="{{page.objectlink}}" target="_blank">Main Site</a>
+                {% if page.github-repo%}<a class="btn btn-outline-secondary ml-3" href="{{page.github-repo}}" target="_blank">GitHub Repository</a> {%endif%}
+                {% if page.documentation%}<a class="btn btn-outline-info ml-3" href="{{page.documentation}}" target="_blank">Documentation</a>{%endif%}
+            </p> 
             <p class="h3 mt-3">{{page.description}}</p>
 
             {% if page.category %}<dt class="field">Category:</dt>
@@ -41,13 +42,13 @@ layout: default
             {% if page.software-requirements %}<dt class="field">Software Requirements:</dt>
             <dd class="field-value">{{page.software-requirements}}</dd>{% endif %}
             <dt class="field">Developer(s):</dt>
-            {% for p in page.people%}<dd class="field-value"> {% for p in page.people%}
+            {% for p in page.people%}<dd class="field-value"> 
             <dd class="field-value">
                 <div class="row"><span class="col-8"><a href="{{ p.name | prepend: 'browse.html#' |relative_url }}">{{p.name}}</a></span>
                     {%if p.website%}<span class="col-1"><a href="https://github.com/{{p.name}}"><i class="fab fa-github text-secondary"></i></a></span>{% endif %}
                     {%if p.website%}<span class="col-1"><a href="{{p.website}}"><i class="fas fa-info-circle"></i></a></span>{% endif %}
                 </div>
-            </dd>{% endfor %}</dd>{% endfor %}
+            </dd></dd>{% endfor %}
         </div>
     </div>
    

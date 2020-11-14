@@ -1,7 +1,5 @@
-{% if page.url contains 'projects' %}{%- assign items = site.projects -%}
-{% elsif page.url contains 'tools' %}{%- assign items = site.tools -%}
-{% else %}{%- assign items = site.projects | concat: site.tools -%}
-{% endif %}
+{%- assign items = site.projects | concat: site.tools  -%}
+
 
 {%- assign fields = site.data.config-browse -%}
 <script>

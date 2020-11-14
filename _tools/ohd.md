@@ -1,6 +1,6 @@
 ---
 objectid: ohd # a short identifier with no spaces, weird characters, etc.
-objecttype: tool # either tool or project
+objecttype: tool # either tool, project, or sketch
 title: Oral History as Data #short descriptive title identifying main purpose/use and possibly technology
 objectlink: https://uidaholib.github.io/oral-history-as-data/ # link to the main tool/project site
 github-repo: https://github.com/uidaholib/oral-history-as-data # link to the main tool/project github repository, only if different
