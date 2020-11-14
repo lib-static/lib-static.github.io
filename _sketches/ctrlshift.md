@@ -1,6 +1,6 @@
 ---
-objectid: ctrlshift # a short identifier with no spaces, weird characters, etc.
-objecttype: project # either tool or project
+objectid: harvester # a short identifier with no spaces, weird characters, etc.
+objecttype: sketch # either tool or project
 title: "CTRL+Shift: Writing Practice at the Dawn of the Digital Age" #short descriptive title identifying main purpose/use and possibly technology
 objectlink: https://ctrl-shift.org/ # link to the main tool/project site
 github-repo: https://github.com/ctrlshifty/ctrlshifty.github.io # link to the main tool/project github repository, only if different

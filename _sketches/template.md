@@ -1,6 +1,6 @@
 ---
 objectid: # a short identifier with no spaces, weird characters, etc.
-objecttype:  # either project, tool, or sketch
+objecttype: # either project, tool, or sketch
 title: #short descriptive title identifying main purpose/use and possibly technology
 objectlink: # full url to the main tool/project site
 github-repo: # link to the main tool/project github repository, only if different

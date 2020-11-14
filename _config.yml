@@ -68,6 +68,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
+  sketches:
+    output: true
+    permalink: /:collection/:name
 # defaults
 defaults:
   - scope:
@@ -77,4 +80,8 @@ defaults:
   - scope:
       type: projects
     values:
-      layout: projects
+      layout: tools
+  - scope:
+      type: sketches
+    values:
+      layout: tools

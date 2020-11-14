@@ -1,9 +1,8 @@
 display_text,stub,dropdown_parent
 Home,/
+Gallery,/gallery.html
 Browse
 All,/browse.html,Browse
 Code,/code.html,Browse
-Tools,/tools/,
-Projects,/projects/,
-How Tos,/howtos/
+How Tos,https://lib-static.github.io/howto/
 About,/about.html
