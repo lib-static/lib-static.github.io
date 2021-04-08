@@ -8,7 +8,7 @@
 # URL VARIABLES
 #
 # url is your gh-pages base, following the pattern: username.github.io
-url: https://lib-static.github.io
+url: 
 # baseurl is your github repository's name prefixed with a /
 baseurl: 
 # location of code, the full url to your github repository
