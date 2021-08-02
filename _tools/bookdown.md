@@ -3,6 +3,7 @@ objectid: bookdown
 objecttype: tool
 title: Bookdown
 objectlink: 'https://bookdown.org/'
+github-repo: 'https://github.com/rstudio/bookdown'
 documentation: 'http://bookdown.org/yihui/bookdown/'
 description: 'The bookdown package is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.'
 category: 'Digital Publishing'
