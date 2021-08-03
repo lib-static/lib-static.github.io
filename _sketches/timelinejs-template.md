@@ -6,13 +6,13 @@ objectlink: https://thecdil.github.io/timelinejs-template/ # full url to the mai
 github-repo: https://github.com/thecdil/timelinejs-template # link to the main tool/project github repository, only if different
 documentation: https://github.com/thecdil/timelinejs-template/blob/main/docs/timeline.md # link to documentaton, if avialble. 
 description: "timelinejs-template is a basic Jekyll template for creating self-hosted TimelineJS on GitHub Pages. It is compatible with existing timelines created in Google Sheets following the TimelineJS template or can be used with TimelineJS formatted JSON files. The template provides a self-contained package of data, media, and code for simplified and sustainable hosting of a timeline that does not rely on 3rd party resources." # short description providing contextual information about the uses, technologies, examples, tools, and/or category the recipe addresses 
-category:  # Choose from: (Digital Collection; Institutional Repository; Research Guide; Qualitative Data Analysis; Oral History; Library Website; Critical Edition; OER; Screwing-Around;) or add a new one -- separate multiple using semi-colons.
-technologies: # list the required technologies (broadly speaking) important to and/or necessary for your recipe; separate by semi-colon. Include the site generator first. Example: jekyll; bootstrap;svg;
+category: Digital Collection # Choose from: (Digital Collection; Institutional Repository; Research Guide; Qualitative Data Analysis; Oral History; Library Website; Critical Edition; OER; Screwing-Around;) or add a new one -- separate multiple using semi-colons.
+technologies: jekyll; github # list the required technologies (broadly speaking) important to and/or necessary for your recipe; separate by semi-colon. Include the site generator first. Example: jekyll; bootstrap;svg;
 software-requirements: # Free text statement describing software installs required before getting started on a local computer.
 people: # list all people responsible for code development
 #example person
-- name: # full name
-  github: # GitHub username
+- name: Evan Peter Williamson # full name
+  github: evanwill # GitHub username
 images: # try and keep it to no more than 2-3 images. 
 - filelocation: # filename for image, including url, or extension and folder of this repository (i.e. '/images/picture.jpg')
   caption: # caption for image
