@@ -14,6 +14,21 @@ baseurl:
 # location of code, the full url to your github repository
 source-code: https://github.com/lib-static/lib-static.github.io
 
+
+
+# Jekyll collections settings
+collections:
+  resources: 
+    output: true
+    permalink: /:collection/:name
+
+# defaults
+defaults:
+  - resources:
+      type: resources
+    values:
+      layout: resources
+
 ##########
 # SITE SETTINGS
 #
@@ -59,29 +74,3 @@ exclude: [docs/, Rakefile, README.md, LICENSE]
 sass:
   style: compressed
 
-
-# Jekyll collections settings
-collections:
-  tools:
-    output: true
-    permalink: /:collection/:name
-  projects:
-    output: true
-    permalink: /:collection/:name
-  sketches:
-    output: true
-    permalink: /:collection/:name
-# defaults
-defaults:
-  - scope:
-      type: tools
-    values:
-      layout: tools
-  - scope:
-      type: projects
-    values:
-      layout: tools
-  - scope:
-      type: sketches
-    values:
-      layout: tools

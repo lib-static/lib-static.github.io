@@ -9,9 +9,9 @@ layout: default
         <li id="bc-title" class="breadcrumb-item active">{{page.title}}</li>
     </ul>
     <div class="row mt-4">
-        <div class="col-md-4 bg-light order-sm-2">
+       <div class="col-md-4  order-sm-2">
             
-            {% if page.images %}
+        {% if page.images %}   
             {% for image in page.images %}
             <figure class="figure text-center mt-4 col-12">
                 <img class="figure-img rounded img-thumbnail" src="{% if image.filelocation contains 'http' %}{{ image.filelocation }}{% else%}{{ image.filelocation | relative_url }}{% endif %}" alt="{{image.caption}}" style="max-height: 300px;" data-toggle="tooltip" data-placement="bottom" title="{{page.image1-caption}}">
@@ -22,7 +22,7 @@ layout: default
             {% if page.related-project %}<dt class="field mb-2">Related Projects:</dt>
             {% for p in page.related-project %}<dd class="field-value my-4"><a class="btn btn-outline-dark" href="{% if p.objectid %}{{ p.objectid | prepend: '/tools/' }} {% else %}{{p.url}}{% endif %}" target="_blank">{{p.title}}</a></dd>{% endfor %}
             {% endif %}
-        </div>
+        </div> 
         <div class="col-md-7 offset-md-1 order-sm-1">
 
             <h2 id="item-title" class="h1">{{page.title}}<sup><small><a class="btn btn-sm ml-2" href="{{ page.development-state | prepend: 'browse.html#' |relative_url }}">{{page.development-state}}</a></small></sup></h2>

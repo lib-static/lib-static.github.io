@@ -8,4 +8,4 @@ permalink: /code.html
 
 ## Browse Code
 
-{%- assign items = site.projects | concat: site.tools -%}
+{%- assign items = site.resources %}

@@ -3,12 +3,17 @@ layout: default
 title: Gallery
 permalink: gallery.html
 ---
+{% assign frameworks = site.resources | where: "objecttype", "framework" %}
+{% assign projects = site.resources | where: "objecttype", "project" %}
+{% assign utilities = site.resources | where: "objecttype", "utility" %}
+
+
 
 <div class="container">
 <p class="h2 my-4">GALLERY</p>
-<p class="h4 pb-3 border-bottom">Tools</p>
+<p class="h4 pb-3 border-bottom">Frameworks</p>
 <div class="row">
-{% for item in site.tools %}
+{% for item in frameworks %}
 <div class="col-md-3 col-6 m-3">
     <div class="card m-3" >
         {% if item.images%}<img class="card-img-top" {% for image in item.images limit: 1 %}src="{% if image.filelocation contains 'http' %}{{ image.filelocation }}{% else%}{{ image.filelocation | relative_url }}{% endif %}" alt="{{image.caption}}"{%endfor%} style="max-height:100px;">{%endif%}
@@ -22,7 +27,7 @@ permalink: gallery.html
 </div>
 <p class="h4 pb-3 border-bottom">Projects</p>
 <div class="row">
-{% for item in site.projects %}
+{% for item in projects %}
 <div class="col-md-3 col-6 m-3">
     <div class="card m-3" >
         {% if item.images%}<img class="card-img-top" {% for image in item.images limit: 1 %}src="{% if image.filelocation contains 'http' %}{{ image.filelocation }}{% else%}{{ image.filelocation | relative_url }}{% endif %}" alt="{{image.caption}}"{%endfor%} style="max-height:100px;">{%endif%}
@@ -34,9 +39,9 @@ permalink: gallery.html
 </div>
 {%endfor%}
 </div>
-<p class="h4 pb-3 border-bottom">Sketches</p>
+<p class="h4 pb-3 border-bottom">Utility</p>
 <div class="row">
-{% for item in site.sketches %}
+{% for item in utilities %}
 <div class="col-md-3 col-6 m-3">
     <div class="card m-3" >
         {% if item.images%}<img class="card-img-top" {% for image in item.images limit: 1 %}src="{% if image.filelocation contains 'http' %}{{ image.filelocation }}{% else%}{{ image.filelocation | relative_url }}{% endif %}" alt="{{image.caption}}"{%endfor%} style="max-height:100px;">{%endif%}

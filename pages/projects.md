@@ -11,7 +11,7 @@ divider: development-state
 
 Below you can find a list of projects that were built using Lib-STATIC principles.  
 
-{% for p in site.projects %}
+{% for p in site.resources  %}
 {:.col-md-3 .float-right .m-3}
 ![{{p.images[0].caption}}]({{p.images[0].filelocation}} "{{p.images[0].caption}}")
 
