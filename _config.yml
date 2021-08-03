@@ -21,6 +21,12 @@ collections:
   resources: 
     output: true
     permalink: /:collection/:name
+  concepts: 
+    output: true
+    permalink: /:collection/:name
+  social_stacks: 
+    output: true
+    permalink: /:collection/:name
 
 # defaults
 defaults:
@@ -28,6 +34,14 @@ defaults:
       type: resources
     values:
       layout: resources
+  - social_stacks:
+      type: social_stacks
+    values:
+      layout: page
+  - static_concepts:
+      type: static_concepts
+    values:
+      layout: page
 
 ##########
 # SITE SETTINGS
