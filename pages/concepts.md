@@ -6,7 +6,7 @@ permalink: concepts.html
 {:.my-5}
 # Static Concepts
 
-{% for c in site.static_concepts %}
+{% for c in site.concepts %}
 
 ## {{c.title}}
 
