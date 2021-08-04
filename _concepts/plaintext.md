@@ -3,6 +3,11 @@ title: Plain Text
 author: evanwill
 ---
 
+***tl;dr***
+
+- Plain text files are a simple, sustainable format to store your project data
+- Plain text based workflows and outputs enable version control, data transformation, access, and preservation
+
 # Plain Text
 
 You might see the term plaintext, plain-text, or plain text sprinkled about in static web ecosystems. 

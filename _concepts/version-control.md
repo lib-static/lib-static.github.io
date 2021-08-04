@@ -3,6 +3,11 @@ title: Version Control
 author: evanwill
 ---
 
+***tl;dr***
+
+- version control systems enable better collaboration, management, exploration, and understanding of static projects
+- almost everyone uses Git
+
 # Version Control
 
 Every project uses version control (or "source control"), whether it is a formal tool or a set of conventions loosely imagined in your head. 
@@ -19,7 +24,7 @@ On a static project, you will likely have large folders of files that need to be
 Because of the complexity and interconnected nature of the source code, we would like to be able to review any edits to the project files to understand:
 
 - changes made on a detailed line by line basis
-- how the project has changed over time
+- how the project has changed over time, who changed it and why
 - issues introduced during individual edits to help debug
 - file integrity to avoid lost or corrupted data
 
@@ -37,27 +42,35 @@ While there are alternatives, the vast majority of open source projects have ado
 Git was originally developed for coordinating huge software development projects (specifically the [Linux kernel](https://www.kernel.org/)). 
 However, it is fast and flexible enough to be used on any scale project, from your personal notes to your library's websites.
 
-Learning Git is not easy and often presents a barrier when getting started with static web projects.
+**Learning Git is not easy** and often presents a barrier when getting started with static web projects.
 However, the pay off will be worthwhile, opening up opportunities to engage in open source ecosystems and to efficiently manage your own work.
 
 ## Commit, Branch, Merge
 
 Rather than storing a series of copies of a file with different filenames, Git captures a snapshot of your project each time you `commit`.
-Then it permanently stores this series of snapshots as your project's history.
+Each `commit` records the creator, email, and changes made, providing transparency and credit for your project, as well as, checksums to ensure no information can be lost or corrupted without detection.
+Git permanently stores this series of snapshots as your project's history.
 
 Try to think of your changes as separate from the document itself.
 The current file that you see in your folder is made up of a specific set of those changes, while the complete history of your project is safely stored in a hidden `.git` directory.
 
-Each `commit` records the creator, email, and changes made, providing transparency and credit for your project, as well as, checksums to ensure no information can be lost or corrupted without detection.
-Unlike "track changes", this history stays with the repository permanently.
-
-branch, merge
-
-ability to experiment 
-work in parallel
-
-Git can efficiently branch, diff, and automatically merge different sets of changes together, enabling people to work in parallel and sync their files.
-
-With Git you can make changes and experiment without fear!
-Committing to a repository Git only adds data, it never deletes information. 
+When committing to a repository Git only adds data, it never deletes information. 
 This makes almost everything undoable!
+
+Git allows you to efficiently create "branches", an exact copy of the code tracked separately, so that you can test or develop new features without overwriting or interfering with your main copy. 
+This is meant to give you the courage to make changes and experiment with your project code without fear!
+
+If your branch is successful, Git also provides tools to merge the new changes back into the main branch. 
+This enables people to work in parallel with the ability to sync files and resolve conflicts in the code.
+
+## Repository Hosts
+
+To make the most of Git version control, most people use a repository hosting service such as [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), or [Gitlab](https://about.gitlab.com/gitlab-com/).
+These platforms combine version control with online project management features in a web interface to facilitate collaboration.
+With a shared "remote" repository, collaborators from anywhere can stay in sync and work in parallel. 
+
+## Resources
+
+- The [Git Book](https://git-scm.com/book/en/v2)
+- GitHub [Guides](https://guides.github.com/) and interactive [Learning Lab](https://lab.github.com/)
+- Atlassian Bitbucket [Learn Git Tutorials](https://www.atlassian.com/git/tutorials)
