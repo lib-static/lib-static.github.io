@@ -36,3 +36,6 @@ There are three parts to your static project that you'll want to think about pre
 ## Site code
 - These are the pre-rendered flat html, css, and javascript files that constitute your website.
 - **Preservation**: Store these files in a personal or institutional dark archive.
+
+Keep in mind that because your site's code is generated completely *before* being served, your website will remain functional for users over the long-term, even if you were to never update it again (though, if you never update it, it will probably start to look outdated!).
+This means less maintenance work to preserve your site's performance and functionality.
