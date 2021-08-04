@@ -26,8 +26,8 @@ Here are just a few:
 There are three parts to your static project that you'll want to think about preserving:
 
 ## Template code
-- This is the code/scripts that, combined with your site's data, enable a static site generator to produce your site's code.
-- **Preservation**: Often this is stored in a cloud-hosted repository service such as [GitHub](https://github.com/). You can back up this code by storing it in a personal or institutional dark archive, or consider using a tool such as [Zenodo](https://guides.github.com/activities/citable-code/) to archive a GitHub repository and assign it a DOI.
+- This is the code/scripts that, combined with your project's data, enable a static site generator to produce the code for your website.
+- **Preservation**: Often this is stored in a cloud-hosted repository service such as [GitHub](https://github.com/). You can back up this repository by storing it in a personal or institutional dark archive, or consider using a tool such as [Zenodo](https://guides.github.com/activities/citable-code/) to archive a GitHub repository and assign it a DOI.
 
 ## Data
 - This is your project's content: data formatted in csv/yaml/json files, written content in markdown/html files, and/or digital objects such as images, pdfs, audio, or video.
@@ -36,3 +36,6 @@ There are three parts to your static project that you'll want to think about pre
 ## Site code
 - These are the pre-rendered flat html, css, and javascript files that constitute your website.
 - **Preservation**: Store these files in a personal or institutional dark archive.
+
+Keep in mind that because your site's code is generated completely *before* being served, your website will remain functional for users over the long-term, even if you were to never update it again (though, if you never update it, it will probably start to look outdated!).
+This means less maintenance work to preserve your site's performance and functionality.
