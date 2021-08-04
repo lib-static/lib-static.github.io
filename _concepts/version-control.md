@@ -23,19 +23,24 @@ Because of the complexity and interconnected nature of the source code, we would
 - issues introduced during individual edits to help debug
 - file integrity to avoid lost or corrupted data
 
-Version control systems are applications that can help us do that, enabling better collaboration, understanding of development of the project, and transparency for your project.
+Version control systems are applications that can help us do that, enabling better collaboration, understanding of development, and transparency for your project.
 
 ## Git Version Control
 
 Large software projects traditionally used centralized version control systems, such as [SVN](https://subversion.apache.org/).
-The source code and full history in these systems is stored in a central server, providing control and security over enterprise projects.
+In these systems the source code and full history is stored in a central server, providing top down control and security over enterprise projects.
 
-However, most open source projects now use [distributed version control](https://en.wikipedia.org/wiki/Distributed_version_control) systems in which each copy of a project contain the full source code *and* full history in a self-contained repository.
+However, most open source projects now use [distributed version control systems](https://en.wikipedia.org/wiki/Distributed_version_control) in which each copy of a project represents the full source code *and* full history in a self-contained repository.
 This radical concept removes the need for centralized infrastructure, improving local performance and transparency, while opening up new means of collaboration.
 
 While there are alternatives, the vast majority of open source projects have adopted [Git](https://git-scm.com/) for version control.
 Git was originally developed for coordinating huge software development projects (specifically the [Linux kernel](https://www.kernel.org/)). 
-However, it is fast and flexible enough to be used on any scale project, from your personal notes to your research lab's code--and offers many benefits beyond "track changes".
+However, it is fast and flexible enough to be used on any scale project, from your personal notes to your library's websites.
+
+Learning Git is not easy and often presents a barrier when getting started with static web projects.
+However, the pay off will be worthwhile, opening up opportunities to engage in open source ecosystems and to efficiently manage your own work.
+
+## Commit, Branch, Merge
 
 Rather than storing a series of copies of a file with different filenames, Git captures a snapshot of your project each time you `commit`.
 Then it permanently stores this series of snapshots as your project's history.
