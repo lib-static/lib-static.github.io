@@ -1,6 +1,6 @@
 ---
 objectid: bookdown
-objecttype: utility
+objecttype: framework
 title: Bookdown
 objectlink: 'https://bookdown.org/'
 github-repo: 'https://github.com/rstudio/bookdown'

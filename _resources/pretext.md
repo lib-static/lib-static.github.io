@@ -1,6 +1,6 @@
 ---
 objectid: pretext
-objecttype: utility
+objecttype: framework
 title: PreTeXt
 objectlink: 'https://pretextbook.org/'
 github-repo: 'https://github.com/rbeezer/mathbook'
