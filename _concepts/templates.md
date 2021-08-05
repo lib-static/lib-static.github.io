@@ -1,5 +1,6 @@
 ---
 title: Templating with Static Site Generators
+author: Chris Diaz
 ---
 
 ***tl;dr***
