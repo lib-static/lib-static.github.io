@@ -26,7 +26,7 @@ Recommendations:
 
 ### common stack: 1 lead (PI), Primary collaborators (typically librarians, faculty members), Hired assitants (often students), Financial tech, Research Office, Grant Advisors, Incentivized partners and collaborators, Hired Developers
 
-Static projects and frameworks are ripe for support by funding agencies in that their outputs inhernetly preservable and reusable. The stack which typically makes a grant happen often relies on 1 lead or a couple co-leads to drive the application, execution, and administration of the grant. 
+Static projects and frameworks are ripe for support by funding agencies in that their outputs are inherently preservable and reusable and their infrastructure investments are minimal. The stack which typically makes a grant happen often relies on 1 lead or a couple co-leads to drive the application, execution, and administration of the grant. 
 
 In the application process, it's important to try and convey the preservation, reuse, and non-proprietary nature of static projects; these concepts can sometimes be difficult to convey. Also, because they forgo the purchasing of pre-made systems or content management platforms, those working on grants for static applications should understand that the time committment from participants will be greater and that the investment from the grant might need to lean more towards investment in hired assitants and salary hours than typical grants.   
 

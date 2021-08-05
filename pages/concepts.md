@@ -7,9 +7,9 @@ permalink: concepts.html
 # Static Concepts
 
 {% for c in site.concepts %}
+{:.my-3}
+## [{{c.title}}]({{c.url | relative_link}})
 
-## {{c.title}}
 
-{{c.content}}
 
 {% endfor %}
