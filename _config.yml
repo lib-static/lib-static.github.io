@@ -80,7 +80,7 @@ defaults:
   - scope:
       type: concepts
     values:
-      layout: page
+      layout: concepts
   - scope:
       type: social_stacks
     values:
