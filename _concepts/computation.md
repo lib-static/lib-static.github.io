@@ -7,7 +7,7 @@ Part of what makes static web frameworks powerful is the access to project files
 
 Let's take a Table of Contents as an example. There are generally two different ways to build one. You can literally write it out by hand, and every time there is a change you can go and add it to the file where you wrote it; or, you can write a little script—a little machine—that can create it for you based on new files being added that meet a certain criteria. When we speak of computation or automation, we speak of the latter process. 
 
-Computation is already central to static web frameworks. It is used to transform your [data from one format to another](/data/), to convert your [templates](/template/) into a full blown site, and much more. Despite this ubiquity, computation remains somewhat mysterious to the average user. It doesn't need to be this way.
+Computation is already central to static web frameworks. It is used to transform your [data from one format to another](/concepts/data/), to convert your [templates](/concepts/templates/) into a full blown site, and much more. Despite this ubiquity, computation remains somewhat mysterious to the average user. It doesn't need to be this way.
 
 Four basic actions lie at the core of computation. In order for us to say that a machine can compute, it must be able to do all four actions. The digital universe is built on a combination and massive organization of these basic building blocks:
 

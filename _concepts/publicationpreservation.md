@@ -1,5 +1,6 @@
 ---
 title: Publication and Preservation
+author: Olivia Wikle
 ---
 
 # Publication

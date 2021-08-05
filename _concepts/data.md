@@ -1,5 +1,6 @@
 ---
 title: Thinking Through Data
+author: Devin Becker
 ---
 
 ***tl;dr***
