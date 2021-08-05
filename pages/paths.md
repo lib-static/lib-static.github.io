@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Static Concepts
-permalink: concepts.html
+permalink: paths/
 ---
 {:.my-5}
-# Static Concepts
+# Paths
 
-{% for c in site.concepts %}
+{% for c in site.posts %}
 {:.my-3}
 ## [{{c.title}}]({{c.url | relative_link}})
 

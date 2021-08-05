@@ -71,6 +71,10 @@ collections:
   social_stacks:
     output: true
     permalink: /:collection/:name
+  posts: 
+    output: true
+    permalink: /paths/:name
+
 # defaults
 defaults:
   - scope:
@@ -80,8 +84,13 @@ defaults:
   - scope:
       type: concepts
     values:
-      layout: page
+      layout: concepts
   - scope:
       type: social_stacks
     values:
       layout: page
+  - scope:
+      type: posts
+    values:
+      layout: post
+  

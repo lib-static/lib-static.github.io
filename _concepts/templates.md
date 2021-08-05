@@ -38,7 +38,7 @@ Template files contain placeholder variables that represent our data. Each gener
 
 We'll start with a few basic variables one would typically see in a static site project: `title` (the title of the item), `creator` (the creator of the item), and `content` (the item itself). Using the previous example, let's assume that `title` and `creator` are project-specific metadata variables that _we_ define and the `content` variable is defined by the system, representing the paragraph content within the Markdown files of the project.
 
-Variables are placed throughout the template files using syntax that depends on the generator. Often, variable syntax uses curly braces `{{ }}` to wrap the name of the specific variable that is being used.
+Variables are placed throughout the template files using syntax that depends on the generator. Often, variable syntax uses curly braces `{% raw %}{{ }}{% endraw %}` to wrap the name of the specific variable that is being used.
 
 ```
 {{ title }}
@@ -55,7 +55,7 @@ Templates are designed to be reused by the generator. For example, we might have
 Parent templates, or _base_ templates, contain standard elements that need to be re-used again and again. For example, every HTML document requires and `<html>` tag. It doesn't make sense to redefine the `<html>` tag in every one of our templates files, so we can use one template called `default.html` that looks like this:
 
 ```html
-<!doctype html>
+{% raw %}<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -65,7 +65,7 @@ Parent templates, or _base_ templates, contain standard elements that need to be
   <body>
     {{ content }}
   </body>
-</html>
+</html>{% endraw %}
 ```
 
 This template uses the HTML5 document structure and places two variables in appropriate places within the document. Now that we have a `default.html` template, we can reuse this template when formatting different types of pages within our website. 
@@ -75,20 +75,19 @@ This template uses the HTML5 document structure and places two variables in appr
 Child templates inherit the structure of their parent templates. With our `default.html` template, we define new templates for pages that require specific structures. Let's say we wanted a template for an informational page, called `page.html`. We would first reference `default.html` as the parent template, then add new HTML elements for the specifics we want to see on the page:
 
 ```html
----
+{% raw %}---
 layout: default
 ---
 
 <h2>{{ title }}</h2>
 <p class="author">{{ creator}}</p>
-{{ content }}
-
+{{ content }}{% endraw %}
 ```
 
-The top of the `page.html` template references its parent template, `default.html`. When the generator uses the `page.html` template, it will place all of its content within the `{{ content}}` variable in the `default.html` template. 
+The top of the `page.html` template references its parent template, `default.html`. When the generator uses the `page.html` template, it will place all of its content within the `{% raw %}{{ content}}{% endraw %}` variable in the `default.html` template. 
 
 ```html
-<!doctype html>
+{% raw %}<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -100,16 +99,16 @@ The top of the `page.html` template references its parent template, `default.htm
     <p class="author">{{ creator}}</p>
     {{ content }}
   </body>
-</html>
+</html>{% endraw %}
 ```
 
-Notice how the `{{ content }}` variable changes depending on the context of its use. When we run the generator to build our website, the `{{ content }}` variable will refer to different things each time it is processed. Let's say that we want the `page.html` template we created to be used to format all of our Markdown files. Here's how the variable will change:
+Notice how the `{% raw %}{{ content}}{% endraw %}` variable changes depending on the context of its use. When we run the generator to build our website, the `{% raw %}{{ content}}{% endraw %}` variable will refer to different things each time it is processed. Let's say that we want the `page.html` template we created to be used to format all of our Markdown files. Here's how the variable will change:
 
-| Processed file    | Value of `{{ content }}`       |
+| Processed file    | Value of `{% raw %}{{ content}}{% endraw %}`       |
 | ------------------|--------------------------------|
-| `default.html`    | `{{ content }}` = `page.html`  |
-| `page.html`       | `{{ content }}` = `about.md`   |
-| `about.md`        | `{{ content }}` = written text |
+| `default.html`    | `{% raw %}{{ content}}{% endraw %}` = `page.html`  |
+| `page.html`       | `{% raw %}{{ content}}{% endraw %}` = `about.md`   |
+| `about.md`        | `{% raw %}{{ content}}{% endraw %}` = written text |
 
 Each generator will have its own way of referencing templates. The above example uses [Jekyll's Layouts conventions](https://jekyllrb.com/docs/step-by-step/04-layouts/) for demonstration purposes, but the conventions may differ depending on which generator you're using. 
 
@@ -120,30 +119,30 @@ Partials, or _includes_, are templates for reusable components of a website. Bec
 For example, here's a partial called `navigation.html`:
 
 ```html
-<nav>
+{% raw %}<nav>
     <h1 class="logo">{{ title}}</h1>
     <ul>
         <li><a href="#">Link</a></li>
         <li><a href="#">Link</a></li>
     </ul>
-</nav>
+</nav>{% endraw %}
 ```
 
 Unlike child templates, partials do not need to reference any parent. Instead, we can place a partial in any other template by explicitly calling it:
 
 ```html
-<!doctype html>
+{% raw %}<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% raw %}{{ title }}{% endraw %}</title>
+    <title>{{ title }}</title>
   </head>
   <body>
-      {% raw %}{% include navigation.html %}}
-      {{ content }}{% endraw %}
+      {% include navigation.html %}}
+      {{ content }}
   </body>
-</html>
+</html>{% endraw %}
 ```
 
 Here, we have modified our `default.html` template by adding a reference to the `navigation.html` partial in the location where we want the generator to place it. Again, the above example uses [Jekyll's conventions](https://jekyllrb.com/docs/includes/) for demonstration purposes; specific syntax will vary.
