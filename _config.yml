@@ -1,51 +1,93 @@
-# collectionbuilder-gh
-# a Jekyll Digital Collection Generator
-# designed for GitHub Pages
+#######
+#
+# bootstrap5-template
+# basic bootstrap 5 template for Jekyll with GitHub Pages
+# https://github.com/thecdil/bootstrap5-template
+#
+#######
 
-# Site settings
+#######
+# SITE SETTINGS
+#
+title: lib-static 
+tagline: "a methodology, a collection, a community"
+description: "a methodology, a collection, a community"
+year: 2021
+author: evan will 
+# add search box to navbar, true/false
+search: true
 
-# title of site appears in banner
-title: Lib-STATIC
-# tagline appears in banner
-tagline: a methodology, and a cookbook
-# description appears in meta tags and other locations
-# this description might appear in search result lists, keep around 160 characters max
-description: "Lib-STATIC is a minimal computing-based approach to creating data-driven tools leveraging static-web technologies (enabled by generators such as Jekyll and a “JAM” stack approach) and librarians’ specialized skills in metadata and classification to create engaging web publications via three components: a spreadsheet with well-formed metadata, a directory of assets, and a configuration file."
-# keywords appear in meta tags
-keywords: "university of idaho, digital collections, digital humanities"
-# creator of the digital collection, to appear in meta tags
-author: dcnb
-# creator contact email for meta tags
-email: dbecker@uidaho.edu
-# collection project date, when did you publish this
-collection-date: "2019"
-
-# url is your gh-pages base, following the pattern: username.github.io
-url: https://lib-static.github.io
+##########
+# URL VARIABLES [optional!]
+#
+# Optional if using GitHub Pages! If building manually, these must be set correctly.
+#
+# use url for the domain, e.g. https://thecdil.github.io
+# on gh-pages follow the pattern: https://username.github.io
+url:
+# use baseurl to add subsection of the domain, e.g. /timelinejs-template
+# on gh-pages this is a / followed by the name of the repository
 # baseurl is your github repository's name prefixed with a /
-baseurl: 
-# repository is the github repository's full url
-repository: https://github.com/lib-static/lib-static.github.io
-# Theme Options
-# Use fontawesome CDN (true, false), https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
-fontawesome: false
-# navbar text color
-# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
-# navbar-color: navbar-dark
-# navbar background color
-# Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
-# navbar-background: bg-secondary
-# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
-# Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
-bootswatch: # leave blank or comment out for plain bootstrap
+baseurl:
+# location of code, the full url to your github repository
+source-code: https://github.com/thecdil/bootstrap5-template
 
-# google services [optional!]
-# leave these blank or comment out to NOT include google code
-# google-tracking-id: "UA-74844011-1"
+##########
+# GOOGLE ANALYTICS [optional!]
+#
+# leave this blank or comment out to NOT include google code
+# Add your google-analytics-id to automatically add the embed code, e.g. "UA-76328753-1"
+google-analytics-id:
 
-# build settings
-permalink: pretty
+##########
+# ROBOTS EXCLUDE [optional!]
+#
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true 
 
-# Note: use environment variable on build command to include analytics
-# JEKYLL_ENV=production jekyll build
-# (this is done automatically by gh-pages build)
+
+#######
+# BUILD SETTINGS [usually leave as is]
+#
+# Collections
+collections_dir: content
+collections:
+  community: 
+    output: true
+  concepts: 
+    output: true
+  projects: 
+    output: true
+
+# Defaults to simplify front matter,
+# all files in the "pages" folder will be output at root of site
+defaults:
+  - scope:
+      path: "pages"
+    values:
+      layout: page
+      permalink: /:basename/
+  - scope: 
+      path: ""
+      type: "concepts"
+    values:
+      layout: content
+      permalink: /:collection/:name
+      section: "Concepts"
+  - scope: 
+      path: ""
+      type: "community"
+    values:
+      layout: content
+      permalink: /:collection/:name
+      section: "Community"
+  - scope: 
+      path: ""
+      type: "projects"
+    values:
+      layout: content
+      permalink: /:collection/:name
+      section: "Projects"
+
+# ignore stuff
+exclude: [docs/, Rakefile, README.md, LICENSE]

@@ -1,0 +1,14 @@
+/* add your scss tweaks here */
+#site-header {
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+.nav-link {
+    img { max-height: 45px; }
+}
+.section-heading {
+    img { max-height: 80px; }
+}
+.content-narrow {
+    max-width: 740px;
+}

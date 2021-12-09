@@ -1,17 +1,20 @@
 ---
 # create lunr store 
 ---
-{%- assign items = site.data.metadata -%}
 var store = [ 
-    {% for item in items %} 
+    {% assign content_pages = site.html_pages | where_exp: 'p','p.searchable != false' %}
+    {% for item in content_pages %}
     { 
-        "indexId": {{ item.indexid | jsonify }},
+        "url": {{ item.url | relative_url | jsonify }},
         "title": {{ item.title | jsonify }},
-        "creator": {{ item.creator | jsonify }},
-        "subjects": {{ item.subject | split: ";" | jsonify }},
-        "date": {{ item.date | jsonify }},
-        "description": {{ item.description | jsonify }},
-        "place": {{ item.place | jsonify }}
+        "text": {{ item.content | strip_html | normalize_whitespace | jsonify }}
+    },
+    {%- endfor -%}
+    {% for item in site.documents %}
+    { 
+        "url": {{ item.url | relative_url | jsonify }},
+        "title": {{ item.title | jsonify }},
+        "text": {{ item.content | strip_html | normalize_whitespace | jsonify }}
     }{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
 ];

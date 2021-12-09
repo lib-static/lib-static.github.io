@@ -1,0 +1,6 @@
+<!-- Bootstrap JS bundle -->
+<script src="{{ '/assets/lib/bootstrap.bundle.min.js' | relative_url }}"></script>
+<!-- load other optional js -->
+{% if page.foot %}{% include {{ page.foot }} %}{% endif %}
+{% if layout.foot %}{% include {{ layout.foot }} %}{% endif %}
+{% include template/scroll-to-top.html %}

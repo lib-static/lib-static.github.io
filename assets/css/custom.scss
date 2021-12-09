@@ -1,16 +1,19 @@
 ---
 # front matter
 ---
-@charset "utf-8";
 
-// base variables
+// add color at page top
+$top-border: #424242;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #B06048;
+// Tweak body text and link color
+$text-color: #111 !default;
+$link-color: #0d6efd !default;
+$base-font-size: 1.1rem;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// limit container size to make reading easier
+$container-max: 950px;
 
-@import "custom";
+// Import partials.
+@import
+  "template", "custom"
+;

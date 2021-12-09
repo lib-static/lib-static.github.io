@@ -1,0 +1,14 @@
+{% comment %}
+
+    Figure include adds an image marked up using bootstrap, https://getbootstrap.com/docs/5.1/content/figures/
+    Options:
+    - "img" = the filename of the image located in the /images/ folder of your repository, or full url to external image
+    - "alt" = description of the image contents for the alt text
+    - "caption" = text for caption of the figure (optional)
+    - "width" = manually set width using options such as "50%" (optional)
+
+{% endcomment %}
+<figure class="figure d-block text-center p-3">
+    <img src="{% if include.img contains '//' %}{{ include.img }}{% else %}{{ include.img | prepend: '/images/' | relative_url }}{% endif %}" alt="{{ include.alt }}" {% if include.width %}style="width:{{ include.width }};" {% endif %}class="figure-img img-fluid rounded">
+    {% if include.caption %}<figcaption class="figure-caption">{{ include.caption | markdownify }}</figcaption>{% endif %}
+</figure>

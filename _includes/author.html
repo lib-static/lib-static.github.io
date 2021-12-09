@@ -1,0 +1,5 @@
+{% if page.author contains "@" %}
+{% assign id = page.author | remove: "@" %}
+{% assign person = site.data.contributors | where: 'id',id | first %}
+{% if person.github_name %}<a href="https://github.com/{{ person.github_name }}">{{ person.first_name }} {{ person.last_name }}</a>{% else %}{{ person.first_name }} {{ person.last_name }}{% endif %}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}
+{% else %}{{ page.author }} {% endif %}
