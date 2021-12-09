@@ -1,6 +1,6 @@
 ---
 title: Get in Contact
-contributor: "@evanwill"
+#contributor: "@evanwill"
 updated: 2021-12-03
 type: contribute
 ---

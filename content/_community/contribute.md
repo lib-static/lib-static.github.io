@@ -1,6 +1,6 @@
 ---
 title: Contribute to lib-static
-contributor: "@evanwill"
+#contributor: "@evanwill"
 updated: 2021-12-03
 type: contribute
 ---
