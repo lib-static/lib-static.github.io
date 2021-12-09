@@ -64,6 +64,8 @@ It is treated as a string field, but please use iso format yyyy-mm-dd.
 
 ### project_documentation (optional)
 
+### project_creators (option)
+
 ### image (optional)
 
 ### image_alt (optional)
