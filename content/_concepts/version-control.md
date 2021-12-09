@@ -1,7 +1,7 @@
 ---
 title: Version Control
-author: "@evanwill"
-date: 2021-08-04
+contributor: "@evanwill"
+updated: 2021-08-04
 type: concept
 ---
 

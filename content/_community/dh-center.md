@@ -1,7 +1,7 @@
 ---
 title: Digital Humanities Center
-author: "@owikle"
-date: 2021-08-04
+contributor: "@owikle"
+updated: 2021-08-04
 type: social stack
 ---
 

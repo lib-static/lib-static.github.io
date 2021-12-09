@@ -1,7 +1,7 @@
 ---
 title: Go it Alone
-author: "@chrisdaaz"
-date: 2021-08-04
+contributor: "@chrisdaaz"
+updated: 2021-08-04
 type: social stack
 ---
 

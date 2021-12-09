@@ -1,7 +1,7 @@
 ---
 title: Publication and Preservation
-author: "@owikle"
-date: 2021-08-04
+contributor: "@owikle"
+updated: 2021-08-04
 type: concept
 ---
 

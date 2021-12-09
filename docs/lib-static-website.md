@@ -16,8 +16,8 @@ At a minium all stubs should have:
 ```
 ---
 title: <the title of the content>
-author: <who wrote the content>
-date: <yyyy-mm-dd>
+contributor: <who wrote the content>
+updated: <yyyy-mm-dd>
 type: <content category>
 ---
 ```

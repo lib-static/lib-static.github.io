@@ -1,7 +1,7 @@
 ---
 title: "Content and Metadata"
-author: "@chrisdaaz"
-date: 2021-08-04
+contributor: "@chrisdaaz"
+updated: 2021-08-04
 type: concept
 ---
 
@@ -25,9 +25,9 @@ Early versions of Markdown targeted HTML as an output format. Most HTML elements
 
 ```yaml
 title: Beloved
-author: Toni Morrison
+contributor: Toni Morrison
 publisher: Alfred A. Knopf
-date: 1987
+updated: 1987
 dewey_decimal: 813.54
 language: English
 ```

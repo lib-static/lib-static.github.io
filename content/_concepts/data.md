@@ -1,7 +1,7 @@
 ---
 title: Thinking Through Data
-author: "@dcnb"
-date: 2021-08-04
+contributor: "@dcnb"
+updated: 2021-08-04
 type: concept
 ---
 

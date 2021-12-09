@@ -1,7 +1,7 @@
 ---
 title: Skunkworks
-author: "@mnyrop"
-date: 2021-08-04
+contributor: "@mnyrop"
+updated: 2021-08-04
 type: social stack
 ---
 

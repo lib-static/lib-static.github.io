@@ -1,7 +1,7 @@
 ---
 title: lib-static Symposium Sprint 2021
-author: "@evanwill"
-date: 2021-09-05
+contributor: "@evanwill"
+updated: 2021-09-05
 type: meetings
 ---
 

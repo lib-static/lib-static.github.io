@@ -1,7 +1,7 @@
 ---
 title: Nimble Tents
-author: "@elotroalex"
-date: 2021-08-04
+contributor: "@elotroalex"
+updated: 2021-08-04
 type: social stack
 ---
 

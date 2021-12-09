@@ -1,7 +1,7 @@
 ---
 title: Contribute to lib-static
-author: "@evanwill"
-date: 2021-12-03
+contributor: "@evanwill"
+updated: 2021-12-03
 type: contribute
 ---
 
