@@ -72,21 +72,21 @@ defaults:
       type: "concepts"
     values:
       layout: content
-      permalink: /:collection/:name
+      permalink: /:collection/:name/
       section: "Concepts"
   - scope: 
       path: ""
       type: "community"
     values:
       layout: content
-      permalink: /:collection/:name
+      permalink: /:collection/:name/
       section: "Community"
   - scope: 
       path: ""
       type: "projects"
     values:
       layout: content
-      permalink: /:collection/:name
+      permalink: /:collection/:name/
       section: "Projects"
 
 # ignore stuff
