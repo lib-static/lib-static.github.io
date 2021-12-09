@@ -3,6 +3,6 @@ layout: default
 ---
 <div class="container content-narrow my-3">
     <h1 >{{ page.title }}</h1>
-    <p class="ms-4 mb-4"><small>contributor: {% include contributor.html %} | last update: {{ page.updated }}</small></p>
+    <p class="ms-4 mb-4"><small>{% if page.contributor %}contributor: {% include contributor.html %}{% endif %}{% if page.contributor and page.updated %} | {% endif %}{% if page.updated %}last update: {{ page.updated }}{% endif %}</small></p>
     {{ content }}
 </div>
