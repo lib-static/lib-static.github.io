@@ -7,8 +7,8 @@ type: contribute
 
 Do you want to ask questions, discuss, or chat about lib-static?
 
-DLF slack
+`lib-static` channel on Code4Lib Slack (check [instructions on how to join](https://code4lib.org/irc/#slack)) 
 
-lib-static gh discussions
+[lib-static gh discussions](https://github.com/lib-static/lib-static.github.io/discussions)
 
-email
+email, libstatic.uidaho@gmail.com
