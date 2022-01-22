@@ -1,6 +1,6 @@
 ---
 title: Projects
-nav: Projects
+nav: Projects &amp; Models
 nav_order: 2
 section: Projects
 foot: js/masonry.html
