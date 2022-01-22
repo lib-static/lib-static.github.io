@@ -11,10 +11,12 @@ foot: js/masonry.html
 lib-static is a provocation to rethink how we do digital infrastructure in libraries to recenter our technology choices around sustainable, pragmatic, and minimal approaches.
 {:.lead}
 
-<a href="/about/" class="btn btn-lg btn-primary m-2">About</a>
-<a href="/projects/" class="btn btn-lg btn-success m-2">Projects</a>
-<a href="/concepts/" class="btn btn-lg btn-info m-2">Concepts</a>
-<a href="/community/" class="btn btn-lg btn-warning m-2">Community</a>
+<div class="row mt-3">
+    <div class="col"><a href="/about/" class="btn w-100 btn-primary mb-3">About</a></div>
+    <div class="col"><a href="/projects/" class="btn w-100 btn-success mb-3">Projects</a></div>
+    <div class="col"><a href="/concepts/" class="btn w-100 btn-info mb-3">Concepts</a></div>
+    <div class="col"><a href="/community/" class="btn w-100 btn-warning mb-3">Community</a></div>
+</div>
 
 Are you: Tired of learning platforms rather than skills? Frustrated with over-bloated systems? Siloed by the tools you know and the tools you don't?
 
