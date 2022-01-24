@@ -20,8 +20,9 @@ Lib-Static is a provocation to rethink how we do digital infrastructure in libra
 
 <hr>
 
+{% assign items = site.documents | where_exp: 'd','d.ignore != "true"' %}
 <div class="row" data-masonry='{"percentPosition": true }'>
-    {% for i in site.documents %}
+    {% for i in items %}
     <div class="col-sm-6">
         <div class="card mb-3 border-{% cycle 'primary', 'success', 'danger', 'warning', 'info', 'dark' %}">
             {% if i.image %}<img src="{{ i.image | relative_url }}" class="card-img-top" alt="{{ i.image_alt }}">{% endif %}
