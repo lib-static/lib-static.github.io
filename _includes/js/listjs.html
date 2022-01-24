@@ -1,0 +1,45 @@
+<script src="{{ '/assets/lib/list.min.js' | relative_url }}"></script>
+<script>
+    /* Fisher-Yates shuffle https://bost.ocks.org/mike/shuffle/ */
+    function shuffle(array) {
+        var m = array.length, t, i;
+        while (m) {
+            i = Math.floor(Math.random() * m--);
+            t = array[m];
+            array[m] = array[i];
+            array[i] = t;
+        }
+        return array;
+    }
+    // add items
+    var listDocs = [
+        {% for i in site.documents %}
+        { listColor: "{{ i.type }}", listLink: "{{ i.url | relative_url }}", listTitle: {{ i.title | jsonify }}, listType: "{{ i.type }}", listText: {{ i.content | strip_html | truncatewords: 25 | jsonify }} }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+    shuffle(listDocs);
+
+    // list.js options and item template
+    var listOptions = {
+        valueNames: [ 
+            { attr: 'data-color', name: 'listColor' },
+            { attr: 'href', name: 'listLink' },
+            'listTitle',
+            'listType',
+            'listText'
+        ],
+        item: `<div class="col-sm-6">
+            <div class="card mb-3 listColor">
+                <div class="card-body">
+                    <h5 class="card-title"><a class="listLink listTitle" href=""></a></h5>
+                    <p class="card-text"><span class="listType"></span><br><span class="listText"></p>
+                </div>
+            </div>
+        </div>`
+
+    };
+
+    // init list.js
+    var documentList = new List('documentList', listOptions, listDocs);
+
+</script>

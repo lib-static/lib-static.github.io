@@ -1,0 +1,38 @@
+---
+title: test
+layout: page
+permalink: /new.html
+auto-heading: false
+foot: js/listjs.html
+---
+
+<div class="h1 mb-4">{{ site.tagline }}</div>
+
+lib-static is a provocation to rethink how we do digital infrastructure in libraries to recenter our technology choices around sustainable, pragmatic, and minimal approaches.
+{:.lead}
+
+<div class="row">
+    <div class="col"><a href="/about/" class="btn w-100 btn-primary mb-3">About</a></div>
+    <div class="col"><a href="/projects/" class="btn w-100 btn-success mb3">Projects</a></div>
+    <div class="col"><a href="/concepts/" class="btn w-100 btn-info mb-3">Concepts</a></div>
+    <div class="col"><a href="/community/" class="btn w-100 btn-warning mb-3">Community</a></div>
+</div>
+
+<hr>
+
+<style>
+[data-color="contribute"]{ border-color: red; } 
+[data-color="concept"]{ border-color: blue; } 
+[data-color="social stack"]{ border-color: green; } 
+</style>
+
+<div id="documentList">
+    <input class="form-control search mt-3 mb-2" placeholder="Filter...">
+
+    <button class="sort btn btn-sm btn-primary" data-sort="listTitle">Sort by Title</button>
+    {% assign types = site.documents | map: 'type' | uniq %}
+    {% for t in types %}<span>{{ t }}</span>{% endfor %}
+    <button class="sort btn btn-sm btn-primary" data-sort="listType">Type</button>
+    
+    <div class="list row"></div>
+</div>
