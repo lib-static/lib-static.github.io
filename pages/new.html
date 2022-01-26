@@ -19,19 +19,22 @@ foot: js/listjs.html
 
 <hr>
 
-<style>
-[data-color="contribute"]{ border-color: red; } 
-[data-color="concept"]{ border-color: blue; } 
-[data-color="social stack"]{ border-color: green; } 
-</style>
-
 <div id="documentList">
     <input class="form-control search mt-3 mb-2" placeholder="Filter...">
 
     <button class="sort btn btn-sm btn-primary" data-sort="listTitle">Sort by Title</button>
-    {% assign types = site.documents | map: 'type' | uniq %}
-    {% for t in types %}<span>{{ t }}</span>{% endfor %}
     <button class="sort btn btn-sm btn-primary" data-sort="listType">Type</button>
+    <button class="btn btn-sm btn-primary" id="shuffleList">Random</button>
+
+    <div class="btn-group my-3" role="group" aria-label="Filter items by type">
+        <input type="radio" class="btn-check" name="filterRadio" id="filter-all" autocomplete="off" value="show-all" checked>
+        <label class="btn btn-outline-primary" for="filter-all">All</label>
+        {% assign types = site.documents | map: 'type' | compact | uniq %}
+        {% for t in types %}
+        <input type="radio" class="btn-check" name="filterRadio" id="filter-{{ t | slugify }}" autocomplete="off" value="{{ t }}">
+        <label class="btn btn-outline-primary" for="filter-{{ t | slugify }}">{{ t }}</label>
+        {% endfor %}
+    </div>
     
-    <div class="list row"></div>
+    <div class="mt-5 list row"></div>
 </div>

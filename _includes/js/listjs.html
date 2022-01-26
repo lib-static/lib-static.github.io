@@ -23,9 +23,10 @@
         }{% unless forloop.last %},{% endunless %}
         {% endfor %}
     ];
+    // shuffle items
     shuffle(listDocs);
 
-    // list.js options and item template
+    // setup list.js options and item template
     var listOptions = {
         valueNames: [ 
             'listTitle',
@@ -71,8 +72,33 @@
         }
 
     };
-
     // init list.js
     var documentList = new List('documentList', listOptions, listDocs);
+
+    // setup filter function
+    function filterByType() {
+        var filterType = document.querySelector('input[name="filterRadio"]:checked').value;
+        if (filterType == "show-all") {
+            documentList.filter();
+        } else {
+            documentList.filter(function(item) { 
+                if (item.values().listType == filterType) { return true; } else { return false } 
+            });
+        }
+    }
+    // add filters to radio
+    var filterRadios = document.querySelectorAll('input[name="filterRadio"]');
+    filterRadios.forEach(radio => radio.addEventListener('change', filterByType));
+    
+    // add random shuffle
+    function shuffleList() {
+        shuffle(listDocs);
+        documentList.filter();
+        documentList.clear();
+        documentList.add(listDocs);
+        filterByType();
+    }
+    var shuffleListBtn = document.getElementById("shuffleList");
+    shuffleListBtn.addEventListener("click", shuffleList);
 
 </script>
