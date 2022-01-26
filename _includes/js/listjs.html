@@ -14,7 +14,13 @@
     // add items
     var listDocs = [
         {% for i in site.documents %}
-        { listColor: "{{ i.type }}", listLink: "{{ i.url | relative_url }}", listTitle: {{ i.title | jsonify }}, listType: "{{ i.type }}", listText: {{ i.content | strip_html | truncatewords: 25 | jsonify }} }{% unless forloop.last %},{% endunless %}
+        { 
+            {% if i.image %}listImg: "{{ i.image | relative_url }}", listImgAlt: "{{ i.image_alt }}",{% endif %}
+            listLink: "{{ i.url | relative_url }}", 
+            listTitle: {{ i.title | jsonify }}, 
+            listType: "{{ i.type }}", 
+            listText: {{ i.project_description | default: i.content | strip_html | truncatewords: 25 | jsonify }} 
+        }{% unless forloop.last %},{% endunless %}
         {% endfor %}
     ];
     shuffle(listDocs);
@@ -22,20 +28,47 @@
     // list.js options and item template
     var listOptions = {
         valueNames: [ 
-            { attr: 'data-color', name: 'listColor' },
-            { attr: 'href', name: 'listLink' },
             'listTitle',
             'listType',
             'listText'
         ],
-        item: `<div class="col-sm-6">
-            <div class="card mb-3 listColor">
-                <div class="card-body">
-                    <h5 class="card-title"><a class="listLink listTitle" href=""></a></h5>
-                    <p class="card-text"><span class="listType"></span><br><span class="listText"></p>
+        item: function(values) {
+            //contribute social stack meetings pathways concept Models Of Models For Tool
+            var borderColor = "";
+            var cardImg = "";
+            switch (values.listType) {
+                case "contribute":
+                    borderColor = "border-success";
+                    break;
+                case "concept":
+                    borderColor = "border-primary";
+                    break;
+                case "Models Of":
+                    borderColor = "border-danger";
+                    break;
+                case "Models For":
+                    borderColor = "border-warning";
+                    break;
+                case "Tool":
+                    borderColor = "border-info";
+                    break;
+                default:
+                    borderColor = "";
+            }
+            if(values.listImg) {
+                cardImg = `<img src="${values.listImg}" class="card-img-top" alt="${values.listImgAlt}">`;
+            } 
+            var card = `<div class="col-sm-6">
+                <div class="card mb-3 ${borderColor}">${cardImg}
+                    <div class="card-body">
+                        <h5 class="card-title"><a class="listTitle" href="${values.listLink}">${values.listTitle}</a></h5>
+                        <p class="card-text"><strong class="listType">${values.listType}</strong><br><span class="listText">${values.listText}</span></p>
+                    </div>
                 </div>
-            </div>
-        </div>`
+            </div>`;
+            return card;
+
+        }
 
     };
 
