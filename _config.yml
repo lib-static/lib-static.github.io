@@ -85,7 +85,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: content
+      layout: project
       permalink: /:collection/:name/
       section: "Projects"
 
