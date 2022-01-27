@@ -1,7 +1,7 @@
-id,first_name,last_name,github_name,affiliation
-evanwill,Evan Peter,Williamson,evanwill,University of Idaho Library
-dcnb,Devin,Becker,dcnb,University of Idaho Library
-owikle,Olivia,Wikle,owikle,University of Idaho Library
-mnyrop,Marii,Nyrop,mnyrop,New York University
-elotroalex,Alex,Gil,elotroalex,Columbia University Library
-chrisdaaz,Chris,Diaz,chrisdaaz,Northwestern University Library
+id,first_name,last_name,link,affiliation
+evanwill,Evan Peter,Williamson,https://evanwill.org/,University of Idaho Library
+dcnb,Devin,Becker,http://devinbecker.org/,University of Idaho Library
+owikle,Olivia,Wikle,https://github.com/owikle,University of Idaho Library
+mnyrop,Marii,Nyrop,https://marii.info/,New York University
+elotroalex,Alex,Gil,http://www.elotroalex.com/,Columbia University Library
+chrisdaaz,Chris,Diaz,https://chrisdaaz.github.io/,Northwestern University Library
