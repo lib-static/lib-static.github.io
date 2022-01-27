@@ -14,5 +14,5 @@
 
 {%- endcomment -%}
 {% if include.centered %}<div class="text-center mb-3">{%- endif -%}
-<a class="btn{% if include.size %} btn-{{ include.size }}{% endif %} btn-{{ include.color | default: 'secondary' }}{% if include.width %} w-{{ include.width }}{% endif %}" href="{{ include.link | relative_url }}"  target="_blank" rel="noopener">{{ include.text }}</a>
+<a class="btn{% if include.size %} btn-{{ include.size }}{% endif %} btn-{{ include.color | default: 'secondary' }}{% if include.width %} w-{{ include.width }}{% endif %}" href="{{ include.link | relative_url }}" target="_blank" rel="noopener">{{ include.text }}</a>
 {% if include.centered %}</div>{%- endif -%}

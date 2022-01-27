@@ -19,7 +19,7 @@
             listLink: "{{ i.url | relative_url }}", 
             listTitle: {{ i.title | jsonify }}, 
             listType: "{{ i.type }}", 
-            listText: {{ i.project_description | default: i.content | strip_html | truncatewords: 25 | jsonify }} 
+            listText: {{ i.description | default: i.content | strip_html | truncatewords: 25 | jsonify }} 
         }{% unless forloop.last %},{% endunless %}
         {% endfor %}
     ];

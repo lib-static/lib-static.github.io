@@ -6,7 +6,7 @@ updated: 2022-01-05
 project_link: https://evanwill.github.io/workshop-template-b/ 
 project_repository: https://github.com/evanwill/workshop-template-b 
 project_documentation: https://github.com/evanwill/workshop-template-b#readme 
-project_description: "A basic Jekyll template for creating OER workshop websites designed for hosting on GitHub Pages." 
+description: "A basic Jekyll template for creating OER workshop websites designed for hosting on GitHub Pages." 
 project_genre: OER
 project_creators: "@evanwill"
 image: https://evanwill.github.io/workshop-template-b/images/uidaho-workshop.jpg

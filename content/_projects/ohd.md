@@ -7,7 +7,7 @@ project_link: https://uidaholib.github.io/oral-history-as-data/
 project_repository: https://github.com/uidaholib/oral-history-as-data 
 project_documentation: 
 project_genre: Oral History; Qualitative Data Analysis
-project_description: "A Jekyll template that allows users to analyze and publish coded oral history or qualitative interview files." 
+description: "A Jekyll template that allows users to analyze and publish coded oral history or qualitative interview files." 
 project_creators: "@dcnb"
 image: /images/ohd1.png
 image_alt: Colorful, SVG-based visualization for interviews based on coded subjects.

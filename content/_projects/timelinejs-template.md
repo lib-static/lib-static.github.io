@@ -8,7 +8,7 @@ project_link: https://thecdil.github.io/timelinejs-template/
 project_repository: https://github.com/thecdil/timelinejs-template 
 project_documentation: https://github.com/thecdil/timelinejs-template/blob/main/docs/timeline.md 
 project_genre: Digital Exhibit
-project_description: "A basic Jekyll template for creating self-hosted TimelineJS on GitHub Pages."
+description: "A basic Jekyll template for creating self-hosted TimelineJS on GitHub Pages."
 project_creators: "@evanwill"
 image:
 image_alt:

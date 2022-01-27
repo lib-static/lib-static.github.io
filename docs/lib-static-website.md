@@ -60,6 +60,11 @@ Will be displayed as "last update" on content pages.
 Since all tech things age quickly, we encourage everything to be dated.
 It is treated as a string field, but please use iso format yyyy-mm-dd.
 
+### description (optional)
+
+A very short description of the content or project, one or two sentences.
+Displays as lead text on content pages.
+
 ### project_link (optional)
 
 A URL to the project's main page.
@@ -88,14 +93,11 @@ Preferably choose from these options:
 
 Digital Collection; Digital Exhibit; Institutional Repository; Research Guide; Qualitative Data Analysis; Oral History; Library Website; Critical Edition; OER; Screwing-Around
 
-### project_description (optional)
-
-A very short description of the project, one or two sentences.
-
 ### image (optional)
 
 A URL to an image to represent the project. 
 This can often be a screenshot or logo.
+Use a full URL or relative path within this repository.
 
 ### image_alt (optional, required if using image option)
 

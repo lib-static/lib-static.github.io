@@ -5,7 +5,7 @@ contributor: "@chrisdaaz"
 updated: 2021-08-04
 project_link: https://plagues.buffett.northwestern.edu/ 
 project_genre: Digital Collection; Student Projects
-project_description: "A collection of personal essays and reflections on the COVID-19 pandemic, hosted on a custom static web front end." 
+description: "A collection of personal essays and reflections on the COVID-19 pandemic, hosted on a custom static web front end." 
 project_creators: Chris Diaz; Northwestern University Libraries
 image: /images/plagues.jpg
 image_alt: Plagues series cover

@@ -6,7 +6,7 @@ updated: 2021-08-04
 project_link: 'https://quire.getty.edu/'
 project_repository: https://github.com/thegetty/quire/
 project_documentation: 'https://quire.getty.edu/documentation/'
-project_description: 'Quire is a modern, multiformat publishing tool designed for longevity, discoverability, and scholarship.'
+description: 'Quire is a modern, multiformat publishing tool designed for longevity, discoverability, and scholarship.'
 project_genre: Digital Publishing
 project_creators: Greg Albers; David Newbury; Matthew Hrudka; Erin Cecele Dunigan; Getty Museum
 image: https://quire.getty.edu/img/illustrations/illustration-multiformat--ambers.png

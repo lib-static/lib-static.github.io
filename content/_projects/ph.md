@@ -6,7 +6,7 @@ updated: 2021-08-04
 project_link: https://programminghistorian.org/ 
 project_repository: https://github.com/programminghistorian 
 project_genre: Digital Publishing; OER
-project_description: "Publication featuring peer-reviewed tutorials that teach digital tools, techniques, and workflows to facilitate humanities research and teaching." 
+description: "Publication featuring peer-reviewed tutorials that teach digital tools, techniques, and workflows to facilitate humanities research and teaching." 
 project_creators:
 image: https://programminghistorian.org/images/logos/ph-en.svg 
 image_alt: programming historian logo

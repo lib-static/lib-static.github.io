@@ -28,7 +28,7 @@ Lib-Static is a provocation to rethink how we do digital infrastructure in libra
             {% if i.image %}<img src="{{ i.image | relative_url }}" class="card-img-top" alt="{{ i.image_alt }}">{% endif %}
             <div class="card-body">
                 <h5 class="card-title"><a href="{{ i.url | relative_url }}">{{ i.title }}</a></h5>
-                <p class="card-text"><strong>{{ i.type }}</strong><br>{{ i.project_description | default: i.content | strip_html | truncatewords: 25 }}</p>
+                <p class="card-text"><strong>{{ i.type }}</strong><br>{{ i.description | default: i.content | strip_html | truncatewords: 25 }}</p>
             </div>
         </div>
     </div>
