@@ -4,8 +4,6 @@ layout: default
 <div class="container content-narrow mt-3 mb-5">
     <h1>{{ page.title }}</h1>
 
-    {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}" class="img-fluid border rounded m-3">{% endif %}
-
     <div class="my-4">
         {% if page.project_link %}<a href="{{ page.project_link }}" class="btn btn-outline-primary m-2">Project Site</a>{% endif %}
         {% if page.project_repository %}<a href="{{ page.project_repository }}" class="btn btn-outline-secondary m-2">Code Repository</a>{% endif %}
@@ -15,17 +13,21 @@ layout: default
     {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
 
     <p>
-        {% if page.type %}<a href="{{ '/projects/' | relative_url }}#{{ page.type | strip | url_param_escape }}" class="btn btn-outline-secondary m-2">{{ page.type }}</a> : {% endif %}
+        {% if page.type %}<a href="{{ '/projects/' | relative_url }}#{{ page.type | strip | url_param_escape }}" class="btn btn-sm btn-outline-secondary m-2">{{ page.type }}</a> : {% endif %}
         {% if page.project_genre %}{% assign genres = page.project_genre | split: ';' %}
-        {% for g in genres %}<a href="{{ '/projects/' | relative_url }}#{{ g | strip | url_param_escape }}" class="btn btn-outline-secondary m-2">{{ g }}</a> {% endfor %}{% endif %}
+        {% for g in genres %}<a href="{{ '/projects/' | relative_url }}#{{ g | strip | url_param_escape }}" class="btn btn-sm btn-outline-secondary m-2">{{ g }}</a> {% endfor %}{% endif %}
     </p>
 
     {% if page.project_creators %}<p>People: {% include contributors.html people=page.project_creators %}</p>{% endif %}
+
+    {% if page.image %}<p><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}" class="img-fluid border rounded m-3"></p>{% endif %}
+
+    <h2>About {{ page.title }}</h2>
     
     {{ content }}
 
-    <hr>
+    <hr class="mt-5">
 
-    <p><small>{% if page.contributor %}contributor: {% include contributors.html poeple=page.contributor %}{% endif %}{% if page.contributor and page.updated %} | {% endif %}{% if page.updated %}last update: {{ page.updated }}{% endif %}</small></p>
+    <p><small>{% if page.contributor %}record contributor: {% include contributors.html people=page.contributor %}{% endif %}{% if page.contributor and page.updated %} | {% endif %}{% if page.updated %}last update: {{ page.updated }}{% endif %}</small></p>
 
 </div>
