@@ -1,18 +1,16 @@
 ---
-objectid: bookdown
-objecttype: framework
 title: Bookdown
-objectlink: 'https://bookdown.org/'
-github-repo: 'https://github.com/rstudio/bookdown'
-documentation: 'http://bookdown.org/yihui/bookdown/'
-description: 'The bookdown package is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.'
-category: 'Digital Publishing'
-technologies: 'R Markdown; Knitr; TinyTeX; Pandoc'
-software-requirements: 'R; R Studio; Terminal; command-prompt'
-people:
-  - name: Yihui Xie 
-    github: yihui
-images:
-- filelocation: https://bookdown.org/yihui/bookdown/images/logo.png
-  caption: Bookdown logo
+type: Tools
+contributor: "@chrisdaaz"
+updated: 2021-08-04
+description: The bookdown package is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.
+project_link: 'https://bookdown.org/'
+project_repository: 'https://github.com/rstudio/bookdown'
+project_documentation: 'http://bookdown.org/yihui/bookdown/'
+project_genre: 'Digital Publishing'
+project_creators: Yihui Xie
+image: https://bookdown.org/yihui/bookdown/images/logo.png
+image_alt: Bookdown logo
 ---
+
+R Studio; R Markdown; Knitr; TinyTeX; Pandoc
