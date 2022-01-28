@@ -1,7 +1,7 @@
 {% assign contributors = include.people | split: ";" %}
 {% for c in contributors %}
 {% if c contains "@" %}
-{% assign id = c | remove: "@" %}
+{% assign id = c | remove: "@" | strip %}
 {% assign person = site.data.contributors | where: 'id',id | first %}
 {% if person.link %}<a href="{{ person.link }}" target="_blank" rel="noopener">{{ person.first_name }} {{ person.last_name }}</a>{% else %}{{ person.first_name }} {{ person.last_name }}{% endif %}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}
 {% else %}{{ c }} {% endif %}
