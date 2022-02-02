@@ -88,7 +88,7 @@
     }
     // add filters to radio
     var filterRadios = document.querySelectorAll('input[name="filterRadio"]');
-    filterRadios.forEach(radio => radio.addEventListener('change', filterByType));
+    filterRadios.forEach(radio => radio.addEventListener('click', filterByType));
     
     // add random shuffle
     function shuffleList() {
@@ -100,5 +100,27 @@
     }
     var shuffleListBtn = document.getElementById("shuffleList");
     shuffleListBtn.addEventListener("click", shuffleList);
+
+    /* get query string */
+    // ?sort=
+    // ?filter=
+    // ?search=
+    document.addEventListener('DOMContentLoaded', function(event) {
+        var queryString = new URLSearchParams(window.location.search);
+        if (queryString.has("sort")) { 
+            var sortOption = queryString.get("sort");
+            // check if options actually exists...
+            document.getElementById(sortOption).click();
+        }
+        if (queryString.has("filter")) { 
+            var filterOption = queryString.get("filter");
+            document.getElementById(filterOption).click();
+        }
+        if (queryString.has("search")) { 
+            var searchOption = queryString.get("search");
+            document.getElementById("listSearch").value = searchOption;
+        }
+
+    });
 
 </script>
