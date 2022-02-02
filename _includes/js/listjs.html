@@ -98,27 +98,26 @@
         documentList.add(listDocs);
         filterByType();
     }
-    var shuffleListBtn = document.getElementById("shuffleList");
+    var shuffleListBtn = document.getElementById("list_shuffle");
     shuffleListBtn.addEventListener("click", shuffleList);
 
     /* get query string */
-    // ?sort=
-    // ?filter=
-    // ?search=
     document.addEventListener('DOMContentLoaded', function(event) {
         var queryString = new URLSearchParams(window.location.search);
-        if (queryString.has("sort")) { 
-            var sortOption = queryString.get("sort");
-            // check if options actually exists...
-            document.getElementById(sortOption).click();
+        // ?sort=
+        if (queryString.has("sort") && document.getElementById(queryString.get("sort"))) { 
+            document.getElementById(queryString.get("sort")).click();
         }
-        if (queryString.has("filter")) { 
-            var filterOption = queryString.get("filter");
-            document.getElementById(filterOption).click();
+        // ?filter=
+        if (queryString.has("filter") && document.getElementById(queryString.get("filter"))) { 
+            document.getElementById(queryString.get("filter")).click();
+            filterByType();
         }
+        // ?search=
         if (queryString.has("search")) { 
             var searchOption = queryString.get("search");
             document.getElementById("listSearch").value = searchOption;
+            documentList.search(searchOption);
         }
 
     });
