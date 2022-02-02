@@ -88,7 +88,7 @@
     }
     // add filters to radio
     var filterRadios = document.querySelectorAll('input[name="filterRadio"]');
-    filterRadios.forEach(radio => radio.addEventListener('change', filterByType));
+    filterRadios.forEach(radio => radio.addEventListener('click', filterByType));
     
     // add random shuffle
     function shuffleList() {
@@ -98,7 +98,28 @@
         documentList.add(listDocs);
         filterByType();
     }
-    var shuffleListBtn = document.getElementById("shuffleList");
+    var shuffleListBtn = document.getElementById("list_shuffle");
     shuffleListBtn.addEventListener("click", shuffleList);
+
+    /* get query string */
+    document.addEventListener('DOMContentLoaded', function(event) {
+        var queryString = new URLSearchParams(window.location.search);
+        // ?sort=
+        if (queryString.has("sort") && document.getElementById(queryString.get("sort"))) { 
+            document.getElementById(queryString.get("sort")).click();
+        }
+        // ?filter=
+        if (queryString.has("filter") && document.getElementById(queryString.get("filter"))) { 
+            document.getElementById(queryString.get("filter")).click();
+            filterByType();
+        }
+        // ?search=
+        if (queryString.has("search")) { 
+            var searchOption = queryString.get("search");
+            document.getElementById("listSearch").value = searchOption;
+            documentList.search(searchOption);
+        }
+
+    });
 
 </script>
