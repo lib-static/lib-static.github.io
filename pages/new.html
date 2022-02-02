@@ -52,9 +52,12 @@ foot: js/listjs.html
             <div class="card card-body">
                 <p>Sort by:</p>
                 <p>
-                    <button class="btn btn-sm btn-primary" id="shuffleList">Random</button>
-                    <button class="sort btn btn-sm btn-primary" data-sort="listTitle">Title</button>
-                    <button class="sort btn btn-sm btn-primary" data-sort="listType">Type</button>
+                    <input type="radio" class="btn-check" name="sortList" id="shuffleList" autocomplete="off" checked>
+                    <label class="btn btn-outline-info" for="shuffleList">Random</label>
+                    <input type="radio" class="btn-check sort" name="sortList" id="sortListTitle" autocomplete="off" data-sort="listTitle">
+                    <label class="btn btn-outline-info" for="sortListTitle">Title</label>
+                    <input type="radio" class="btn-check sort" name="sortList" id="sortListType" autocomplete="off" data-sort="listType">
+                    <label class="btn btn-outline-info" for="sortListType">Type</label>
                 </p>
                 <p>View item types:</p>
                 <p>
