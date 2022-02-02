@@ -19,6 +19,7 @@
             listLink: "{{ i.url | relative_url }}", 
             listTitle: {{ i.title | jsonify }}, 
             listType: "{{ i.type }}", 
+            {% if i.project_genre %}listGenre: "{{ i.project_genre }}",{% endif %}
             listText: {{ i.description | default: i.content | strip_html | truncatewords: 25 | jsonify }} 
         }{% unless forloop.last %},{% endunless %}
         {% endfor %}
@@ -31,12 +32,14 @@
         valueNames: [ 
             'listTitle',
             'listType',
+            'listGenre',
             'listText'
         ],
         item: function(values) {
             //contribute social stack meetings pathways concept Models Of Models For Tool
             var borderColor = "";
             var cardImg = "";
+            var cardGenre = "";
             switch (values.listType) {
                 case "contribute":
                     borderColor = "border-success";
@@ -57,18 +60,21 @@
                     borderColor = "";
             }
             if(values.listImg) {
-                cardImg = `<img src="${values.listImg}" class="card-img-top" alt="${values.listImgAlt}">`;
+                cardImg = `<p class="text-center"><img src="${values.listImg}" class="img-fluid" alt="${values.listImgAlt}"></p>`;
+            } 
+            if(values.listGenre) { 
+                cardGenre = ` : ${values.listGenre.split(";").join(" ;")}`;
             } 
             var card = `<div class="col-sm-6">
-                <div class="card mb-3 ${borderColor}">${cardImg}
+                <div class="card mb-3 ${borderColor}">
                     <div class="card-body">
-                        <h5 class="card-title"><a class="listTitle" href="${values.listLink}">${values.listTitle}</a></h5>
-                        <p class="card-text"><strong class="listType">${values.listType}</strong><br><span class="listText">${values.listText}</span></p>
+                        <h3 class="card-title"><a class="listTitle" href="${values.listLink}">${values.listTitle}</a></h3>
+                        <p class="card-text"><strong class="listType">${values.listType}</strong> ${cardGenre}</p>${cardImg}
+                        <p class="card-text"><span class="listText">${values.listText}</span></p>
                     </div>
                 </div>
             </div>`;
             return card;
-
         }
 
     };
