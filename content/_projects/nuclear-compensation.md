@@ -7,7 +7,7 @@ project_link: https://nuclear-compensation.northwestern.pub/
 project_genre: Digital Publishing
 description: "An edited monograph on compensating the victims of nuclear disasters." 
 project_creators: "@chrisdaaz" 
-images: /images/nuclearcompensation.jpg 
+image: /images/nuclearcompensation.jpg 
 image_alt: Nuclear Compensation book cover
 ---
 
