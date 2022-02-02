@@ -47,25 +47,27 @@ foot: js/listjs.html
 
     <div class="input-group mb-3">
         <input type="text" class="form-control search" aria-label="Text input with dropdown button" placeholder="Filter...">
-        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">options</button>
-        <div class="dropdown-menu w-100 px-5">
-            <p>Sort by:</p>
-            <p>
-                <button class="btn btn-sm btn-primary" id="shuffleList">Random</button>
-                <button class="sort btn btn-sm btn-primary" data-sort="listTitle">Title</button>
-                <button class="sort btn btn-sm btn-primary" data-sort="listType">Type</button>
-            </p>
-            <p>View item types:</p>
-            <p>
-                <input type="radio" class="btn-check" name="filterRadio" id="filter-all" autocomplete="off" value="show-all" checked>
-                <label class="btn btn-outline-primary" for="filter-all">All</label>
-                {% assign types = site.documents | map: 'type' | compact | uniq %}
-                {% for t in types %}
-                <input type="radio" class="btn-check" name="filterRadio" id="filter-{{ t | slugify }}" autocomplete="off" value="{{ t }}">
-                <label class="btn btn-outline-primary" for="filter-{{ t | slugify }}">{{ t }}</label>
-                {% endfor %}
-    
-            </p>
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseListOptions" aria-expanded="false" aria-controls="collapseListOptions">options</button>
+        <div class="collapse w-100" id="collapseListOptions">
+            <div class="card card-body">
+                <p>Sort by:</p>
+                <p>
+                    <button class="btn btn-sm btn-primary" id="shuffleList">Random</button>
+                    <button class="sort btn btn-sm btn-primary" data-sort="listTitle">Title</button>
+                    <button class="sort btn btn-sm btn-primary" data-sort="listType">Type</button>
+                </p>
+                <p>View item types:</p>
+                <p>
+                    <input type="radio" class="btn-check" name="filterRadio" id="filter-all" autocomplete="off" value="show-all" checked>
+                    <label class="btn btn-outline-primary" for="filter-all">All</label>
+                    {% assign types = site.documents | map: 'type' | compact | uniq %}
+                    {% for t in types %}
+                    <input type="radio" class="btn-check" name="filterRadio" id="filter-{{ t | slugify }}" autocomplete="off" value="{{ t }}">
+                    <label class="btn btn-outline-primary" for="filter-{{ t | slugify }}">{{ t }}</label>
+                    {% endfor %}
+        
+                </p>
+            </div>
         </div>
     </div>
     
