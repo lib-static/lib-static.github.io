@@ -1,0 +1,73 @@
+---
+title: test
+layout: page
+permalink: /new.html
+auto-heading: false
+foot: js/listjs.html
+---
+
+<div class="h1 mb-4">{{ site.tagline }}</div>
+
+<p class="lead">lib-static is a provocation to rethink how we do digital infrastructure in libraries to recenter our technology choices around sustainable, pragmatic, and minimal approaches.</p>
+
+<div class="row row-cols-1 row-cols-md-2 my-3 g-2">
+    <div class="col">
+        <div class="card h-100 bg-primary">
+            <div class="card-body text-center py-5">
+                <a href="{{ '/about/' | relative_url }}" class="stretched-link text-white h2">Why?</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 bg-success">
+            <div class="card-body text-center py-5">
+                <a href="{{ '/projects/' | relative_url }}" class="stretched-link text-white h2">Projects &amp; Models</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 bg-warning">
+            <div class="card-body text-center py-5">
+                <a href="{{ '/concepts/' | relative_url }}" class="stretched-link text-white h2">Concepts</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 bg-info">
+            <div class="card-body text-center py-5">
+                <a href="{{ '/community/' | relative_url }}" class="stretched-link text-white h2">Community</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div id="documentList">
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control search" aria-label="Text input with dropdown button" placeholder="Filter...">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">options</button>
+        <div class="dropdown-menu w-100 px-5">
+            <p>Sort by:</p>
+            <p>
+                <button class="btn btn-sm btn-primary" id="shuffleList">Random</button>
+                <button class="sort btn btn-sm btn-primary" data-sort="listTitle">Title</button>
+                <button class="sort btn btn-sm btn-primary" data-sort="listType">Type</button>
+            </p>
+            <p>View item types:</p>
+            <p>
+                <input type="radio" class="btn-check" name="filterRadio" id="filter-all" autocomplete="off" value="show-all" checked>
+                <label class="btn btn-outline-primary" for="filter-all">All</label>
+                {% assign types = site.documents | map: 'type' | compact | uniq %}
+                {% for t in types %}
+                <input type="radio" class="btn-check" name="filterRadio" id="filter-{{ t | slugify }}" autocomplete="off" value="{{ t }}">
+                <label class="btn btn-outline-primary" for="filter-{{ t | slugify }}">{{ t }}</label>
+                {% endfor %}
+    
+            </p>
+        </div>
+    </div>
+    
+    <div class="mt-5 list row"></div>
+</div>

@@ -20,14 +20,15 @@ Lib-Static is a provocation to rethink how we do digital infrastructure in libra
 
 <hr>
 
+{% assign items = site.documents | where_exp: 'd','d.ignore != "true"' %}
 <div class="row" data-masonry='{"percentPosition": true }'>
-    {% for i in site.documents %}
+    {% for i in items %}
     <div class="col-sm-6">
         <div class="card mb-3 border-{% cycle 'primary', 'success', 'danger', 'warning', 'info', 'dark' %}">
             {% if i.image %}<img src="{{ i.image | relative_url }}" class="card-img-top" alt="{{ i.image_alt }}">{% endif %}
             <div class="card-body">
                 <h5 class="card-title"><a href="{{ i.url | relative_url }}">{{ i.title }}</a></h5>
-                <p class="card-text"><strong>{{ i.type }}</strong><br>{{ i.project_description | default: i.content | strip_html | truncatewords: 25 }}</p>
+                <p class="card-text"><strong>{{ i.type }}</strong><br>{{ i.description | default: i.content | strip_html | truncatewords: 25 }}</p>
             </div>
         </div>
     </div>

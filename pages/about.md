@@ -2,7 +2,7 @@
 title: About lib-static
 nav: Why?
 nav_order: 1
-section: About
+section: Why?
 layout: content
 ---
 
