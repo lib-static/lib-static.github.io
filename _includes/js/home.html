@@ -13,7 +13,8 @@
     }
     // add items
     var listDocs = [
-        {% for i in site.documents %}
+        {% assign listDocs = site.documents | where_exp: 'i','i.ignore != true' %}
+        {% for i in listDocs %}
         { 
             {% if i.image %}listImg: "{{ i.image | relative_url }}", listImgAlt: "{{ i.image_alt }}",{% endif %}
             listLink: "{{ i.url | relative_url }}", 
