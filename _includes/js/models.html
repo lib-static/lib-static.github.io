@@ -84,12 +84,16 @@
 
     // setup filter function
     function filterByType() {
-        var filterType = document.querySelector('input[name="filterRadio"]:checked').value;
-        if (filterType == "show-all") {
+        var filterBtn = document.querySelector('input[name="filterRadio"]:checked');
+        if (filterBtn.value == "show-all") {
             documentList.filter();
+        } else if (filterBtn.id.includes("filter-genre-")) {
+            documentList.filter(function(item) { 
+                if (item.values().listGenre && item.values().listGenre.includes(filterBtn.value)) { return true; } else { return false } 
+            });
         } else {
             documentList.filter(function(item) { 
-                if (item.values().listType == filterType) { return true; } else { return false } 
+                if (item.values().listType == filterBtn.value) { return true; } else { return false } 
             });
         }
     }
