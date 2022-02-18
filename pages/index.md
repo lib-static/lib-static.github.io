@@ -15,28 +15,28 @@ Lib-Static is a provocation to rethink how we do digital infrastructure in libra
     <div class="col">
         <div class="card h-100 bg-primary">
             <div class="card-body text-center py-5">
-                <a href="{{ '/about/' | relative_url }}" class="stretched-link text-white h2">Why?</a>
+                <a href="{{ '/about/' | relative_url }}" class="stretched-link text-white h1">Why?</a>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card h-100 bg-success">
             <div class="card-body text-center py-5">
-                <a href="{{ '/projects/' | relative_url }}" class="stretched-link text-white h2">Models</a>
+                <a href="{{ '/projects/' | relative_url }}" class="stretched-link text-white h1">Models</a>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card h-100 bg-warning">
             <div class="card-body text-center py-5">
-                <a href="{{ '/concepts/' | relative_url }}" class="stretched-link text-white h2">Concepts</a>
+                <a href="{{ '/concepts/' | relative_url }}" class="stretched-link text-white h1">Concepts</a>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card h-100 bg-info">
             <div class="card-body text-center py-5">
-                <a href="{{ '/community/' | relative_url }}" class="stretched-link text-white h2">Community</a>
+                <a href="{{ '/community/' | relative_url }}" class="stretched-link text-white h1">Community</a>
             </div>
         </div>
     </div>
