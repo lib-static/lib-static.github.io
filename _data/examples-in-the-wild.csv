@@ -1,0 +1,14 @@
+title,genre,description,url
+Scholars' Lab Website relaunch,article,Jekyll-based DH center site,https://scholarslab.lib.virginia.edu/blog/site-relaunch/
+Fitzwilliam Museum Exhibit sites,exhibits,"Jekyll-based templates for creating websites for temporary exhibits in the museum, led by Daniel Pett",https://github.com/FitzwilliamMuseum/egyptiancoffins
+staticAid,finding aids,Jekyll-based project for archival descriptions from ArchivesSpace,https://github.com/helrond/staticAid
+Just-the-class,OER,Jekyll template for course website,https://github.com/kevinlin1/just-the-class
+Manicule,publishing,React app for manuscripts,https://github.com/wtrettien/manicule
+"The sculptures of the roman villa of Chiragan, Musée Saint-Raymond",exhibit,"Museum catalog built using a static workflow that provides a website, open data, and print book",https://villachiragan.saintraymond.toulouse.fr/en/
+JSTOR-Labs Juncture,exhibit,A framework for creating visual essays,https://github.com/JSTOR-Labs/juncture
+DCRMR: Descriptive Cataloging of Rare Materials (RDA Edition),documentation,Manual built using Jekyll,https://bsc.rbms.info/
+Flâneur,exhibit,Jekyll-based theme for maps with texts,https://github.com/kirschbombe/flaneur
+Quarto,publishing,scientific publishing system with Pandoc,https://quarto.org/
+Unlocking the Airwaves,exhibit,Large digital collection of early public radio content built using Gatsby,https://github.com/umd-mith/airwaves
+"National Neighbors: Distant Viewing the National Gallery of Art's collection of collections",digital scholarship,Explorative image analysis project published on a static site with IIIF viewer,https://nga-neighbors.library.cmu.edu/
+"Shakespeare-VR",digital scholarship,Jekyll-based website to publish project videos and learing content,https://shakespeare-vr.library.cmu.edu/
