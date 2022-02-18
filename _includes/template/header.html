@@ -2,11 +2,11 @@
     <div id="site-header" class="container">
 
         {% if page.url == '/' %}
-        <h1><img class="img-fluid" src="{{ '/assets/img/lib-static-text-jm.svg' | relative_url }}" alt="{ lib-static }"></h1>
+        <h1><img class="img-fluid" src="{{ '/assets/img/lib-static-text-jm.svg' | relative_url }}" alt="{ Lib-Static }"></h1>
         {% else %}
-        <div class="h3 section-heading">
-            <a href="{{ '/' | relative_url }}" title="lib-static"><img class="img-fluid" src="{{ '/assets/img/lib-static-logo-black.svg' | relative_url }}" alt="{ lib-static }"></a>
-            <span class="ms-3"><a class="text-dark" href="{{ '/' | append: page.section | downcase | relative_url }}">{{ page.section }}</a></span>
+        <div class="section-heading">
+            <a href="{{ '/' | relative_url }}" title="lib-static"><img class="img-fluid" src="{{ '/assets/img/lib-static-logo-jm2.svg' | relative_url }}" alt="{ lib-static }"></a>
+            <span class="ms-5 h1 align-middle"><a class="text-dark" href="{{ '/' | relative_url }}{{ page.section | downcase }}/">{{ page.section | uppercase }}</a></span>
         </div>
         {% endif %}
         
@@ -16,10 +16,10 @@
 
         <div class="collapse navbar-collapse" id="navbarContent">
 
-            <ul class="navbar-nav me-auto mt-5">
+            <ul class="navbar-nav me-auto mt-5 h2">
                 {% unless page.url == '/' %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ '/' | relative_url }}"><img class="img-fluid" src="{{ '/assets/img/lib-static-text-black.svg' | relative_url }}" alt="{ lib-static }"></a>
+                    <a class="nav-link" href="{{ '/' | relative_url }}"><img class="img-fluid" src="{{ '/assets/img/lib-static-text-jm.svg' | relative_url }}" alt="{ lib-static }"></a>
                 </li>{% endunless %}
                 {% assign nav_pages = site.html_pages | where_exp: 'p','p.nav' | sort: 'nav_order' %}
                 {% for p in nav_pages %}
