@@ -3,12 +3,13 @@ layout: default
 ---
 <div class="container content-narrow mt-3 mb-5">
     <h1 >{{ page.title }}</h1>
-
-    <p class="ms-4 mb-4"><small>{% if page.contributor %}contributor: {% include contributors.html people=page.contributor %}{% endif %}{% if page.contributor and page.updated %} | {% endif %}{% if page.updated %}last update: {{ page.updated }}{% endif %}</small></p>
     
+    {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+    
+    <p class="ms-4 mb-4"><small>{% if page.contributor %}contributor: {% include contributors.html people=page.contributor %}{% endif %}{% if page.contributor and page.updated %} | {% endif %}{% if page.updated %}last update: {{ page.updated }}{% endif %}</small></p>
+
     {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}" class="img-fluid border rounded">{% endif %}
 
-    {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
-
     {{ content }}
+
 </div>
