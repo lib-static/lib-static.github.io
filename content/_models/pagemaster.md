@@ -1,6 +1,6 @@
 ---
 title: Jekyll/Pagemaster
-type: Tool
+type: Tools
 contributor: "@mnyrop"
 updated: 2021-08-04
 description: Pagemaster is a Jekyll plugin for generating a collection of markdown pages from a file of JSON, YAML, or CSV records.

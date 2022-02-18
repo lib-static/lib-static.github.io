@@ -1,6 +1,6 @@
 ---
 title: Hugo Book theme
-type: Tool
+type: Tools
 contributor: "@chrisdaaz"
 updated: 2021-08-04
 description: 'A theme for Hugo designed for books.'
