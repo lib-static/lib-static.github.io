@@ -3,7 +3,7 @@ title: lib-static
 layout: page
 permalink: /
 auto-heading: false
-foot: js/listjs.html
+foot: js/home.html
 ---
 
 <div class="h1 mb-4">{{ site.tagline }}</div>
