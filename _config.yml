@@ -56,7 +56,7 @@ collections:
     output: true
   concepts: 
     output: true
-  projects: 
+  models: 
     output: true
 
 # Defaults to simplify front matter,
@@ -83,11 +83,11 @@ defaults:
       section: "Community"
   - scope: 
       path: ""
-      type: "projects"
+      type: "models"
     values:
       layout: project
       permalink: /:collection/:name/
-      section: "Projects"
+      section: "Models"
 
 # ignore stuff
 exclude: [docs/, Rakefile, README.md, LICENSE]

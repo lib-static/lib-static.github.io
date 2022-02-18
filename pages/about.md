@@ -9,7 +9,7 @@ layout: content
 Are you Tired of learning platforms rather than skills? Frustrated with over-bloated systems? Siloed by the tools you know and the tools you don't?
 
 It might be time to explore the lib-static approach, a development methodology that leverages static web technologies and librarian skills to create engaging web publications hosted on minimal infrastructure.
-This site highlights the [projects]({{ '/projects/' | relative_url }}), [concepts]({{ '/concepts/' | relative_url }}), and [communities]({{ '/community/' | relative_url }}) that can enable lib-static projects and pathways to transform how you do *digital* in libraries.
+This site highlights the [models]({{ '/models/' | relative_url }}), [concepts]({{ '/concepts/' | relative_url }}), and [communities]({{ '/community/' | relative_url }}) that can enable lib-static projects and pathways to transform how you do *digital* in libraries.
 
 ## A Methodology
 
