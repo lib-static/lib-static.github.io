@@ -1,5 +1,17 @@
 <footer class="mt-auto border-top bg-light">
-    <div class="container my-4">
-        <p><a href="{{ '/' | relative_url }}">{{ site.title }}</a> | {{ site.description }} | {{ site.year }}</p>
+    <div class="container my-5">
+        <p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/' | relative_url }}"><img class="img-fluid" src="{{ '/assets/img/lib-static-text-jm.svg' | relative_url }}" alt="{ lib-static }"></a>
+                </li>
+                {% assign nav_pages = site.html_pages | where_exp: 'p','p.nav' | sort: 'nav_order' %}
+                {% for p in nav_pages %}
+                <li class="nav-item">
+                    <a class="nav-link text-body{% if page.url contains p.url %} text-decoration-underline active{% endif %}" {% if page.url == p.url %}aria-current="page"{% endif %} href="{{ p.url | relative_url }}">{% if p.nav == true %}{{ p.title }}{% else %}{{ p.nav }}{% endif %}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </p>
     </div>
 </footer>
