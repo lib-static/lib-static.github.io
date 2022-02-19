@@ -2,7 +2,7 @@
 title: More Examples?
 #contributor: "@evanwill"
 updated: 2021-12-03
-type: contribute
+type: community
 foot: js/examples.html
 ---
 

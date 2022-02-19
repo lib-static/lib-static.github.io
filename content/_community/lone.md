@@ -1,4 +1,5 @@
 ---
+ignore: true
 title: Go it Alone
 contributor: "@chrisdaaz"
 updated: 2021-08-04

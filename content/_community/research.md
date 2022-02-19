@@ -2,12 +2,12 @@
 title: The Literature
 #contributor: "@evanwill"
 updated: 2021-12-03
-type: contribute
+type: community
 foot: js/research.html
 ---
 
 Some curated articles highlighting Lib-Static related methods, concepts, and projects.
-And check our [Lib-Static zotero group](https://www.zotero.org/groups/4393671/lib-static) for articles and resources of interest.
+And check our [Lib-Static zotero group](https://www.zotero.org/groups/4393671/lib-static) for more articles and resources of interest.
 
 <div id="documentList">
     <div class="input-group mb-3">

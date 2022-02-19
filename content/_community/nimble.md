@@ -1,4 +1,5 @@
 ---
+ignore: true
 title: Nimble Tents
 contributor: "@elotroalex"
 updated: 2021-08-04

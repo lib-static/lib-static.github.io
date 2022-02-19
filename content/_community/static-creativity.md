@@ -1,4 +1,5 @@
 ---
+ignore: true
 title: Waking Up to Static
 contributor: "@dcnb"
 updated: 2021-08-04
