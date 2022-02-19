@@ -65,7 +65,7 @@ Browse everything:
                 <p>
                     <input type="radio" class="btn-check" name="filterRadio" id="filter-all" autocomplete="off" value="show-all" checked>
                     <label class="btn btn-outline-primary m-1" for="filter-all">All</label>
-                    {% assign types = site.documents | map: 'type' | compact | uniq %}
+                    {% assign types = site.documents | where_exp: 'i','i.ignore != true' | map: 'type' | compact | uniq %}
                     {% for t in types %}
                     <input type="radio" class="btn-check" name="filterRadio" id="filter-{{ t | slugify }}" autocomplete="off" value="{{ t }}">
                     <label class="btn btn-outline-primary m-1" for="filter-{{ t | slugify }}">{{ t }}</label>
