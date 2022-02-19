@@ -1,5 +1,5 @@
 ---
-title: Contribute to lib-static
+title: Contribute to Lib-Static
 #contributor: "@evanwill"
 updated: 2021-12-03
 type: contribute

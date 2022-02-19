@@ -1,5 +1,5 @@
 ---
-title: lib-static
+title: Lib-Static
 layout: page
 permalink: /
 auto-heading: false

@@ -65,8 +65,8 @@ https://github.com/contact/report-abuse
 ## Contact info
 
 - email: libstatic.uidaho@gmail.com
-- [lib-STATIC GitHub organization](https://github.com/lib-static)
-- [lib-STATIC home page](https://lib-static.github.io/)
+- [Lib-Static GitHub organization](https://github.com/lib-static)
+- [Lib-Static home page](https://lib-static.github.io/)
 
 ## Attribution
 

@@ -5,12 +5,12 @@ updated: 2021-08-04
 type: social stack
 ---
 
-Some libraries may have significant investment in static web methods, driven by digital teams who largely adopt lib-static type approaches. 
+Some libraries may have significant investment in static web methods, driven by digital teams who largely adopt Lib-Static type approaches. 
 This does not necessarily mean they build/rebuild *all* library digital infrastructure using static web, but that multiple librarians and other personnel understand the concepts, are interested in exploring static solutions, and regularly collaborate on implementing them.
-Libraries pursuing a lib-static approach will carefully evaluate infrastructure choices and pragmatically decide to pursue static web projects that meet their needs.
+Libraries pursuing a Lib-Static approach will carefully evaluate infrastructure choices and pragmatically decide to pursue static web projects that meet their needs.
 
 This does not mean that the library at large understands that their web approach is unique or interesting in any way, since large parts of library staff (who do not directly interact with production of web properties) will not directly experience any difference from more conventional models of development. 
-This *also* does not mean that the digital librarians are aware of or actively taking part in a secretive lib-static revolution to transform infrastructure. 
+This *also* does not mean that the digital librarians are aware of or actively taking part in a secretive Lib-Static revolution to transform infrastructure. 
 Static web methods have been in existence since the very beginning of the web (were in fact the beginning of the web), and have been adopted in many forms in many places.
 
 Recommendations:

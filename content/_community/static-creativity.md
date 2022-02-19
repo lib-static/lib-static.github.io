@@ -35,6 +35,6 @@ And the static approach, and my learning Jekyll in particular, had let me start 
 
 And, most importantly, I wasn't getting stuck any more by thoughts like "I can't do that" or "I'd need help for that" -- I had learned in building CTRL+Shift and working with my grad student collaborators, I could build some version of what we thought up. It might not be the most beautifully designed web display ever, but I could make it work, then make it better. And the ideas behind how we displayed the content were sound, and the outputs and interpretations they allowed added to our study. 
 
-So that is the reason I find this lib-STATIC approach so liberating. I don't need to wait for the Stanfords, Yales, or Googles of the world to create the application that displays the content I care about in the way I feel it wants to be displayed. I can steal code and debug issues and surf Stack Overflow until my eyes bleed and end up  cobbling something together that fits what I see. 
+So that is the reason I find this Lib-Static approach so liberating. I don't need to wait for the Stanfords, Yales, or Googles of the world to create the application that displays the content I care about in the way I feel it wants to be displayed. I can steal code and debug issues and surf Stack Overflow until my eyes bleed and end up  cobbling something together that fits what I see. 
 
-And (***and! And!***) then I can work with others to make tools and frameworks (and projects like lib-STATIC) that can help others do the same. 
+And (***and! And!***) then I can work with others to make tools and frameworks (and projects like Lib-Static) that can help others do the same. 

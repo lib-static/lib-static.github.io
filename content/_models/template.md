@@ -21,6 +21,6 @@ Tell us about the project:
 
 - What it does / description
 - Why you created it
-- How it uses lib-static approach
+- How it uses Lib-Static approach
 
 Include some examples if applicable.

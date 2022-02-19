@@ -1,4 +1,4 @@
-# lib-static website docs
+# Lib-Static website docs
 
 ## Content Collections
 
@@ -122,5 +122,5 @@ For items in "projects" the content should cover:
 
 - What the project does / description
 - Why the project was created
-- How it uses lib-static approach
+- How it uses Lib-Static approach
 - Some examples if applicable

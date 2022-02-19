@@ -9,9 +9,9 @@
 #######
 # SITE SETTINGS
 #
-title: lib-static 
+title: Lib-Static 
 tagline: "a methodology, a collection, a community"
-description: "a methodology, a collection, a community"
+description: "a methodology, a collection, a community: Lib-Static is a provocation to rethink how we do digital infrastructure in libraries to recenter our technology choices around sustainable, pragmatic, and minimal approaches."
 year: 2021
 author: evan will 
 # add search box to navbar, true/false
