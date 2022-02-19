@@ -1,12 +1,13 @@
 ---
-title: About Lib-Static
+title: Why Lib-Static
 nav: Why?
 nav_order: 1
 section: Why?
-layout: content
+layout: page
 ---
 
-Are you Tired of learning platforms rather than skills? Frustrated with over-bloated systems? Siloed by the tools you know and the tools you don't?
+Are you tired of learning platforms rather than skills? Frustrated with over-bloated systems? Siloed by the tools you know and the tools you don't?
+{:.lead}
 
 It might be time to explore the Lib-Static approach, a development methodology that leverages static web technologies and librarian skills to create engaging web publications hosted on minimal infrastructure.
 This site highlights the [models]({{ '/models/' | relative_url }}), [concepts]({{ '/concepts/' | relative_url }}), and [communities]({{ '/community/' | relative_url }}) that can enable Lib-Static projects and pathways to transform how you do *digital* in libraries.
