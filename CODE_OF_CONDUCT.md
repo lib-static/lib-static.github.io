@@ -2,9 +2,9 @@
 
 ## Our Pledge
 
-A primary goal of the Lib-STATIC community is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As community participants, we pledge to make participation in our project and community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+A primary goal of the Lib-Static community is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As community participants, we pledge to make participation in our project and community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-We invite all those who participate in the Lib-STATIC community to help us create safe and positive experiences for everyone.
+We invite all those who participate in the Lib-Static community to help us create safe and positive experiences for everyone.
 
 ## Scope
 
