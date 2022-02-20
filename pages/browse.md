@@ -8,8 +8,8 @@ Browse all site content (or you can also use [search page]({{ '/search/' | relat
 
 <div id="documentList">
     <div class="input-group mb-3">
-        <input type="text" id="listSearch" class="form-control search" aria-label="Text input to filter list" placeholder="Filter...">
-        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseListOptions" aria-expanded="false" aria-controls="collapseListOptions">options</button>
+        <input type="text" id="listSearch" class="form-control form-control-lg search" aria-label="Text input to filter list" placeholder="Filter...">
+        <button class="btn btn-lg btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseListOptions" aria-expanded="false" aria-controls="collapseListOptions">options</button>
         <div class="collapse w-100" id="collapseListOptions">
             <div class="card card-body">
                 <p>Sort by:</p>
