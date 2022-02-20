@@ -1,0 +1,18 @@
+---
+ignore: true
+title: Lib-Static Contributors
+#contributor: "@evanwill"
+updated: 2021-12-03
+type: contribute
+---
+
+{%- assign contributors = site.data.contributors | sort: 'last_name' -%}
+{%- for person in contributors -%}
+<h2>{% if person.link %}<a href="{{ person.link }}" target="_blank" rel="noopener">{{ person.first_name }} {{ person.last_name }}</a>{% else %}{{ person.first_name }} {{ person.last_name }}{% endif %}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}</h2>
+{%- assign p_id = "@" | append: person.id -%}
+{%- assign p_content = site.documents | where_exp: 'i','i.contributor contains p_id' -%}
+<ul>
+{% for c in p_content %}
+<li><a href="{{ c.url | relative_url }}">{{ c.title }}</a></li>{% endfor %}
+</ul>
+{%- endfor -%}

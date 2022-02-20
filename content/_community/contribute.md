@@ -5,16 +5,23 @@ updated: 2021-12-03
 type: contribute
 ---
 
-How to contribute to this site
+We welcome you to get involved! 
+There are many ways to contribute, from writing content to simply sharing out the site.
 
-we invite contributions via github pr or email.
-types of contributions:
+To contribute to the web site feel free to open a [GitHub Issue](https://github.com/lib-static/lib-static.github.io/issues) or Pull Request, or [get in touch via other channels]({{ '/community/contact/' | relative_url }}).
+We are always looking for:
 
-- edits and updates to content
-- new projects, tools, concepts, paths, social stacks
-- technical features
+- Edits, updates, fixes for content and listings.
+- Listings, tips, or requests for new projects, tools, and concepts.
+- Content writing, thought pieces, ideas that should be shared here.
+- New technical or artistic features.
+
+Check our [website docs](docs/lib-static-website.md) for information about the format for content. Every piece of content on the site is a Markdown stub using the same basic template.
+
+Please check our project [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Current Contributors
 
-{% for c in site.data.contributors %}
-- {{ c.first_name }} {{ c.last_name }} {% if c.github_name %}([{{ c.github_name }}](https://github.com/{{ c.github_name }})){% endif %}{% endfor %}
+{% assign people = site.data.contributors | sort: 'last_name' %}
+{% for person in people %}
+- {% if person.link %}<a href="{{ person.link }}" target="_blank" rel="noopener">{{ person.first_name }} {{ person.last_name }}</a>{% else %}{{ person.first_name }} {{ person.last_name }}{% endif %}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% endfor %}
