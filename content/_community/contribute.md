@@ -3,10 +3,8 @@ title: Contribute to Lib-Static
 #contributor: "@evanwill"
 updated: 2021-12-03
 type: contribute
+description: We welcome you to get involved! There are many ways to contribute to Lib-Static, from writing content to listing your Model to simply sharing out the site.
 ---
-
-We welcome you to get involved! 
-There are many ways to contribute, from writing content to simply sharing out the site.
 
 To contribute to the web site feel free to open a [GitHub Issue](https://github.com/lib-static/lib-static.github.io/issues) or Pull Request, or [get in touch via other channels]({{ '/community/contact/' | relative_url }}).
 We are always looking for:

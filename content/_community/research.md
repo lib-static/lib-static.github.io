@@ -4,10 +4,10 @@ title: The Literature
 updated: 2021-12-03
 type: community
 foot: js/research.html
+description: Curated articles highlighting Lib-Static related methods, concepts, and projects.
 ---
 
-Some curated articles highlighting Lib-Static related methods, concepts, and projects.
-And check our [Lib-Static zotero group](https://www.zotero.org/groups/4393671/lib-static) for more articles and resources of interest.
+Also check our [Lib-Static zotero group](https://www.zotero.org/groups/4393671/lib-static) for more articles and resources of interest.
 
 <div id="documentList">
     <div class="input-group mb-3">

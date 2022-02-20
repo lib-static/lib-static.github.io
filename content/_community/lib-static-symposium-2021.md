@@ -3,6 +3,7 @@ title: Lib-Static Symposium Sprint 2021
 contributor: "@evanwill"
 updated: 2021-09-05
 type: meetings
+description: Description of the first Lib-Static meeting bringing together six library-adjacent static web enthusiasts to conceive this project.
 ---
 
 Using a light-weight agile sprint framework, participants in this symposium met over the course of a week in August 2021 to discuss the Lib-Static concept and envision ways and websites through which we can provide resources and assistance for our DH and library colleagues who would like to use static web/minimal computing techniques to develop web projects and templates. 
