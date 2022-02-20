@@ -32,14 +32,14 @@
             <script>
                 function site_search() {
                     var query = document.getElementById("site-search").value;
-                    window.open("{{ '/search/' | relative_url }}?q=" + encodeURIComponent(query), "_self" );
+                    window.open("{{ '/browse/' | relative_url }}?search=" + encodeURIComponent(query), "_self" );
                     }
             </script>
             <form class="d-flex" onsubmit="site_search(); return false;">
                 <div class="input-group">
-                    <input id="site-search" class="form-control" type="search" placeholder="Search content..." aria-label="Search">
+                    <input id="site-search" class="form-control form-control-lg" type="search" placeholder="Search content..." aria-label="Search">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="submit">{% include icon.html icon="search" label="Submit Search" %}</button>
+                        <button class="btn btn-lg btn-outline-primary" type="submit">{% include icon.html icon="search" label="Submit Search" %}</button>
                     </div>
                 </div>
             </form>
