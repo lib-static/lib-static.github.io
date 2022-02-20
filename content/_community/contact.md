@@ -3,12 +3,13 @@ title: Get in Contact
 #contributor: "@evanwill"
 updated: 2021-12-03
 type: contribute
+description: Do you want to ask questions, discuss, or chat about Lib-Static?
 ---
 
-Do you want to ask questions, discuss, or chat about Lib-Static?
+Here are our main contact methods:
 
-`lib-static` channel on Code4Lib Slack (check [instructions on how to join](https://code4lib.org/irc/#slack)) 
+- [Lib-Static Discussions](https://github.com/lib-static/lib-static.github.io/discussions){:.btn .btn-outline-info .m-2} -- forum style posts on GitHub.
+- Email [libstatic.uidaho@gmail.com](mailto:libstatic.uidaho@gmail.com){:.btn .btn-outline-success .m-2}
+- The **Lib-Static** channel on the Code4Lib Slack -- follow [instructions on how to join Code4Lib Slack](https://code4lib.org/irc/#slack) then look for the channel and say hi!
 
-[Lib-Static gh discussions](https://github.com/lib-static/lib-static.github.io/discussions)
-
-email [libstatic.uidaho@gmail.com](mailto:libstatic.uidaho@gmail.com)
+Please check our project [Code of Conduct](CODE_OF_CONDUCT.md).
