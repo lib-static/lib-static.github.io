@@ -6,7 +6,8 @@
         {% else %}
         <div class="section-heading">
             <a href="{{ '/' | relative_url }}" title="lib-static"><img class="img-fluid" src="{{ '/assets/img/lib-static-logo-jm2.svg' | relative_url }}" alt="{ lib-static }"></a>
-            <span class="ms-5 h1 align-middle"><a class="text-dark" href="{{ '/' | relative_url }}{{ page.section | downcase }}/">{{ page.section | uppercase }}</a></span>
+            {% if page.section %}
+            <span class="ms-5 h1 align-middle"><a class="text-dark" href="{{ '/' | relative_url }}{{ page.section | downcase }}/">{{ page.section | uppercase }}</a></span>{% endif %}
         </div>
         {% endif %}
         
