@@ -14,8 +14,8 @@ image: # URL to image
 image_alt: # description of image
 ---
 
-Content about the project.
-Add what ever you want in Markdown!
+The structured data in the YAML header above will create a introduction for the entry, including the title as H1.
+Add any narrative content about the project here in Markdown.
 
 Tell us about the project:
 
