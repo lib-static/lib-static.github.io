@@ -8,7 +8,7 @@ project_link: https://formes.io/
 project_repository: https://github.com/dcnb/formes 
 project_genre: Screwing-Around; Poetry
 project_creators: "@dcnb"
-image: /images/homepage.png
+image: /images/forme.png
 image_alt: Homepage for Forme website
 ---
 
