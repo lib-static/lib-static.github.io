@@ -154,8 +154,6 @@ Here, we have modified our `default.html` template by adding a reference to the 
 
 While most Lib-Static projects revolve around static HTML, some generators let you create templates for non-HTML outputs. Pandoc, for example, uses [templates](https://pandoc.org/MANUAL.html#templates) to generate each of its [supported output formats](https://pandoc.org/). Similarly, [Hugo](https://gohugo.io/) uses templates to generate [XML sitemaps](https://gohugo.io/templates/sitemap-template/) and [RSS feeds](https://gohugo.io/templates/rss/). One could get creative with templates to generate all sorts of library-specific metadata files we might want to distribute with our web projects. 
 
-***
+-------
 
 **Further reading:** "[Introduction to Static Site Generators](https://chrisdaaz.github.io/static-web-scholcomm/tutorials/static-site-generators/)" by Chris Diaz.
-
-***

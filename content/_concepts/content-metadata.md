@@ -45,19 +45,20 @@ title: "My article"
 
 ## Introduction
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
 
 The YAML content is sandwiched between the three hyphens `---` at the beginning and end of the YAML *block*. The only YAML data we have is `title` of the article. The Markdown formatted body content of the article (i.e. the full-text) follows the second set of hyphens. 
 
 More complex projects might need to separate the YAML data from the Markdown content. This is especially helpful when trying to keep files small; it can be unpleasant to scroll through many, many lines of YAML before getting to the Markdown section of the file. In these situations, static site generators provide convensions for storing YAML data in or more more YAML files within a specific subfolder of the project. For example, Jekyll provides a [`_data`](https://jekyllrb.com/docs/datafiles/) folder for storing YAML, JSON, CSV files. Similarly, [Quire](https://quire.getty.edu/) projects use standalone YAML files for website configurations, publication metadata, and bibliographic references.
 
-***
+---------
 
 **Suggested resources:**
 
 - "[Sustainable Authorship in Plain Text using Pandoc and Markdown](https://doi.org/10.46430/phen0041)" by Dennis Tenen and Grant Wythoff in _The Programming Historian_. 
 - [Markdown Tutorial (using the CommonMark specification)](https://commonmark.org/help/tutorial/).
 - [YAML in one video](https://youtu.be/cdLNKUoMc6c)
-
-***

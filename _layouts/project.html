@@ -28,6 +28,6 @@ layout: default
 
     <hr class="mt-5">
 
-    <p><small>{% if page.contributor %}record contributor: {% include contributors.html people=page.contributor %}{% endif %}{% if page.contributor and page.updated %} | {% endif %}{% if page.updated %}last update: {{ page.updated }}{% endif %}</small></p>
+    <p class="ms-4 mb-4">{% if page.contributor %}record contributor: {% include contributors.html people=page.contributor %}{% endif %}{% if page.contributor and page.updated %}<br>{% endif %}{% if page.updated %}last update: {{ page.updated }}{% endif %}</p>
 
 </div>
