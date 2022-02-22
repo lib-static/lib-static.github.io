@@ -3,12 +3,8 @@ title: Version Control
 contributor: "@evanwill"
 updated: 2021-08-04
 type: concept
+description: Version control systems enable better collaboration, management, exploration, and understanding of static projects (and almost everyone uses Git). 
 ---
-
-***tl;dr***
-
-- version control systems enable better collaboration, management, exploration, and understanding of static projects
-- almost everyone uses Git
 
 Every project uses version control (or "source control"), whether it is a formal tool or a set of conventions loosely imagined in your head. 
 

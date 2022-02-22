@@ -3,12 +3,8 @@ title: Templating with Static Site Generators
 contributor: "@chrisdaaz"
 updated: 2021-08-04
 type: concept
+description: Creating and modifying templates is a transferable skill for using most static site generators. Templating let's you determine the form and presentation of your text content.
 ---
-
-***tl;dr***
-
-- Creating and modifying templates is a transferable skill for using most static site generators
-- Templating let's you determine the form and presentation of your text content
 
 Static site generators use templates to format the text we publish on our websites. While the templating syntax may differ depending on which generator you're using, the idea behind the workflow is the same: you're making decisions about _how_ the content will be structured.
 
