@@ -3,7 +3,7 @@ ignore: true
 title: Nimble Tents
 contributor: "@elotroalex"
 updated: 2021-08-04
-type: social stack
+type: Social Stacks
 ---
 
 Life in the anthropocene seems to be marked by an endless series of crises.

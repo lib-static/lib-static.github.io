@@ -3,7 +3,7 @@ ignore: true
 title: Digital Humanities Center
 contributor: "@owikle"
 updated: 2021-08-04
-type: social stack
+type: Social Stacks
 ---
 
 ## Potential roles (vary from institution to institution):

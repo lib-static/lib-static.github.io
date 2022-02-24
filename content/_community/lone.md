@@ -3,7 +3,7 @@ ignore: true
 title: Go it Alone
 contributor: "@chrisdaaz"
 updated: 2021-08-04
-type: social stack
+type: Social Stacks
 ---
 
 You are the Digital something at your library. 

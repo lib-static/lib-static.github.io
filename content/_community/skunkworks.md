@@ -3,7 +3,7 @@ ignore: true
 title: Skunkworks
 contributor: "@mnyrop"
 updated: 2021-08-04
-type: social stack
+type: Social Stacks
 ---
 
 Description

@@ -2,7 +2,7 @@
 title: The Literature
 #contributor: "@evanwill"
 updated: 2021-12-03
-type: community
+type: Community
 foot: js/research.html
 description: Curated articles highlighting Lib-Static related methods, concepts, and projects.
 ---

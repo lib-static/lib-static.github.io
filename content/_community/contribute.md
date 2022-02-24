@@ -2,7 +2,7 @@
 title: Contribute to Lib-Static
 #contributor: "@evanwill"
 updated: 2021-12-03
-type: contribute
+type: Contribute
 description: We welcome you to get involved! There are many ways to contribute to Lib-Static, from writing content to listing your Model to simply sharing out the site.
 ---
 

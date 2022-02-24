@@ -2,7 +2,7 @@
 title: Libraries, Frameworks, and Toolkits
 contributor: "@evanwill"
 updated: 2021-08-04
-type: concept
+type: Concepts
 ---
 
 CSS and JS

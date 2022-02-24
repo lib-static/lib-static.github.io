@@ -2,7 +2,7 @@
 title: Version Control
 contributor: "@evanwill"
 updated: 2021-08-04
-type: concept
+type: Concepts
 description: Version control systems enable better collaboration, management, exploration, and understanding of static projects (and almost everyone uses Git). 
 ---
 

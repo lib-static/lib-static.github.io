@@ -2,7 +2,7 @@
 title: Thinking Through Data
 contributor: "@dcnb"
 updated: 2021-08-04
-type: concept
+type: Concepts
 ---
 
 ***tl;dr***

@@ -2,7 +2,7 @@
 title: Lib-Static Symposium Sprint 2021
 contributor: "@evanwill"
 updated: 2021-09-05
-type: meetings
+type: Meetings
 description: Description of the first Lib-Static meeting bringing together six library-adjacent static web enthusiasts to conceive this project.
 ---
 

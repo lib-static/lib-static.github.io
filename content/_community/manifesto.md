@@ -2,7 +2,7 @@
 title: Original Lib-Static "Manifesto"
 #contributor: "@evanwill"
 updated: 2018
-type: contribute
+type: Contribute
 ---
 
 **methodology in progress!**

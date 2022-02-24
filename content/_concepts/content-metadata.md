@@ -2,7 +2,7 @@
 title: "Content and Metadata"
 contributor: "@chrisdaaz"
 updated: 2021-08-04
-type: concept
+type: Concepts
 ---
 
 Lib-static projects use [plain text](/concepts/plaintext/), human-readable documents for content and metadata. Static site generators can consume and format these documents --to HTML, JSON, PDF, etc.-- however we like; but more importantly, plain text read with any text editor on just about any machine, now and in the future.

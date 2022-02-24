@@ -2,7 +2,7 @@
 title: Publication and Preservation
 contributor: "@owikle"
 updated: 2021-08-04
-type: concept
+type: Concepts
 ---
 
 ### Publication

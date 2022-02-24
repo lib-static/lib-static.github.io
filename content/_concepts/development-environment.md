@@ -2,7 +2,7 @@
 title: Development Environment
 contributor: "@evanwill"
 updated: 2021-08-04
-type: concept
+type: Concepts
 ---
 
 The software, tools, and workflows necessary to work on your project.

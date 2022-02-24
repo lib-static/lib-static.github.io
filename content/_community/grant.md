@@ -3,7 +3,7 @@ ignore: true
 title: Grant Funded Project
 contributor: "@dcnb"
 updated: 2021-08-04
-type: social stack
+type: Social Stacks
 ---
 
 Common stack: 1 lead (PI), Primary collaborators (typically librarians, faculty members), Hired assistants (often students), Financial tech, Research Office, Grant Advisors, Incentivized partners and collaborators, Hired Developers

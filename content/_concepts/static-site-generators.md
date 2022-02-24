@@ -2,7 +2,7 @@
 title: Static Site Generators
 contributor: "@evanwill"
 updated: 2021-08-04
-type: concept
+type: Concepts
 ---
 
 what is it

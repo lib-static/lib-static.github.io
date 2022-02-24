@@ -2,7 +2,7 @@
 title: Get in Contact
 #contributor: "@evanwill"
 updated: 2021-12-03
-type: contribute
+type: Contribute
 description: Do you want to ask questions, discuss, or chat about Lib-Static?
 ---
 

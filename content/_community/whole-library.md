@@ -3,7 +3,7 @@ ignore: true
 title: Whole Library 
 contributor: "@evanwill"
 updated: 2021-08-04
-type: social stack
+type: Social Stacks
 ---
 
 Some libraries may have significant investment in static web methods, driven by digital teams who largely adopt Lib-Static type approaches. 

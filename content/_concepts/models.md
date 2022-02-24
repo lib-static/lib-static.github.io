@@ -2,7 +2,7 @@
 title: Models For and Models Of
 contributor: "@dcnb"
 updated: 2021-08-04
-type: concept
+type: Concepts
 ---
 
 Models For and Models Of?

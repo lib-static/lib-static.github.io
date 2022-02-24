@@ -2,7 +2,7 @@
 title: Leveraging Computation
 contributor: "@elotroalex"
 updated: 2021-08-04
-type: concept
+type: Concepts
 ---
 
 Part of what makes static web frameworks powerful is the access to project files at all levels. Besides being able to more easily change the look or structure of the pages on your project, you can usually add automation or *computation* with fewer obstacles.

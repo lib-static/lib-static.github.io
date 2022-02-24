@@ -3,7 +3,7 @@ ignore: true
 title: Waking Up to Static
 contributor: "@dcnb"
 updated: 2021-08-04
-type: pathways
+type: Pathways
 ---
 
 I was sleeping in the basement guest room. We had a baby. He'd been sick that summer. My wife was kind to me the night before; she said, "go sleep in the basement and catch up." 
