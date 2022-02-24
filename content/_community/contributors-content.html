@@ -4,6 +4,7 @@ title: Lib-Static Contributors
 #contributor: "@evanwill"
 updated: 2021-12-03
 type: contribute
+description: List of all content by contributor.
 ---
 
 {%- assign contributors = site.data.contributors | sort: 'last_name' -%}
@@ -13,6 +14,6 @@ type: contribute
 {%- assign p_content = site.documents | where_exp: 'i','i.contributor contains p_id' -%}
 <ul>
 {% for c in p_content %}
-<li><a href="{{ c.url | relative_url }}">{{ c.title }}</a></li>{% endfor %}
+<li><a href="{{ c.url | relative_url }}">{{ c.title }}</a> [{{ c.type }}, {{ c.updated }}]</li>{% endfor %}
 </ul>
 {%- endfor -%}
