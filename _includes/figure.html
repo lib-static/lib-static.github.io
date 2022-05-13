@@ -9,6 +9,6 @@
 
 {% endcomment %}
 <figure class="figure d-block text-center p-3">
-    <img src="{% if include.img contains '//' %}{{ include.img }}{% else %}{{ include.img | prepend: '/images/' | relative_url }}{% endif %}" alt="{{ include.alt }}" {% if include.width %}style="width:{{ include.width }};" {% endif %}class="figure-img img-fluid rounded">
+    {% if include.link %}<a href="{{include.link}}" target="_blank">{% endif %}<img src="{% if include.img contains '//' %}{{ include.img }}{% else %}{{ include.img | prepend: '/images/' | relative_url }}{% endif %}" alt="{{ include.alt }}" {% if include.width %}style="width:{{ include.width }};" {% endif %}class="figure-img img-fluid rounded">{% if include.link %}</a>{% endif %}
     {% if include.caption %}<figcaption class="figure-caption">{{ include.caption | markdownify }}</figcaption>{% endif %}
 </figure>

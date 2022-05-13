@@ -12,8 +12,10 @@ Siloed by the tools you know and the tools you don't?
 {:.lead}
 
 It might be time to explore the Lib-Static approach, a development methodology that leverages static web technologies and librarian skills to create engaging web publications hosted on minimal infrastructure.
+
 This site highlights the [Models]({{ '/models/' | relative_url }}){:.btn .btn-outline-danger}, [Concepts]({{ '/concepts/' | relative_url }}){:.btn .btn-outline-primary}, and [Communities]({{ '/community/' | relative_url }}){:.btn .btn-outline-success} that can enable Lib-Static projects and pathways to transform how you do **_digital_** in libraries, sharing viable static web solutions for infrastructure problems of all sizes.
 
+{:.mt-4 .mb-3}
 ## Why?
 
 Many of us started on a static web approach because we were **frustrated** with the library systems we used daily.
@@ -23,6 +25,7 @@ Our time was consumed with maintaining complex system overhead, rather than on c
 
 We started to see that there were ways to build these systems and tools that could reverse these opportunity costs, leveraging and building the skills of librarians and cultural heritage workers to put the unique resources and values of the institution at the forefront of project design decisions. 
 
+{:.mt-4 .mb-3}
 ## A Methodology
 
 Informed by the philosophy of minimal computing, the Lib-Static methodology centers digital infrastructure approaches around the unique needs, values, and opportunities of libraries and other GLAM organizations.

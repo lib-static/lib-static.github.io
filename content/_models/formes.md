@@ -14,7 +14,5 @@ image_alt: Homepage for Forme website
 
 Jekyll; Ruby; JavaScript; JSON
 
-- filelocation: /images/dickinson-build.png # filename for image, including url, or extension and folder of this repository (i.e. '/images/picture.jpg')
-  caption: A forme with generated lines from Emily Dickinson poems # caption for image
-- filelocation: /images/easterwings.png # filename for image, including url, or extension and folder of this repository (i.e. '/images/picture.jpg')
-  caption: A forme of George Herbert's Easter Wings # caption for image
+{% include figure.html img='dickinson-build.png' alt='A forme with generated lines from Emily Dickinson poems' caption='A forme with generated lines from Emily Dickinson' link="https://formes.io/builds/formes/dickinson.html" %}
+{% include figure.html img='easterwings.png' alt="A forme of George Herbert's Easter Wings # caption for image" caption="A forme of George Herbert's Easter Wings # caption for image" link="https://formes.io/formes/easterwings.html" %}
