@@ -8,8 +8,8 @@ project_repository: https://github.com/programminghistorian
 project_genre: Digital Publishing; OER
 description: "Publication featuring peer-reviewed tutorials that teach digital tools, techniques, and workflows to facilitate humanities research and teaching." 
 project_creators:
-image: https://programminghistorian.org/images/logos/ph-en.svg 
-image_alt: programming historian logo
+image: https://programminghistorian.org/images/about.png
+image_alt: programming historian image of women at mechanical computer
 ---
 
 Programming Historian publishes peer-reviewed tutorials that teach digital tools, techniques, and workflows to facilitate humanities research and teaching. 
