@@ -28,17 +28,6 @@ We started to see that there were ways to build these systems and tools that cou
 {:.mt-4 .mb-3}
 ## A Methodology
 
-Informed by the philosophy of minimal computing, the **Lib-Static methodology** centers digital infrastructure approaches around the unique needs, values, and opportunities of libraries and other GLAM organizations.
-Simply stated, Lib-Static approaches seek to apply the techniques of the modern static web to solve problems in the digital library ecosystem.
-{:.lead}
-
-It differs greatly from the predominant model for platform and tool building for libraries as it does not require complex infrastructure nor extensive IT staffing (or 3rd party vendors) to implement and maintain the systems put into use. 
-Instead, the Lib-Static approach focuses on practical, sustainable workflows using data-driven static web templates hosted on simplified infrastructure while leveraging (and building) the inhouse specialized skills of librarians in metadata, data, and organization.
-
-This provides librarians unique agency and ownership over their systems, as well as meaningful opportunities for professional development leading to fundamental digital skills. 
-The shift towards a focus on clean data and simple systems enables a more agile and responsive approach, allowing the iterative development of features, gradual acquisition of developer skills, and flexible migration between hosts without the need for deep investment.
-
-Lib-Static methodology gives libraries and cultural institutions the framework within which to develop and use tools that actually embody their principles by removing the overwrought features and extensive infrastructure requirements that permeate many of the library systems currently used and developed.
 
 <table class="table table-bordered align-middle border-primary my-5">
     <tr>
@@ -75,9 +64,14 @@ Lib-Static methodology gives libraries and cultural institutions the framework w
 
 {:.mt-4 .mb-3}
 ## Static Web Opportunities
+Informed by the philosophy of minimal computing, the Lib-Static methodology centers digital infrastructure approaches around the unique needs, values, and opportunities of libraries and other GLAM organizations.
+Simply stated, Lib-Static approaches seek to apply the techniques of the modern static web to solve problems in the digital library/digital scholarship ecosystem. 
 
-Since around 2015 static site generators and the "JAM Stack" approach have exploded in the web development landscape--utilizing simplified markup, plain text data files, and web APIs to create complete websites without the need for complex server-side software, databases, or content management systems. 
-Rather than a relying on server-side processing to generate a dynamic page on the fly for each user request, static web tools "pre-render" every page into HTML, CSS, and JS files that can be delivered directly to users with high performance, efficiency, and security from the most basic web servers or services. 
+The Lib-Static approach focuses on practical, sustainable workflows using data-driven static web templates hosted on simplified infrastructure while leveraging (and building) the inhouse specialized skills of librarians in metadata, data, and organization. This provides librarians unique agency and ownership over their systems, as well as meaningful opportunities for professional development leading to fundamental digital skills. 
+
+## Static Web in Context
+
+Since around 2015 static site generators and the ["JAM Stack"](https://jamstack.wtf/) approach have exploded in the web development landscape--utilizing simplified markup, plain text data files, and web APIs to create complete websites without the need for complex server-side software, databases, or content management systems. Rather than a relying on server-side processing to generate a dynamic page on the fly for each user request, static web tools "pre-render" every page into HTML, CSS, and JS files that can be delivered directly to users with high performance, efficiency, and security from the most basic web servers or services. 
 The modern static web approach provides high performance for users, minimal infrastructure requirements for IT, and lower barriers for developers. 
 
 The simplified infrastructure and development environment of static web approaches are uniquely suited to enable:
@@ -88,5 +82,11 @@ The simplified infrastructure and development environment of static web approach
 - A focus on modular components, templates, and recipes that encourage learning investment on one project leading to efficiencies on another, building complementary work that powers further research and learning.
 - Public documentation and sharing, making investment more reusable while creating artifacts of learning alongside research and publications.
 
+## It Ain't Perfect
+
 We recognize that there will be learning curves and frustrations in the development and use of any system, regardless of its underlying methodology. 
 Lib-Static acknowledges that all digital projects require investment in learning and seeks to maximize the local impact and value of learning during the process, while establishing technical solutions and social workflows that more closely match the structure of library work cycles and needs. 
+
+Things will still break. You may still have the urge to pull out your eyebrows while learning the Lib-Static approach. 
+
+***But for us, the Lib-Static community, there's something powerful to this approach, and we wanted to share with any of you that might be interested***

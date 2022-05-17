@@ -3,6 +3,7 @@ title: Waking Up to Static
 contributor: "@dcnb"
 updated: 2021-08-04
 type: Pathways
+subtitle: Sleep deprivation and way too many hours working spreadsheets leads to an information visualization breakthrough
 ---
 
 I was sleeping in the basement guest room. We had a baby. He'd been sick that summer. My wife was kind to me the night before; she said, "go sleep in the basement and catch up." 
