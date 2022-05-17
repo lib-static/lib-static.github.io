@@ -1,0 +1,132 @@
+<script src="{{ '/assets/lib/list.min.js' | relative_url }}"></script>
+<script>
+    /* Fisher-Yates shuffle https://bost.ocks.org/mike/shuffle/ */
+    function shuffle(array) {
+        var m = array.length, t, i;
+        while (m) {
+            i = Math.floor(Math.random() * m--);
+            t = array[m];
+            array[m] = array[i];
+            array[i] = t;
+        }
+        return array;
+    }
+    // add items
+    var listDocs = [
+        {% assign listDocs = site.documents | where_exp: 'i','i.ignore != true' %}
+        {% for i in listDocs %}
+        { 
+            {% if i.image %}listImg: "{{ i.image | relative_url }}", listImgAlt: "{{ i.image_alt }}",{% endif %}
+            listLink: "{{ i.url | relative_url }}", 
+            listTitle: {{ i.title | jsonify }}, 
+            listType: "{{ i.type }}", 
+            {% if i.project_genre %}listGenre: "{{ i.project_genre }}",{% endif %}
+            listText: {{ i.description | default: i.content | strip_html | truncatewords: 25 | jsonify }} 
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+    // shuffle items
+    shuffle(listDocs);
+
+    // setup list.js options and item template
+    var listOptions = {
+        valueNames: [ 
+            'listTitle',
+            'listType',
+            'listGenre',
+            'listText'
+        ],
+        item: function(values) {
+            //contribute social stack meetings pathways concept Models Of Models For Tool
+            var borderColor = "";
+            var cardImg = "";
+            var cardGenre = "";
+            switch (values.listType) {
+                case "contribute":
+                    borderColor = "border-success";
+                    break;
+                case "concept":
+                    borderColor = "border-primary";
+                    break;
+                case "Models Of":
+                    borderColor = "border-danger";
+                    break;
+                case "Models For":
+                    borderColor = "border-warning";
+                    break;
+                case "Tool":
+                    borderColor = "border-info";
+                    break;
+                default:
+                    borderColor = "";
+            }
+            if(values.listImg) {
+                cardImg = `<p class="text-center"><img src="${values.listImg}" class="img-fluid list-img" alt="${values.listImgAlt}"></p>`;
+            } 
+            if(values.listGenre) { 
+                cardGenre = ` : ${values.listGenre.split(";").join(" ;")}`;
+            } 
+            var card = `<div class="col">
+                <div class="card mb-3 ${borderColor}">
+                    <div class="card-body">
+                        <h3 class="card-title"><a class="listTitle" href="${values.listLink}">${values.listTitle}</a></h3>
+                        <p class="card-text"><strong class="listType">${values.listType}</strong> ${cardGenre}</p>${cardImg}
+                        <p class="card-text"><span class="listText">${values.listText}</span></p>
+                    </div>
+                </div>
+            </div>`;
+            return card;
+        }
+
+    };
+    // init list.js
+    var documentList = new List('documentList', listOptions, listDocs);
+
+    // setup filter function
+    function filterByType() {
+        var filterType = document.querySelector('input[name="filterRadio"]:checked').value;
+        if (filterType == "show-all") {
+            documentList.filter();
+        } else {
+            documentList.filter(function(item) { 
+                if (item.values().listType == filterType) { return true; } else { return false } 
+            });
+        }
+    }
+    // add filters to radio
+    var filterRadios = document.querySelectorAll('input[name="filterRadio"]');
+    filterRadios.forEach(radio => radio.addEventListener('click', filterByType));
+    
+    // add random shuffle
+    function shuffleList() {
+        shuffle(listDocs);
+        documentList.filter();
+        documentList.clear();
+        documentList.add(listDocs);
+        filterByType();
+    }
+    var shuffleListBtn = document.getElementById("list_shuffle");
+    shuffleListBtn.addEventListener("click", shuffleList);
+
+    /* get query string */
+    document.addEventListener('DOMContentLoaded', function(event) {
+        var queryString = new URLSearchParams(window.location.search);
+        // ?sort=
+        if (queryString.has("sort") && document.getElementById(queryString.get("sort"))) { 
+            document.getElementById(queryString.get("sort")).click();
+        }
+        // ?filter=
+        if (queryString.has("filter") && document.getElementById(queryString.get("filter"))) { 
+            document.getElementById(queryString.get("filter")).click();
+            filterByType();
+        }
+        // ?search=
+        if (queryString.has("search")) { 
+            var searchOption = queryString.get("search");
+            document.getElementById("listSearch").value = searchOption;
+            documentList.search(searchOption);
+        }
+
+    });
+
+</script>

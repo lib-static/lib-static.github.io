@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Language" content="en-us" >
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+{% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}
+<!--
+    __    ________       ______________  ________________
+   / /   /  _/ __ )     / ___/_  __/   |/_  __/  _/ ____/
+  / /    / // __  |_____\__ \ / / / /| | / /  / // /     
+ / /____/ // /_/ /_____/__/ // / / ___ |/ / _/ // /___   
+/_____/___/_____/     /____//_/ /_/  |_/_/ /___/\____/   
+                                                         
+lib-static https://github.com/lib-static
+-->
+<meta name="generator" content="thecdil/bootstrap5-template">
+<link rel="shortcut icon" href="{{ '/assets/img/lib-static-logo-black.svg' | absolute_url }}">
+
+<link rel="stylesheet" href="{{ '/assets/lib/bootstrap.min.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" type="text/css">
+
+{% if site.noindex == true or page.noindex == true %}<meta name="robots" content="noindex">{% endif %}
+{% include template/analytics.html %}
+<!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->

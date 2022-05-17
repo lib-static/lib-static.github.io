@@ -1,0 +1,50 @@
+<nav class="navbar navbar-light bg-white">
+    <div id="site-header" class="container">
+
+        {% if page.url == '/' %}
+        <h1><img class="img-fluid" src="{{ '/assets/img/lib-static-text-jm.svg' | relative_url }}" alt="{ Lib-Static }"></h1>
+        {% else %}
+        <div class="section-heading">
+            <a href="{{ '/' | relative_url }}" title="lib-static"><img class="img-fluid" src="{{ '/assets/img/lib-static-logo-jm2.svg' | relative_url }}" alt="{ lib-static }"></a>
+            {% if page.section %}
+            <span class="ms-5 h1 align-middle"><a class="text-dark" href="{{ '/' | relative_url }}{{ page.section | downcase }}/">{{ page.section | uppercase }}</a></span>{% endif %}
+        </div>
+        {% endif %}
+        
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+            <ul class="navbar-nav me-auto mt-5 h2">
+                {% unless page.url == '/' %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/' | relative_url }}"><img class="img-fluid" src="{{ '/assets/img/lib-static-text-jm.svg' | relative_url }}" alt="{ lib-static }"></a>
+                </li>{% endunless %}
+                {% assign nav_pages = site.html_pages | where_exp: 'p','p.nav' | sort: 'nav_order' %}
+                {% for p in nav_pages %}
+                <li class="nav-item">
+                    <a class="nav-link{% if page.url contains p.url %} active{% endif %}{% if p.section-color %} text-{{ p.section-color }}{% endif %}" {% if page.url == p.url %}aria-current="page"{% endif %} href="{{ p.url | relative_url }}">{% if p.nav == true %}{{ p.title }}{% else %}{{ p.nav }}{% endif %}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% if site.search == true %}
+            <script>
+                function site_search() {
+                    var query = document.getElementById("site-search").value;
+                    window.open("{{ '/browse/' | relative_url }}?search=" + encodeURIComponent(query), "_self" );
+                    }
+            </script>
+            <form class="d-flex" onsubmit="site_search(); return false;">
+                <div class="input-group">
+                    <input id="site-search" class="form-control form-control-lg" type="search" placeholder="Search content..." aria-label="Search">
+                    <button class="btn btn-lg btn-outline-primary" type="submit">{% include icon.html icon="search" label="Submit Search" %}</button>
+                </div>
+            </form>
+            {% endif %}
+
+            <hr>
+        </div>
+    </div>
+</nav>

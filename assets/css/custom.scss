@@ -1,16 +1,36 @@
 ---
 # front matter
 ---
-@charset "utf-8";
 
-// base variables
+// Tweak body text and link color
+$text-color: #111 !default;
+$link-color: #2271B2 !default;
+$base-font-size: 1.1rem;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #B06048;
+// limit container size to make reading easier
+$container-max: 950px;
+$container-narrow: 740px;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+/* color theming */
+{% assign btns = site.data.config-theme-colors | where_exp: "item","item.color != nil" %}
+{% if btns != empty %}
+{% for btn in btns %}
+{% assign color = btn.color | strip %}{% if color != empty %}
+${{ btn.color_class | slugify }}: {{ color }};{% endif %}
+{% endfor %}
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    {% for btn in btns %}{% assign color = btn.color | strip %}{% if color != empty %}
+    "{{ btn.color_class | slugify }}": ${{ btn.color_class | slugify }}{% unless forloop.last %},{% endunless %}
+    {% endif %}{% endfor %}
+  ),
+  $theme-colors
+);
+@import "theme-colors", "theme-utilities";
+{% endif %}
 
-@import "custom";
+// Import partials.
+@import
+  "template", "custom"
+;

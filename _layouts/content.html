@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="container content-narrow mt-3 mb-5">
+    {% if page.type == 'Pathways'%}{% include jumbotron.html heading=page.title  text=page.subtitle %}
+    {% if page.contributor %}<p class="text-end fs-italic">by {% include contributors.html people=page.contributor %}{% endif %}
+    {% else %}<h1>{{ page.title }}</h1>{% endif %}
+    
+    {% if page.description %}<p class="lead my-4">{{ page.description }}</p>{% endif %}
+
+    {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}" class="img-fluid border rounded">{% endif %}
+
+    {{ content }}
+
+    <hr class="mt-5">
+
+    <p class="ms-4 mb-4">{% if page.contributor %}contributor: {% include contributors.html people=page.contributor %}{% endif %}{% if page.contributor and page.updated %}<br>{% endif %}{% if page.updated %}last update: {{ page.updated }}{% endif %}</p>
+
+</div>

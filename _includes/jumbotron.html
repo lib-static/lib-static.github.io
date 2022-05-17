@@ -1,0 +1,22 @@
+{% comment %}
+
+    Bootstrap Jumbotron, https://getbootstrap.com/docs/5.1/examples/jumbotron/
+    
+    Options:
+    - "heading" = large text on the jumbotron
+    - "text" = [optional] paragraph text on the jumbotron
+    - "button-text" = [optional] text to add button below paragraph 
+    - "button-link" = [optional] button link, full URL
+    - "button-color" = [optional] a bootstrap color (primary, secondary, success, danger, warning, info, light, dark, link), or outline color (outline-primary, outline-secondary, outline-success, outline-danger, outline-warning, outline-info, outline-light, outline-dark)
+    - "text-color" = [optional] set text color using bootstrap color (primary, secondary, success, danger, warning, info, light, dark, body, muted, white)
+    - "bg" = [optional] set background color using bootstrap color (primary, secondary, success, danger, warning, info, light, dark, body, white)
+    - "border" = [optional] to add border use true 
+
+{%- endcomment -%}
+<div class="p-5 mb-4 bg-{{ include.bg | default: 'light' }} rounded-3{% if include.border %} border{% endif %}">
+    <div class="container-fluid py-5{% if include.text-color %} text-{{ include.text-color }}{% endif %}">
+        {% if include.heading %}<h1 class="display-5 fw-bold">{{ include.heading }}</h1>{% endif %}
+        {% if include.text %}<p class="col-md-8 fs-4">{{ include.text | markdownify }}</p>{% endif %}
+        {% if include.button-text %}<a class="btn btn-{{ include.button-color | default: 'primary' }} btn-lg" href="{{ include.button-link | relative_url }}">{{ include.button-text }}</a>{% endif %}
+    </div>
+</div>
