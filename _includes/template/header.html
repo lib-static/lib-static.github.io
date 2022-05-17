@@ -25,7 +25,7 @@
                 {% assign nav_pages = site.html_pages | where_exp: 'p','p.nav' | sort: 'nav_order' %}
                 {% for p in nav_pages %}
                 <li class="nav-item">
-                    <a class="nav-link{% if page.url contains p.url %} active{% endif %}" {% if page.url == p.url %}aria-current="page"{% endif %} href="{{ p.url | relative_url }}">{% if p.nav == true %}{{ p.title }}{% else %}{{ p.nav }}{% endif %}</a>
+                    <a class="nav-link{% if page.url contains p.url %} active{% endif %}{% if p.section-color %} text-{{ p.section-color }}{% endif %}" {% if page.url == p.url %}aria-current="page"{% endif %} href="{{ p.url | relative_url }}">{% if p.nav == true %}{{ p.title }}{% else %}{{ p.nav }}{% endif %}</a>
                 </li>
                 {% endfor %}
             </ul>
