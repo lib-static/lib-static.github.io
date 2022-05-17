@@ -20,7 +20,7 @@ layout: default
 
     {% if page.project_creators %}<p>People: {% include contributors.html people=page.project_creators %}</p>{% endif %}
 
-    {% if page.image %}<p><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}" class="img-fluid border rounded m-3"></p>{% endif %}
+    {% if page.image %}<p class="text-center"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}" class="img-fluid border rounded"></p>{% endif %}
 
     <h2>About {{ page.title }}</h2>
     
