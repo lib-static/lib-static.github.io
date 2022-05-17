@@ -28,24 +28,23 @@ We started to see that there were ways to build these systems and tools that cou
 {:.mt-4 .mb-3}
 ## A Methodology
 
-
-<table class="table table-bordered align-middle border-primary my-5">
+<table class="table table-bordered align-middle border-info my-5">
     <tr>
-        <td class="text-center h4">Open</td>
+        <td class="text-center h3">Open</td>
         <td><ul class="my-2">
             <li>open data / data driven</li>
             <li>open source / collaborative development</li>
         </ul></td>
     </tr>
     <tr>
-        <td class="text-center h4">Simple(ish)</td>
+        <td class="text-center h3">Simple(ish)</td>
         <td><ul class="my-2">
             <li>minimal infrastructure requirements (less IT)</li>
             <li>lower barriers to development</li>
         </ul></td>
     </tr>
     <tr>
-        <td class="text-center h4">Librar* Optimized</td>
+        <td class="text-center h3">Librar* Optimized</td>
         <td><ul class="my-2">
             <li>full control over content and data (no 3rd parties)</li>
             <li>leverage / build librarian skills</li>
@@ -53,7 +52,7 @@ We started to see that there were ways to build these systems and tools that cou
         </ul></td>
     </tr>
     <tr>
-        <td class="text-center h4">User Focused</td>
+        <td class="text-center h3">User Focused</td>
         <td><ul class="my-2">
             <li>simple standards based HTML = useability, accessibility</li>
             <li>engaging design and user interaction</li>
@@ -64,6 +63,7 @@ We started to see that there were ways to build these systems and tools that cou
 
 {:.mt-4 .mb-3}
 ## Static Web Opportunities
+
 Informed by the philosophy of minimal computing, the Lib-Static methodology centers digital infrastructure approaches around the unique needs, values, and opportunities of libraries and other GLAM organizations.
 Simply stated, Lib-Static approaches seek to apply the techniques of the modern static web to solve problems in the digital library/digital scholarship ecosystem. 
 
@@ -71,7 +71,9 @@ The Lib-Static approach focuses on practical, sustainable workflows using data-d
 
 ## Static Web in Context
 
-Since around 2015 static site generators and the ["JAM Stack"](https://jamstack.wtf/) approach have exploded in the web development landscape--utilizing simplified markup, plain text data files, and web APIs to create complete websites without the need for complex server-side software, databases, or content management systems. Rather than a relying on server-side processing to generate a dynamic page on the fly for each user request, static web tools "pre-render" every page into HTML, CSS, and JS files that can be delivered directly to users with high performance, efficiency, and security from the most basic web servers or services. 
+Since around 2015 static site generators and the ["JAM Stack"](https://jamstack.wtf/) approach have exploded in the web development landscape--utilizing simplified markup, plain text data files, and web APIs to create complete websites without the need for complex server-side software, databases, or content management systems. 
+
+Rather than a relying on server-side processing to generate a dynamic page on the fly for each user request, static web tools "pre-render" every page into HTML, CSS, and JS files that can be delivered directly to users with high performance, efficiency, and security from the most basic web servers or services. 
 The modern static web approach provides high performance for users, minimal infrastructure requirements for IT, and lower barriers for developers. 
 
 The simplified infrastructure and development environment of static web approaches are uniquely suited to enable:
@@ -87,6 +89,7 @@ The simplified infrastructure and development environment of static web approach
 We recognize that there will be learning curves and frustrations in the development and use of any system, regardless of its underlying methodology. 
 Lib-Static acknowledges that all digital projects require investment in learning and seeks to maximize the local impact and value of learning during the process, while establishing technical solutions and social workflows that more closely match the structure of library work cycles and needs. 
 
-Things will still break. You may still have the urge to pull out your eyebrows while learning the Lib-Static approach. 
+Things will still break. 
+You may still have the urge to pound your head on the monitor while learning the Lib-Static approach. 
 
-***But for us, the Lib-Static community, there's something powerful to this approach, and we wanted to share with any of you that might be interested***
+**_But for us, the Lib-Static community, there's something powerful to this approach, and we wanted to share with any of you that might be interested_**
