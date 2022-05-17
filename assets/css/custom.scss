@@ -9,6 +9,7 @@ $base-font-size: 1.1rem;
 
 // limit container size to make reading easier
 $container-max: 950px;
+$container-narrow: 740px;
 
 /* color theming */
 {% assign btns = site.data.config-theme-colors | where_exp: "item","item.color != nil" %}
