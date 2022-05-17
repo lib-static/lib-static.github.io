@@ -2,7 +2,7 @@
 
 ## Content Collections
 
-Most content on the site is Markdown stubs in [Jekyll collections](https://jekyllrb.com/docs/collections/).
+Most content on the site is generated from Markdown stubs in [Jekyll collections](https://jekyllrb.com/docs/collections/).
 These are grouped in the folder "content".
 Inside are three collections:
 
