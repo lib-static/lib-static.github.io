@@ -1,5 +1,8 @@
 # Lib-Static website docs
 
+You can contribute by creating or editing content on the site. 
+These notes provide the guidelines for how the markdown stubs are transformed into pages on the website.
+
 ## Content Collections
 
 Most content on the site is generated from Markdown stubs in [Jekyll collections](https://jekyllrb.com/docs/collections/).
@@ -108,7 +111,9 @@ Contributors that are not `@` mentioned are treated as plain text, so you can op
 A general type of the project.
 Preferably choose from these options:
 
-Digital Collection; Digital Exhibit; Institutional Repository; Research Guide; Qualitative Data Analysis; Oral History; Library Website; Critical Edition; OER; Screwing-Around; Utility
+Digital Collection; Digital Exhibit; Digital Publishing; Institutional Repository; Research Guide; Qualitative Data Analysis; Oral History; Library Website; Critical Edition; OER; Screwing-Around; Utility
+
+Separate multiple genre using a semicolon `;`.
 
 #### image (optional)
 

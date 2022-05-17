@@ -1,20 +1,20 @@
 # Lib-Static
 
-> **methodology in progress!**
+<https://lib-static.github.io/>
 
-See [CollectionBuilder](https://collectionbuilder.github.io/) and [Oral History as Data](https://github.com/uidaholib/oral-history-as-data) for our works in progress.
-
-Lib-Static is a minimal computing-based approach to creating data-driven tools leveraging static-web technologies (enabled by generators such as Jekyll and a "JAM" stack approach) and librarians’ specialized skills in metadata and classification to create engaging web publications via three components: a spreadsheet with well-formed metadata, a directory of assets, and a configuration file. 
+Lib-Static is a provocation to rethink how we do digital infrastructure in libraries to recenter our technology choices around sustainable, pragmatic, and minimal approaches.
+This site highlights the Models, Concepts, and Communities that can enable Lib-Static projects to transform how you do digital in libraries, sharing viable static web solutions for infrastructure problems of all sizes.
 
 ![Lib-Static Values](images/lib-static-values.png)
 
 # Why?
 
-In response to challenges and frustrations with the systems we used daily, we started to see that there were ways to build these systems and tools that did not lock us into proprietary contracts nor lock us out of the code and data driving the site's presentation. 
-These experiences led us to a philosophy of development that leverages the expertise of librarians and cultural heritage workers and the unique values of their institutions at the forefront of project design decisions.
-This methodology differs greatly from the predominant model for platform and tool building for academic libraries as it does not require complex infrastructure nor specialized developers to build, implement, and maintain the systems put into use.
-The shift towards a focus on clean data and simple systems enables a more agile and responsive approach, allowing the iterative development of features, gradual acquisition of developer skills, and flexible migration between hosts without the need for deep investment. 
+Informed by the philosophy of minimal computing, the Lib-Static methodology centers digital infrastructure approaches around the unique needs, values, and opportunities of libraries and other GLAM organizations. Simply stated, Lib-Static approaches seek to apply the techniques of the modern static web to solve problems in the digital library/digital scholarship ecosystem.
 
-We recognize that there will still be learning curves and frustrations in the development and use of any system, regardless of its underlying methodology. 
-However, with its focus on the primary values of usability and accessibility, Lib-Static gives libraries and cultural institutions the framework within which to develop and use tools that actually embody their principles by removing the overwrought features and extensive infrastructure requirements that permeate many of the library systems currently used and developed.
+The Lib-Static approach focuses on practical, sustainable workflows using data-driven static web templates hosted on simplified infrastructure while leveraging (and building) the in-house specialized skills of librarians in metadata, data, and organization. This provides librarians unique agency and ownership over their systems, as well as meaningful opportunities for professional development leading to fundamental digital skills.
 
+We recognize that there will be learning curves and frustrations in the development and use of any system, regardless of its underlying methodology. Lib-Static acknowledges that all digital projects require investment in learning and seeks to maximize the local impact and value of learning during the process, while establishing technical solutions and social workflows that more closely match the structure of library work cycles and needs.
+
+Things will still break. You may still have the urge to pound your head on the monitor while learning and debugging.
+
+But for us, the Lib-Static community, there’s something powerful to this approach, and we wanted to share with any of you that might be interested.
