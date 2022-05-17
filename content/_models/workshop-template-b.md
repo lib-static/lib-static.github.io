@@ -14,7 +14,7 @@ image_alt: black and white image of people working at a library table
 ---
 
 `workshop-template-b` is a minimal Jekyll template for creating workshop websites designed for simple hosting on GitHub Pages.
-The template provides a Bootstrap 5 theme with builtin customization options.
+The template provides a Bootstrap theme with builtin customization options.
 Content is written in Markdown and can be enhanced using Bootstrap features in Liquid includes.
 
 ## Why

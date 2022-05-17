@@ -12,4 +12,8 @@ image: https://programminghistorian.org/images/logos/ph-en.svg
 image_alt: programming historian logo
 ---
 
-Programming Historian publishes peer-reviewed tutorials that teach digital tools, techniques, and workflows to facilitate humanities research and teaching. All content is written in Markdown with an open peer review process managed on GitHub. The site is generated using Jekyll and hosted on GitHub pages. Features workflows to handle content translations and multilingual site.
+Programming Historian publishes peer-reviewed tutorials that teach digital tools, techniques, and workflows to facilitate humanities research and teaching. 
+
+All content is written in Markdown with an open peer review process managed via GitHub Issues.
+The site is generated using Jekyll and hosted on GitHub pages. 
+Features workflows to handle content translations and multilingual site.

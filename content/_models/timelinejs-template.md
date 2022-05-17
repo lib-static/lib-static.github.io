@@ -14,7 +14,7 @@ image:
 image_alt:
 ---
 
-`timelinejs-template` is a minimal Jekyll template for creating self-hosted [TimelineJS](https://timeline.knightlab.com/) features on GitHub Pages with a basic Bootstrap 5 theme. 
+`timelinejs-template` is a minimal Jekyll template for creating self-hosted [TimelineJS](https://timeline.knightlab.com/) features on GitHub Pages with a basic Bootstrap theme. 
 The template provides a self-contained package of data, media, and code for simplified and sustainable hosting of a timeline that does not rely on 3rd party resources.
 
 ## Why

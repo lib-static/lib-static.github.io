@@ -9,6 +9,8 @@ project_repository: https://github.com/collectionbuilder/
 project_documentation: https://collectionbuilder.github.io/cb-docs/
 project_genre: Digital Collection
 project_creators: "@evanwill; @dcnb; @owikle"
+image: images/gh-base.jpg
+image_alt: example collectionbuilder-gh home page showing navigation features
 ---
 
 CollectionBuilder is a set of flexible, static web templates for creating digital collection websites. These templates are driven by metadata and powered by modern static web technology. Using three primary components—a spreadsheet of metadata, a directory of assets, and a configuration file—CollectionBuilder helps users to build and customize sustainable, digital collections and exhibits for free, learning valuable development practices in the process.
@@ -27,7 +29,7 @@ The most basic version, CollectionBuilder-GH, is designed to be created using on
 More advanced versions require the use of Git, Ruby, and Jekyll to build the final site (or a online workflows platform that can do it for you). 
 The templates also provide Rake tasks that use ImageMagick and GhostScript to generate access derivatives of collection items. 
 
-CollectionBuilder's theme is build using BootStrap, and uses open source libraries such as Leaflet and DataTables to create interactive features.
+CollectionBuilder's theme is build using Bootstrap, and uses open source libraries such as Leaflet and DataTables to create interactive features.
 
 Leaflet Map Generated from Metadata, https://collectionbuilder.github.io/images/home/map.jpg
 

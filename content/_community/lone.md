@@ -48,5 +48,5 @@ Will it be OK? Probably! Here's what it takes:
 - A willingness to learn 
 - (and maybe a love for puzzles)
 
-Lib-static is a community focused on data portability, code reusability, and project maintainability. 
-More importantly, Lib-static is a community dedicated to supporting colleagues on their learning paths. 
+Lib-Static is a community focused on data portability, code reusability, and project maintainability. 
+More importantly, Lib-Static is a community dedicated to supporting colleagues on their learning paths. 

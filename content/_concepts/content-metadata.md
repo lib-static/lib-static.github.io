@@ -5,11 +5,11 @@ updated: 2021-08-04
 type: Concepts
 ---
 
-Lib-static projects use [plain text](/concepts/plaintext/), human-readable documents for content and metadata. Static site generators can consume and format these documents --to HTML, JSON, PDF, etc.-- however we like; but more importantly, plain text read with any text editor on just about any machine, now and in the future.
+Lib-Static projects use [plain text](/concepts/plaintext/), human-readable documents for content and metadata. Static site generators can consume and format these documents --to HTML, JSON, PDF, etc.-- however we like; but more importantly, plain text read with any text editor on just about any machine, now and in the future.
 
 > Plain text files have been around since the electronic typewriter. The longevity of this standard inherently makes plain text more sustainable and stable than proprietary formats. While files produced even ten years ago in Microsoft Word and Apple’s Pages can cause significant problems when opened with the latest version, it is still possible to open a file written in any number of “dead” plain text editors from the past several decades: AlphaPlus, Perfect Writer, Text Wizard, Spellbinder, WordStar, or Isaac Asimov’s favorite SCRIPSIT 2.0, made by Radio Shack. Writing in plain text guarantees that your files will remain readable ten, fifteen, twenty years from now. --Tenen & Wythoff
 
-Lib-static utilities and practices revolve around two specific plain text formats: Markdown and YAML.
+Lib-Static utilities and practices revolve around two specific plain text formats: Markdown and YAML.
 
 ### Content = Markdown
 
@@ -32,11 +32,11 @@ dewey_decimal: 813.54
 language: English
 ```
 
-Markdown is to HTML as YAML is to JSON. YAML is intended to simplify the writing and editing of data formats, like JSON and XML. In Lib-static projects, YAML is used by static site generators to provide description and administrative (i.e. configuration) metadata about a website or a web page. YAML files use `.yml` or `.yaml` file extensions.
+Markdown is to HTML as YAML is to JSON. YAML is intended to simplify the writing and editing of data formats, like JSON and XML. In Lib-Static projects, YAML is used by static site generators to provide description and administrative (i.e. configuration) metadata about a website or a web page. YAML files use `.yml` or `.yaml` file extensions.
 
 ### Markdown and YAML in Practice
 
-There are a few ways to organize Markdown and YAML content within a Lib-static project. The most basic approach is to store YAML front-matter *at the top* of a Markdown file. Let's example the following document we'll name `article.md`:
+There are a few ways to organize Markdown and YAML content within a Lib-Static project. The most basic approach is to store YAML front-matter *at the top* of a Markdown file. Let's example the following document we'll name `article.md`:
 
 ```
 ---

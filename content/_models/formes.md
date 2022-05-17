@@ -12,7 +12,8 @@ image: /images/forme.png
 image_alt: Homepage for Forme website
 ---
 
-Jekyll; Ruby; JavaScript; JSON
+Uses: Jekyll; Ruby; JavaScript; JSON
 
 {% include figure.html img='dickinson-build.png' alt='A forme with generated lines from Emily Dickinson poems' caption='A forme with generated lines from Emily Dickinson' link="https://formes.io/builds/formes/dickinson.html" %}
+
 {% include figure.html img='easterwings.png' alt="A forme of George Herbert's Easter Wings # caption for image" caption="A forme of George Herbert's Easter Wings # caption for image" link="https://formes.io/formes/easterwings.html" %}

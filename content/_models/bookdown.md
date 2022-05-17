@@ -13,4 +13,6 @@ image: https://bookdown.org/yihui/bookdown/images/logo.png
 image_alt: Bookdown logo
 ---
 
-R Studio; R Markdown; Knitr; TinyTeX; Pandoc
+The **bookdown** package can be added to your R installation to generate multiple format publications (PDF, HTML, Word) from [R Markdown](https://rmarkdown.rstudio.com/) content.
+
+Uses: R Studio; R Markdown; Knitr; TinyTeX; Pandoc.

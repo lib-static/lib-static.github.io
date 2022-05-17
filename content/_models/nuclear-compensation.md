@@ -11,6 +11,7 @@ image: /images/nuclearcompensation.jpg
 image_alt: Nuclear Compensation book cover
 ---
 
-Nuclear Compensation is an edited monograph on compensating the victims of nuclear disasters. The book is available as HTML, PDF, and print-on-demand.
+Nuclear Compensation is an edited monograph on compensating the victims of nuclear disasters. 
+Created using Quire, the book is available as HTML, PDF, and print-on-demand.
 
-Quire; Hugo; PrinceXML; YAML; Markdown; 
+Uses: Quire; Hugo; PrinceXML; YAML; Markdown.

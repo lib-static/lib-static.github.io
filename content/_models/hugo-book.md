@@ -13,4 +13,4 @@ image: https://github.com/alex-shpak/hugo-book/raw/master/images/screenshot.png
 image_alt: Hugo Book Example
 ---
 
-Hugo
+A simple Hugo theme designed for books or documentation websites with multi-language support and sidebar style navigation.
