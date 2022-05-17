@@ -1,5 +1,5 @@
 ---
-title: Original Lib-Static "Manifesto"
+title: Original Lib-Static "Manifesto", 2018
 #contributor: "@evanwill"
 updated: 2018
 type: Contribute
