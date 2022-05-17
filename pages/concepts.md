@@ -3,6 +3,7 @@ title: Static Web Concepts
 nav: Concepts
 nav_order: 3
 section: Concepts
+section-color: warning
 foot: js/concepts.html
 ---
 

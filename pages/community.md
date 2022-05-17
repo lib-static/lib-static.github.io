@@ -3,6 +3,7 @@ title: Community
 nav: Community
 nav_order: 4
 section: Community
+section-color: info
 ---
 
 Lib-Static acknowledges that infrastructure isn't about technology, it is about people in context--> labor, learning, empowerment, and collaboration.

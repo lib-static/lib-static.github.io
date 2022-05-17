@@ -2,6 +2,7 @@
 layout: default 
 ---
 <div class="container content-narrow mt-3 mb-5">
-    {% if page.auto-heading != false %}<h1 class="display-1 mb-5">{{ page.title }}</h1>{% endif %}
+    {% if page.section-color %}<h1 class="display-1 mb-5 bg-{{ page.section-color }} text-white p-4 rounded">{{ page.title }}</h1>
+    {% elsif page.auto-heading != false %}<h1 class="display-1 mb-5">{{ page.title }}</h1>{% endif %}
     {{ content }}
 </div>

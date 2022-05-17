@@ -3,6 +3,7 @@ title: Why Lib-Static?
 nav: Why?
 nav_order: 1
 #section: Why?
+section-color: primary
 layout: page-narrow
 ---
 
