@@ -3,7 +3,7 @@ title: Why Lib-Static?
 nav: Why?
 nav_order: 1
 #section: Why?
-layout: page
+layout: page-narrow
 ---
 
 Are you tired of learning platforms rather than skills? 
@@ -28,8 +28,9 @@ We started to see that there were ways to build these systems and tools that cou
 {:.mt-4 .mb-3}
 ## A Methodology
 
-Informed by the philosophy of minimal computing, the Lib-Static methodology centers digital infrastructure approaches around the unique needs, values, and opportunities of libraries and other GLAM organizations.
-Simply stated, Lib-Static approaches seek to apply the techniques of the modern static web to solve problems in the digital library ecosystem. 
+Informed by the philosophy of minimal computing, the **Lib-Static methodology** centers digital infrastructure approaches around the unique needs, values, and opportunities of libraries and other GLAM organizations.
+Simply stated, Lib-Static approaches seek to apply the techniques of the modern static web to solve problems in the digital library ecosystem.
+{:.lead}
 
 It differs greatly from the predominant model for platform and tool building for libraries as it does not require complex infrastructure nor extensive IT staffing (or 3rd party vendors) to implement and maintain the systems put into use. 
 Instead, the Lib-Static approach focuses on practical, sustainable workflows using data-driven static web templates hosted on simplified infrastructure while leveraging (and building) the inhouse specialized skills of librarians in metadata, data, and organization.
@@ -39,7 +40,7 @@ The shift towards a focus on clean data and simple systems enables a more agile 
 
 Lib-Static methodology gives libraries and cultural institutions the framework within which to develop and use tools that actually embody their principles by removing the overwrought features and extensive infrastructure requirements that permeate many of the library systems currently used and developed.
 
-<table class="table table-bordered align-middle border-primary">
+<table class="table table-bordered align-middle border-primary my-5">
     <tr>
         <td class="text-center h4">Open</td>
         <td><ul class="my-2">
@@ -72,6 +73,7 @@ Lib-Static methodology gives libraries and cultural institutions the framework w
     </tr>
 </table>
 
+{:.mt-4 .mb-3}
 ## Static Web Opportunities
 
 Since around 2015 static site generators and the "JAM Stack" approach have exploded in the web development landscape--utilizing simplified markup, plain text data files, and web APIs to create complete websites without the need for complex server-side software, databases, or content management systems. 
