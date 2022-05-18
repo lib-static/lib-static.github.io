@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" class="h-100">
+<!doctype html>
+<html lang="en">
     <head>
-        {% include template/head.html %}
+      <meta http-equiv="Refresh" content="0; URL={{page.url | absolute_url }}">
+        <title>{% if page.title %}{{ page.title }} - {% endif %}Page moved</title>
+        <meta name="robots" content="noindex" />
     </head>
-    <body class="d-flex flex-column h-100">
-        <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
-        {% include template/header.html %}
-        <main id="maincontent" role="main" aria-label="Content" class="flex-shrink-0">
-        {{ content }}
-        </main>
-        {% include template/footer.html %}
-        {% include template/foot.html %}
+    <body>
+        <p>This page has moved: <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a>.<br>Please update your bookmarks!</p>
     </body>
 </html>
