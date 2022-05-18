@@ -28,7 +28,7 @@ url:
 # use baseurl to add subsection of the domain, e.g. /timelinejs-template
 # on gh-pages this is a / followed by the name of the repository
 # baseurl is your github repository's name prefixed with a /
-baseurl:
+baseurl: /redirect
 # location of code, the full url to your github repository
 source-code: https://github.com/thecdil/bootstrap5-template
 
