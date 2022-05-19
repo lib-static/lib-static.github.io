@@ -6,11 +6,11 @@ type: Concepts
 description: "- Models For provide frameworks for learning/building <br>- Models Of provide examples of what can be done using the Models For <br> - Models Of can become Models For and vice versa ('intertransposability!')"
 ---
 
-This is an idea based on a slightly misremembered reading of Anthropologist  Clifford Geertz' book *The Interpretation of Cultures* in college. More on that below. 
+This [Models]({{ '/models/' | relative_url }}){:.btn .btn-success} concept is based on a slight misreading/misremembering of Anthropologist  [Clifford Geertz'](https://en.wikipedia.org/wiki/Clifford_Geertz) book *The Interpretation of Cultures* in college. More on that below. 
 
-In essence, we think of **Models Of** as examples of static web projects that one can use as inspiration and **Models For** as the templates/frameworks from which one can build their own static web projects. 
+For our purposes, we think of [**Models Of**]({{ '/models/?filter=filter-models-of' | relative_url }}) as examples of static web projects that one can use as inspiration and [**Models For**]({{ '/models/?filter=filter-models-for' | relative_url }}) as the templates/frameworks from which one can build their own static web projects. 
 
-Most of the frameworks featured here as **Models For** are intended to be copied (usually by clicking "Use This Template!" on a GitHub repository's main GitHub page) and then revised with the users own content. 
+Most of the frameworks featured here as Models For are intended to be copied (usually by clicking "Use This Template!" on a GitHub repository's main GitHub page) and then revised with the users own content. 
 
 By replacing the "models" contents with your own, a user gets an in depth tour of the workings of the repository/framework, creating an educational/development experience where one learns by building.
 
