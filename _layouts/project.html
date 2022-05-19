@@ -2,8 +2,7 @@
 layout: default
 ---
 <div class="container content-narrow mt-3 mb-5">
-    <h1>{{ page.title }}</h1>
-
+    {% include jumbotron.html heading=page.title padding=1 bg="white border-dark" border=true %}
     <div class="my-4 text-end">
         {% if page.project_link %}<a href="{{ page.project_link }}" class="btn btn-primary m-2" target="_blank" rel="noopener">Project Site</a>{% endif %}
         {% if page.project_repository %}<a href="{{ page.project_repository }}" class="btn btn-secondary m-2" target="_blank" rel="noopener">Code Repository</a>{% endif %}

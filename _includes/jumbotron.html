@@ -14,7 +14,7 @@
 
 {%- endcomment -%}
 <div class="p-5 mb-4 bg-{{ include.bg | default: 'light' }} rounded-3{% if include.border %} border{% endif %}">
-    <div class="container-fluid py-5{% if include.text-color %} text-{{ include.text-color }}{% endif %}">
+    <div class="container-fluid py-{{ include.padding | default: '5' }}{% if include.text-color %} text-{{ include.text-color }}{% endif %}">
         {% if include.heading %}<h1 class="display-5 fw-bold">{{ include.heading }}</h1>{% endif %}
         {% if include.text %}<p class="col-md-8 fs-4">{{ include.text | markdownify }}</p>{% endif %}
         {% if include.button-text %}<a class="btn btn-{{ include.button-color | default: 'primary' }} btn-lg" href="{{ include.button-link | relative_url }}">{{ include.button-text }}</a>{% endif %}
