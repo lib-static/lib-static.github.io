@@ -5,7 +5,7 @@ updated: 2021-08-04
 type: Concepts
 ---
 
-This is an idea based on a misremembered reading of Anthropologist  Clifford Geertz' book *The Interpretation of Cultures* in college. More on that below. 
+This is an idea based on a slightly misremembered reading of Anthropologist  Clifford Geertz' book *The Interpretation of Cultures* in college. More on that below. 
 
 In essence, we think of **Models Of** as examples of static web projects that one can use as inspiration and **Models For** as the templates/frameworks from which one can build their own static web projects. 
 
