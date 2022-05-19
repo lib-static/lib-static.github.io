@@ -7,7 +7,7 @@ description: CollectionBuilder is an open source tool for creating digital colle
 project_link: https://collectionbuilder.github.io/ 
 project_repository: https://github.com/collectionbuilder/ 
 project_documentation: https://collectionbuilder.github.io/cb-docs/
-project_genre: Digital Collection
+project_genre: Digital Collection; Digital Exhibit
 project_creators: "@evanwill; @dcnb; @owikle"
 image: images/gh-base.jpg
 image_alt: example collectionbuilder-gh home page showing navigation features

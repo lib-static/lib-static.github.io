@@ -6,7 +6,7 @@ updated: 2021-08-04
 description: A multidisciplinary digital humanities project that represents community response to the recent extirpation (2019) of southern mountain caribou from the South Selkirk mountains of North Idaho—the last caribou to inhabit the coterminous United States.
 project_link: https://cdil.lib.uidaho.edu/storying-extinction/
 project_repository: https://github.com/thecdil/storying_combined/
-project_genre: Deep Mapping
+project_genre: Deep Mapping; Student Projects
 project_creators: "@dcnb;Jack Kredell;Chris Lamb"
 image: /images/storying.png
 image_alt: Homepage for Storying Extinction website

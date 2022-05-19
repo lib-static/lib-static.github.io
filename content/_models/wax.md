@@ -7,7 +7,7 @@ description: Wax is an extensible workflow for producing scholarly exhibitions w
 project_link: https://minicomp.github.io/wax/
 project_repository: https://github.com/minicomp/wax
 project_documentation: https://minicomp.github.io/wiki/wax/
-project_genre: Digital Publishing;Critical Edition
+project_genre: Digital Collection; Digital Exhibit
 project_creators: "@elotroalex;@mnyrop"
 image: images/wax.png
 image_alt: screenshot of the Wax site demo

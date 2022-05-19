@@ -1,5 +1,5 @@
 ---
-title: "CTRL+Shift: Writing Practice at the Dawn of the Digital Age"
+title: "CTRL+Shift"
 type: Models Of
 contributor: "@dcnb"
 updated: 2021-08-04
