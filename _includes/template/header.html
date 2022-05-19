@@ -29,7 +29,6 @@
                 </li>
                 {% endfor %}
             </ul>
-            {% if site.search == true %}
             <script>
                 function site_search() {
                     var query = document.getElementById("site-search").value;
@@ -42,7 +41,6 @@
                     <button class="btn btn-lg btn-outline-primary" type="submit">{% include icon.html icon="search" label="Submit Search" %}</button>
                 </div>
             </form>
-            {% endif %}
 
             <hr>
         </div>

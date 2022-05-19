@@ -1,8 +1,7 @@
 #######
 #
-# bootstrap5-template
-# basic bootstrap 5 template for Jekyll with GitHub Pages
-# https://github.com/thecdil/bootstrap5-template
+# Lib-Static
+# https://github.com/lib-static/lib-static.github.io
 #
 #######
 
@@ -12,10 +11,8 @@
 title: Lib-Static 
 tagline: "a methodology, a collection, a community"
 description: "a methodology, a collection, a community: Lib-Static is a provocation to rethink how we do digital infrastructure in libraries to recenter our technology choices around sustainable, pragmatic, and minimal approaches."
-year: 2021
+year: 2022
 author: evan will 
-# add search box to navbar, true/false
-search: true
 
 ##########
 # URL VARIABLES [optional!]
@@ -30,7 +27,7 @@ url:
 # baseurl is your github repository's name prefixed with a /
 baseurl:
 # location of code, the full url to your github repository
-source-code: https://github.com/thecdil/bootstrap5-template
+source-code: https://github.com/lib-static/lib-static.github.io
 
 ##########
 # GOOGLE ANALYTICS [optional!]
@@ -90,4 +87,4 @@ defaults:
       section: "Models"
 
 # ignore stuff
-exclude: [docs/, Rakefile, README.md, LICENSE]
+exclude: [docs/, Rakefile, README.md, LICENSE, CODE_OF_CONDUCT.md]
