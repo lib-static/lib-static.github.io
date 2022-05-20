@@ -9,7 +9,7 @@ auto-heading: false
 <div class="h1 mb-4">{{ site.tagline }}</div>
 
 Lib-Static is a provocation to rethink how we do digital infrastructure in libraries to recenter our technology choices around sustainable, pragmatic, and minimal approaches.
-{:.lead}
+{:.fs-5}
 
 <div class="row row-cols-1 row-cols-md-2 my-3 g-2">
     <div class="col">

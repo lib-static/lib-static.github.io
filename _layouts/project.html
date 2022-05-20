@@ -9,7 +9,7 @@ layout: default
         {% if page.project_documentation %}<a href="{{ page.project_documentation }}" class="btn btn-success m-2" target="_blank" rel="noopener">Documentation</a>{% endif %}
     </div>
 
-    {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+    {% if page.description %}<p class="fs-5">{{ page.description }}</p>{% endif %}
 
     <p>
         {% if page.type %}<a href="{{ '/models/' | relative_url }}#{{ page.type | strip | url_param_escape }}" class="btn btn-sm btn-outline-primary m-2">{{ page.type }}</a> : {% endif %}

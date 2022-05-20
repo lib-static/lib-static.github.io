@@ -10,7 +10,7 @@ layout: page-narrow
 Are you tired of learning platforms rather than skills? 
 Frustrated with over-bloated systems? 
 Siloed by the tools you know and the tools you don't?
-{:.lead}
+{:.fs-5}
 
 It might be time to explore the Lib-Static approach, a development methodology that leverages static web technologies and librarian skills to create engaging web publications hosted on minimal infrastructure.
 

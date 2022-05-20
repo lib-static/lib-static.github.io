@@ -28,7 +28,8 @@
     object-fit: cover;
 }
 
-blockquote{
+// blockquote style
+blockquote {
     width:90%;
     font-style:italic;
     color: #555555;
@@ -37,9 +38,9 @@ blockquote{
     border-left:2px solid #359B73 ;
     position: relative;
     background:#f5f5f5;
-  }
+}
 
-  blockquote span{
+blockquote span {
     display:block;
     color:#4c4a4a;
     font-weight: bold;
@@ -47,8 +48,4 @@ blockquote{
     font-style: normal;
     text-align: right;
     margin-top:1em;
-  }
-
-  .lead{
-      font-weight: 400;
-  }
+}
