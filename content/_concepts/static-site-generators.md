@@ -5,7 +5,7 @@ updated: 2021-08-04
 type: Concepts
 ---
 
-*Static Site Generators* are software tools that bundle together a stack of web development packages used to transform a directory of source code into a complete static website (i.e. a folder of HTML, CSS, JSON, and JavaScript files).
+*Static Site Generators* are software tools that bundle together a stack of web development packages used to transform a directory of source code into a complete static website (i.e. a ready-to-serve folder of HTML, CSS, JSON, and JavaScript files).
 
 These tools give you some of the power of a content management system, without all the infrastructure overhead. 
 Static site generators can be installed and used on your local computer, and typically feature: 
@@ -23,10 +23,11 @@ Some of the most popular and mature include [Jekyll](https://jekyllrb.com/), [Hu
 Options include general purpose generators or tools built around specific JS frameworks such as Vue or React.
 
 If you are familiar with using CMS such as WordPress or Drupal (or in the DH world Scalar, Omeka, Islandora, CONTENTdm), one thing you may have noticed is missing from the static generator workflow is some sort of GUI web-based Admin interface.
-There isn't content management systems or digital asset management system or other type of dynamic web application installed on a server that you might be used to seeing in the context of building websites.
+There isn't a content management system or digital asset management system or other type of dynamic web application installed on a server that you might be used to seeing in the context of building websites.
 
 Static generator projects are literally a folder of plaintext files.
 The generator is used via command line options on your local computer or run via online build services to output a complete static site.
+These ready-to-serve files can be hosted on a minimal server or free static hosting platform, yet provide high performance to users.
 
 For Lib-Static, using static site generators allows users to create reusable, data-driven templates consisting of modular chunks of HTML, CSS, and JavaScript.
 The tools bundled in the generator make it easier to write these components, and to keep the data, content, and presentation layers cleanly separated.
