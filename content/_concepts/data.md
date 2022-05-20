@@ -3,6 +3,7 @@ title: Thinking Through Data
 contributor: "@dcnb"
 updated: 2021-08-04
 type: Concepts
+description: Understanding your content as data enables powerful means to transform web features.
 ---
 
 ***tl;dr***
@@ -11,12 +12,12 @@ type: Concepts
 - Static web projects transform data to create their features and utility
 - Data can be transformed into different data formats and outputs to enable preservation and reuse of the data. 
 
-Static web applications and [frameworks](/gallery/) depend on data structures and data transformations to enable their features and utility. Data can be structured via a variety of formats, including tabular data represented most often via [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) spreadsheets, semi-structured data represented as [JSON](https://en.wikipedia.org/wiki/JSON), and human readable key-value pairs listed in [YAML](https://en.wikipedia.org/wiki/YAML) files or frontmatter. These formats are all plain text formats, and making sure that your content and files are in [plain text](/concepts/plaintext) is essential for static sites and frameworks to operate.  
+Static web applications and frameworks depend on data structures and data transformations to enable their features and utility. Data can be structured via a variety of formats, including tabular data represented most often via [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) spreadsheets, semi-structured data represented as [JSON](https://en.wikipedia.org/wiki/JSON), and human readable key-value pairs listed in [YAML](https://en.wikipedia.org/wiki/YAML) files or frontmatter. These formats are all plain text formats, and making sure that your content and files are in [plain text](/concepts/plaintext/) is essential for static sites and frameworks to operate.  
 
 
 ### How Static Site Generators use Data
 
-Static web projects and frameworks depend on users following specific data requiremnts in order to make available, via data transformation, the visualization and alternative data output features core to their use. They do so because the features they're building require data be ingested into their scripts or [templates](templates.html) in specifically organized and formatted ways in order for the visualizations to work. 
+Static web projects and frameworks depend on users following specific data requirements in order to make available, via data transformation, the visualization and alternative data output features core to their use. They do so because the features they're building require data be ingested into their scripts or [templates](/concepts/templates/) in specifically organized and formatted ways in order for the visualizations to work. 
 
 Static web frameworks can enable a number of different types of visualizations and interactions, as well as a variety of additional data outputs, by iterating over collection and configuration data. This enables a user to focus on their collection or exhibit data as a whole rather than learning a series of specific ways of representing that data for various scripts or presentations.
 
@@ -41,5 +42,5 @@ This transformational ability allows project/collection data:
 - to be reused in a variety of contexts; 
 - to be preserved in open, reusable formats going forward;
 - and to enable certain machine learning and indexing functions, 
-    - such as providing structured data in the "<head>" of html files to allow for better discovery via Google and other search engines.)
+    - such as providing structured data in the "`<head>`" of html files to allow for better discovery via Google and other search engines.)
 

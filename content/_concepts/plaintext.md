@@ -3,14 +3,14 @@ title: Plain Text
 contributor: "@evanwill"
 updated: 2021-08-04
 type: Concepts
+description: Plain text files are a simple, sustainable format to store your project data.
 ---
 
-***tl;dr***
+You might see the term plaintext, plain-text, or plain text sprinkled about in static web ecosystems. 
+At the heart of Lib-Static projects is "source code", the raw material that will transformed into published outputs and preserved for future reuse--and the core of that source will be plaintext files. 
+Plain text based workflows and outputs enable [version control](/concepts/version-control/), [data transformation](/concepts/data/), [access, and preservation](/concepts/publicationpreservation/)
 
-- Plain text files are a simple, sustainable format to store your project data
-- Plain text based workflows and outputs enable [version control](/concepts/version-control/), [data transformation](/concepts/data/), [access, and preservation](/concepts/publicationpreservation/)
-
-You might see the term plaintext, plain-text, or plain text sprinkled about in static web ecosystems. At the heart of Lib-Static projects is "source code", the raw material that will transformed into published outputs and preserved for future reuse--and the core of that source will be plaintext files. The exact meaning of "plain text" is loose, but the most important concept in this context is the distinction between *plain text files* vs. *binary files*.
+The exact meaning of "plain text" is loose, but the most important concept in this context is the distinction between *plain text files* vs. *binary files*.
 
 ### Text vs. Binary
 

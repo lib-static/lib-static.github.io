@@ -3,9 +3,8 @@ title: Static Site Generators
 contributor: "@evanwill"
 updated: 2021-08-04
 type: Concepts
+description: Static Site Generators are software tools that bundle together a stack of web development packages used to transform a directory of source code into a complete static website (i.e. a ready-to-serve folder of HTML, CSS, JSON, and JavaScript files).
 ---
-
-*Static Site Generators* are software tools that bundle together a stack of web development packages used to transform a directory of source code into a complete static website (i.e. a ready-to-serve folder of HTML, CSS, JSON, and JavaScript files).
 
 These tools give you some of the power of a content management system, without all the infrastructure overhead. 
 Static site generators can be installed and used on your local computer, and typically feature: 

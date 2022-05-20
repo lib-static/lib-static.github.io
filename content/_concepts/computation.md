@@ -3,9 +3,8 @@ title: Leveraging Computation
 contributor: "@elotroalex"
 updated: 2021-08-04
 type: Concepts
+description: Part of what makes static web frameworks powerful is the access to project files at all levels. Besides being able to more easily change the look or structure of the pages on your project, you can usually add automation or computation with fewer obstacles.
 ---
-
-Part of what makes static web frameworks powerful is the access to project files at all levels. Besides being able to more easily change the look or structure of the pages on your project, you can usually add automation or *computation* with fewer obstacles.
 
 Let's take a Table of Contents (ToC) as an example. There are generally two different ways to build one. You can literally write it out by hand, and every time there is a change you can go and add it to the file where you wrote it; or, you can write a little script—a little machine—that can create it for you based on new files being added that meet a certain criteria. When we speak of computation or automation, we speak of the latter process. 
 

@@ -20,7 +20,7 @@ Models Of can also become Models For (this "intertransposibility," Geertz argues
 
 The Lib-Static website privileges this "model of/model for" metaphor because it centers the educational nature and potential of its approach. 
 
-#### The Origins of this Particular Idea
+## The Origins of this Particular Idea
 
 The concept of Models Of/Models For does not begin or end with Geertz, but the thought process I had for thinking through the lib-static approach as models began with my remembering my struggling with this, one of his major arguments/metaphors relative to his definition of Religion. 
 
@@ -29,6 +29,3 @@ In the chapter ["Religion as Cultural System"](https://nideffer.net/classes/GCT_
 > The term "model" has, however, two senses—an "of" sense and a "for" sense—and though these are but aspects of the same basic concept they are very much worth distinguishing for analytic purposes. In the first, what is stressed is the manipulation of symbol structures so as to bring them, more or less closely, into parallel with the pre-established nonsymbolic system, as when we grasp how dams work by developing a theory of hydraulics or constructing a flow chart. The theory or chart models physical relationships in such a way—that is, by expressing their structure in synoptic form—as to render them apprehensible; it is a model of "reality." In the second, what is stressed is the manipulation of the nonsymbolic systems in terms of the relationships expressed in the symbolic, as when we construct a dam according to the specifications implied in an hydraulic theory or the conclusions drawn from a flow chart. Here, the theory is a model under whose guidance physical relationships are organized: it is a model for "reality."<span>Clifford Geertz, "The Interpretation of Cultures," p. 94</span>
 
 So the misremembering portion has to do with more of the "Models Of" side of things: wheras Geertz' examples of a model of is more like a wireframe of a website than the actual website. Here, we are simplifying the idea a little, but I think the "intertransposibility" principle, and the educational/habit forming emphases are equivalen for both our usage and Geertz' --> Geertz uses imprint learning in Animals as an example of "Models for" in that it " involves the presentation of an appropriate sequence of behavior by a model animal in the presence of a learning animal" (*Ibid.*). 
-
-
-

@@ -3,9 +3,9 @@ title: Static Web
 contributor: "@evanwill"
 updated: 2021-08-04
 type: Concepts
+description: Static websites are a collection of HTML, CSS, JS, images, and other files that are delivered to users exactly as they are on the server. 
 ---
 
-Static websites are a collection of HTML, CSS, JS, images, and other files that are delivered to users exactly as they are on the server. 
 You can think of a [static website](https://en.wikipedia.org/wiki/Static_web_page){:target="_blank" rel="noopener"} as a shared folder of readonly files exposed on the web.
 The URL in your web browser is basically just a path to find a document in a folder, generally representing a request for an HTML file in a specific location on the server.
 

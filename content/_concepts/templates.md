@@ -1,5 +1,5 @@
 ---
-title: Templating with Static Site Generators
+title: Templating 
 contributor: "@chrisdaaz"
 updated: 2021-08-04
 type: Concepts
