@@ -3,8 +3,8 @@ title: Oral History as Data
 type: Models For
 contributor: "@dcnb"
 updated: 2021-08-04
-project_link: https://uidaholib.github.io/oral-history-as-data/ 
-project_repository: https://github.com/uidaholib/oral-history-as-data 
+project_link: https://oralhistoryasdata.github.io/
+project_repository: https://github.com/oralhistoryasdata/
 project_documentation: 
 project_genre: Oral History; Qualitative Data Analysis
 description: "A Jekyll template that allows users to analyze and publish coded oral history or qualitative interview transcripts." 
