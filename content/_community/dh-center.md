@@ -31,7 +31,4 @@ You establish a system for translating that content into data (probably in Googl
 
 Why did you choose static in this scenario? The faculty collaborator was technically curious, and you saw an opportunity to teach some transferable data skills (maybe you taught her some formulas in Google Sheets, gave an overview of version control and ensured a familiarity with GitHub workflows) that are potentially beneficial beyond the project. You also were aware that your dh center doesn't have a lot of personnel resources to spend on maintaining projects long-term, so you needed to produce a site that would remain secure while still allowing for content and code updates when desired.
 
-### DH teaching
-
-
 
