@@ -12,3 +12,4 @@ Quarto,publishing,scientific publishing system with Pandoc,https://quarto.org/
 Unlocking the Airwaves,exhibit,Large digital collection of early public radio content built using Gatsby,https://github.com/umd-mith/airwaves
 "National Neighbors: Distant Viewing the National Gallery of Art's collection of collections",digital scholarship,Explorative image analysis project published on a static site with IIIF viewer,https://nga-neighbors.library.cmu.edu/
 "Shakespeare-VR",digital scholarship,Jekyll-based website to publish project videos and learing content,https://shakespeare-vr.library.cmu.edu/
+Advanced Search Gem,advanced search plugin,Jekyll plugin for indexing and creating an advanced search interface for a jekyll site based on defined fields,https://github.com/dnoneill/jekyll-lunr-js-custom-search
