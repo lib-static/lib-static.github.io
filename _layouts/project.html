@@ -12,9 +12,9 @@ layout: default
     {% if page.description %}<p class="fs-5">{{ page.description }}</p>{% endif %}
 
     <p>
-        {% if page.type %}<a href="{{ '/models/' | relative_url }}#{{ page.type | strip | url_param_escape }}" class="btn btn-sm btn-outline-primary m-2">{{ page.type }}</a> : {% endif %}
+        {% if page.type %}<a href="{{ '/models/' | relative_url }}?filter=filter-{{ page.type | strip | slugify }}" class="btn btn-sm btn-outline-primary m-2">{{ page.type }}</a> : {% endif %}
         {% if page.project_genre %}{% assign genres = page.project_genre | split: ';' %}
-        {% for g in genres %}<a href="{{ '/models/' | relative_url }}#{{ g | strip | url_param_escape }}" class="btn btn-sm btn-outline-secondary m-2">{{ g }}</a> {% endfor %}{% endif %}
+        {% for g in genres %}<a href="{{ '/models/' | relative_url }}?filter=filter-genre-{{ g | strip | slugify }}" class="btn btn-sm btn-outline-secondary m-2">{{ g }}</a> {% endfor %}{% endif %}
     </p>
 
     {% if page.project_creators %}<p>People: {% include contributors.html people=page.project_creators %}</p>{% endif %}
