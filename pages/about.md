@@ -21,7 +21,7 @@ This site highlights the [Models]({{ '/models/' | relative_url }}){:.btn .btn-su
 
 Many of us started on a static web approach because we were **frustrated** with the library systems we used daily.
 
-We spent extensive efforts setting up heavy database driven platforms (or payed 3rd parties to do so), and found ourselves giving up control over our data, being locked into proprietary contracts, and excluded from development decisions.
+We spent extensive efforts setting up heavy database driven platforms (or paid 3rd parties to do so), and found ourselves giving up control over our data, being locked into proprietary contracts, and excluded from development decisions.
 Our time was consumed with maintaining complex system overhead, rather than on collaborating with researchers, creating data, and providing high quality access to users.
 
 We started to see that there were ways to build these systems and tools that could reverse these opportunity costs, leveraging and building the skills of librarians and cultural heritage workers to put the unique resources and values of the institution at the forefront of project design decisions. 
