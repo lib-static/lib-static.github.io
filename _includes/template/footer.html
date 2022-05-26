@@ -1,6 +1,6 @@
 {% unless page.url == '/' %}
 <footer class="mt-auto border-top bg-light">
-    <div class="container my-5">
+    <div class="container mt-5">
         <p>
             <ul class="nav">
                 <li class="nav-item">
@@ -14,9 +14,8 @@
                 {% endfor %}
             </ul>
         </p>
-        
-        <p class="mt-5 ms-4"><small><a href="{{ site.source-code }}/blob/main/{% if page.collection %}content/{% endif %}{{ page.path }}" target="_blank" rel="noopener" class="text-dark">Edit this page on GitHub</a></small></p>
-
+        <p class="mt-5 ms-4 "><small><a href="{{ site.source-code }}/blob/main/{% if page.collection %}content/{% endif %}{{ page.path }}" target="_blank" rel="noopener" class="text-dark">Edit this page on GitHub</a></small></p>
+        <p class="mt-5 mb-3 text-center"><small>Support for this project provided by the <a href="{{ site.source-code }}/blob/main/{% if page.collection %}content/{% endif %}{{ page.path }}" target="_blank" rel="noopener" class="text-dark text-decoration-underline">Institute of Museum and Library Services</a> and the <a href="{{ site.source-code }}/blob/main/{% if page.collection %}content/{% endif %}{{ page.path }}" target="_blank" rel="noopener" class="text-dark text-decoration-underline">University of Idaho Library</a>.</small></p>
     </div>
     
 </footer>{% endunless %}
