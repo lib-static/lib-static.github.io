@@ -22,7 +22,7 @@ foot: js/models.html
         :
         {% assign raw_genres = listDocs | map: 'project_genre' | compact | join: ";" | split: ";" %}
         {% capture genres %}{% for r in raw_genres %}{{ r | strip }};{% endfor %}{% endcapture %}
-        {% assign genres = genres | split: ";" | uniq %}
+        {% assign genres = genres | split: ";" | uniq | sort %}
         {% for g in genres %}
         <input type="radio" class="btn-check" name="filterRadio" id="filter-genre-{{ g | slugify }}" autocomplete="off" value="{{ g }}">
         <label class="btn btn-outline-secondary m-1" for="filter-genre-{{ g | slugify }}">{{ g }}</label>
