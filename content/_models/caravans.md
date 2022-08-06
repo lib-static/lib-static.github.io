@@ -15,4 +15,6 @@ image_alt: Caravans of gold exhibit logo
 The website presents a condensed digital version of the physical exhibition *Caravans of Gold, Fragments in Time: Art, Culture, and Exchange across Medieval Saharan Africa*, originally curated by The Block Museum of Art, Northwestern University, in 2019.
 It uses the [Jekyll Multiple Languages plugin](https://github.com/nulib/caravans-wax/tree/main/_i18n) to present three language options.
 
-Uses: Wax; Jekyll.
+Uses: Wax; Jekyll; PWA.
+
+Read more about the project in Chris Diaz, ["Minimal Computing with Progressive Web Apps", DHQ 16.2, 2022](http://www.digitalhumanities.org/dhq/vol/16/2/000584/000584.html).
