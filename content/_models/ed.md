@@ -7,7 +7,7 @@ description: Ed. is a Jekyll theme designed for textual editors based on minimal
 project_link: https://minicomp.github.io/ed/
 project_repository: https://github.com/minicomp/ed
 project_documentation: https://minicomp.github.io/ed/documentation/
-project_genre: Digital Publishing;Critical Edition
+project_genre: Digital Publishing; Critical Edition
 project_creators: "@elotroalex;Susanna Allés Torrent;Terry Catapano;Johann Gillium"
 image: images/ed.png
 image_alt: example Ed minimal Walt Whitman poem edition
