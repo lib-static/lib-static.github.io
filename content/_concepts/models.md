@@ -16,7 +16,7 @@ By replacing the "models" contents with your own, a user gets an in depth tour o
 
 CollectionBuilder, Wax, Ed, Oral History as Data -- these are all models for building specific web projects. And the creators of these projects have gradually moved from calling them "Tools" to referring to them as "frameworks" or "templates." 
 
-Models Of can also become Models For (this "intertransposibility," Geertz argues, is central to human though! - p.94). So if, for instance, one wanted to replicate the map feature and essay layouts set up in [Storying Extinction]({{'/models/storying/' | relative_url }}), one needs to just import that repository into their own account and start editing it. 
+Models Of can also become Models For (this "intertransposibility," Geertz argues, is central to human thought! - p.94). So if, for instance, one wanted to replicate the map feature and essay layouts set up in [Storying Extinction]({{'/models/storying/' | relative_url }}), one needs to just import that repository into their own account and start editing it. 
 
 The Lib-Static website privileges this "model of/model for" metaphor because it centers the educational nature and potential of its approach. 
 
