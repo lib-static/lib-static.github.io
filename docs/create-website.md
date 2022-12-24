@@ -55,7 +55,7 @@ Use `includes` to simplify adding Bootstrap features to Markdown pages, see comm
 
 bootstrap-template has a few built in customization options enabling you to quickly tweak the template theme:
 
-- Tweak base variables in `assets/css/custom.scss` (text color, link color, container size). The variables in this file work with `_sass/_template.scss` to set some default options.
+- Tweak base variables in `assets/css/main.scss` (text color, link color, container size). The variables in this file work with `_sass/_template.scss` to set some default options.
 - Tweak bootstrap theme colors using `_data/theme-colors.csv`. Add a css color in the color column next to the BS color-class to override, or create a new class name. This works with `_sass/_theme-colors.scss` to auto generate btn-, text-, and bg- classes based on your settings.
 - Add custom CSS to `_sass/_custom.scss`. Styles in this file will override the template and bootstrap.
 
