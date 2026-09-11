@@ -22,13 +22,14 @@ This enables complex interactivity such as comments, customized views, user mana
 This is kind of magical, but does come with costs. 
 For quality performance you need beefy servers to support both your user side and admin workflows.
 An increase in traffic can over tax server processing, requiring more CPU or more servers to scale.
-These are heavy, complicated pieces of infrastructure--they use a lot of energy, they require a lot of IT support, and need constant updates and maintenance to avoid major security risks.
+These are heavy, complicated pieces of infrastructure--they use a lot of energy, they require system admin support, and need constant updates and maintenance to avoid major security risks.
 Setting up a platform such as Drupal or Omeka isn't just set it and forget it! 
-You are adopting a puppy that needs constant ongoing attention.
+You are adopting a puppy that needs constant ongoing attention and care.
 
-Deployed static sites are much less needy--without updates they may start to look dated, but won't create security risks.
-Their on going costs are minimal (if not free).
-They can provide high performance and scale with minimal server resources.
+Deployed static sites are much less needy--think of it as the contrast between keeping a folder of files vs maintaining software.
+Static sites can provide high performance and scale with minimal server resources.
+Without updates your site may start to look dated, but will keep working and won't create security risks.
+The going costs are minimal (if not free).
 Rather than keeping up with your system admin work, you can go build something new!
 
 Thus, despite the power of dynamic sites, static web has experienced a [boom since around 2015](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/) in the web development landscape.
