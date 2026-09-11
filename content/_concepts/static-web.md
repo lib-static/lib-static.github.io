@@ -29,7 +29,7 @@ You are adopting a puppy that needs constant ongoing attention and care.
 Deployed static sites are much less needy--think of it as the contrast between keeping a folder of files vs maintaining software.
 Static sites can provide high performance and scale with minimal server resources.
 Without updates your site may start to look dated, but will keep working and won't create security risks.
-The going costs are minimal (if not free).
+The ongoing costs are minimal (if not free).
 Rather than keeping up with your system admin work, you can go build something new!
 
 Thus, despite the power of dynamic sites, static web has experienced a [boom since around 2015](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/) in the web development landscape.
