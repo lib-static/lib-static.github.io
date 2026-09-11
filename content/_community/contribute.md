@@ -32,4 +32,4 @@ Every piece of content on the site is a Markdown stub using the same basic templ
 
 {% assign people = site.data.contributors | sort: 'last_name' %}
 {% for person in people %}
-- {% if person.link %}<a href="{{ person.link }}" target="_blank" rel="noopener">{{ person.first_name }} {{ person.last_name }}</a>{% else %}{{ person.first_name }} {{ person.last_name }}{% endif %}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% endfor %}
+- {% if person.link %}<a href="{{ person.link }}" >{{ person.first_name }} {{ person.last_name }}</a>{% else %}{{ person.first_name }} {{ person.last_name }}{% endif %}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% endfor %}

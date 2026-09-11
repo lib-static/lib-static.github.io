@@ -17,7 +17,7 @@ Static site generators can be installed and used on your local computer, and typ
 - file-based data options (create content from CSVs or JSON).
 - plugin extensibility (add new functionality).
 
-With growing interest in static web approaches hundreds of generators have sprung onto the scene--browse lists at [Jamstack Site Generators](https://jamstack.org/generators/){:target="_blank" rel="noopener"} and [Static Site Generators](https://staticsitegenerators.net/){:target="_blank" rel="noopener"}.
+With growing interest in static web approaches hundreds of generators have sprung onto the scene--browse lists at [Jamstack Site Generators](https://jamstack.org/generators/) and [Static Site Generators](https://staticsitegenerators.net/).
 Some of the most popular and mature include [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [Gatsby](http://gatsbyjs.org/), and [Eleventy](https://11ty.dev/).
 Options include general purpose generators or tools built around specific JS frameworks such as Vue or React.
 
